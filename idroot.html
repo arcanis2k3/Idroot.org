@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>idroot.org — Your handle on the open web</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sky: #0085ff;
+      --sky-light: #e8f3ff;
+      --sky-mid: #bddeff;
+      --ink: #0f1923;
+      --ink-soft: #3d5166;
+      --ink-faint: #7a9ab0;
+      --surface: #f7fafd;
+      --white: #ffffff;
+      --border: #ddeaf5;
+      --verified: #00b877;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 250, 253, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      color: var(--ink);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--sky); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--sky); }
+
+    .btn-primary {
+      background: var(--sky);
+      color: white;
+      border: none;
+      padding: 0.55rem 1.25rem;
+      border-radius: 100px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 2px 12px rgba(0, 133, 255, 0.25);
+    }
+    .btn-primary:hover {
+      background: #006ee0;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 18px rgba(0, 133, 255, 0.35);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: calc(100vh - 60px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background orbs */
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(0, 133, 255, 0.07) 0%, transparent 70%);
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(0, 184, 119, 0.06) 0%, transparent 70%);
+      bottom: 50px;
+      right: 10%;
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: var(--sky-light);
+      border: 1px solid var(--sky-mid);
+      color: var(--sky);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.75rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-eyebrow .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--verified);
+      box-shadow: 0 0 6px var(--verified);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      max-width: 740px;
+      margin-bottom: 1.5rem;
+      animation: fadeUp 0.6s 0.1s ease both;
+    }
+    h1 em {
+      font-style: italic;
+      color: var(--sky);
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--ink-soft);
+      max-width: 500px;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.6s 0.2s ease both;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeUp 0.6s 0.3s ease both;
+    }
+
+    .btn-secondary {
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: color 0.2s;
+    }
+    .btn-secondary:hover { color: var(--sky); }
+
+    /* Handle preview */
+    .handle-preview {
+      margin-top: 4rem;
+      animation: fadeUp 0.7s 0.4s ease both;
+      position: relative;
+      z-index: 1;
+    }
+
+    .handle-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1.5rem 2rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 4px 30px rgba(15, 25, 35, 0.07), 0 1px 3px rgba(15, 25, 35, 0.04);
+      max-width: 420px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .handle-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #bddeff 0%, #91c8ff 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      color: var(--sky);
+      flex-shrink: 0;
+    }
+
+    .handle-info { flex: 1; min-width: 0; }
+    .handle-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-bottom: 0.15rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .verified-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      background: var(--verified);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .verified-badge svg { width: 9px; height: 9px; }
+
+    .handle-at {
+      font-size: 0.85rem;
+      color: var(--sky);
+      font-weight: 500;
+    }
+
+    .handle-chip {
+      background: var(--sky-light);
+      border: 1px solid var(--sky-mid);
+      color: var(--sky);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 100px;
+      white-space: nowrap;
+      letter-spacing: 0.03em;
+    }
+
+    /* SECTION */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    /* HOW IT WORKS */
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .step-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .step-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(15, 25, 35, 0.09);
+    }
+    .step-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0, 133, 255, 0.03) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .step-number {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3rem;
+      color: var(--sky-mid);
+      line-height: 1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .step-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-card p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+
+    /* WHY */
+    .why-section {
+      background: var(--ink);
+      border-radius: 24px;
+      padding: 4rem 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin: 0 2rem;
+      max-width: calc(1100px - 4rem);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .why-left h2 { color: white; }
+    .why-left p {
+      color: rgba(255,255,255,0.6);
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .why-features { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .why-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .why-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(0, 133, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .why-icon svg { width: 14px; height: 14px; color: #5bb8ff; }
+
+    /* HANDLE EXAMPLES */
+    .examples-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2.5rem;
+    }
+
+    .example-handle {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.5rem 1rem;
+      font-size: 0.88rem;
+      color: var(--sky);
+      font-weight: 500;
+      transition: background 0.2s, border-color 0.2s;
+      cursor: default;
+    }
+    .example-handle:hover {
+      background: var(--sky-light);
+      border-color: var(--sky-mid);
+    }
+
+    /* CTA BANNER */
+    .cta-banner {
+      text-align: center;
+      padding: 5rem 2rem 6rem;
+    }
+
+    .cta-banner h2 {
+      margin-bottom: 1.25rem;
+    }
+
+    .cta-banner p {
+      color: var(--ink-soft);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: gap;
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .footer-logo span { color: var(--sky); }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      font-size: 0.85rem;
+      color: var(--ink-faint);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--sky); }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--ink-faint);
+    }
+
+    /* AT Protocol badge */
+    .atproto-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.4rem 0.9rem 0.4rem 0.6rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      margin-top: 2rem;
+    }
+    .atproto-badge:hover {
+      border-color: var(--sky-mid);
+      box-shadow: 0 2px 10px rgba(0, 133, 255, 0.1);
+    }
+    .atproto-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--sky);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .why-section {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 2.5rem 2rem;
+        margin: 0 1rem;
+      }
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      footer { flex-direction: column; align-items: flex-start; }
+    }
+    /* Didit modal styles */
+    .didit-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 25, 35, 0.6);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .didit-modal-overlay.active { display: flex; }
+
+    .didit-modal {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 2.5rem 2rem 2rem;
+      max-width: 440px;
+      width: calc(100% - 2rem);
+      box-shadow: 0 24px 80px rgba(15, 25, 35, 0.18);
+      text-align: center;
+      animation: fadeUp 0.3s ease both;
+      position: relative;
+    }
+
+    .didit-modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none; border: none;
+      color: var(--ink-faint);
+      cursor: pointer;
+      padding: 0.25rem;
+      border-radius: 6px;
+      transition: color 0.2s, background 0.2s;
+      display: flex; align-items: center;
+    }
+    .didit-modal-close:hover { color: var(--ink); background: var(--sky-light); }
+
+    .didit-logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .didit-modal h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .didit-modal p {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+
+    .didit-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+      text-align: left;
+    }
+
+    .didit-step {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+    }
+
+    .didit-step-num {
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--sky-light);
+      border: 1px solid var(--sky-mid);
+      color: var(--sky);
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .didit-disclaimer {
+      font-size: 0.75rem;
+      color: var(--ink-faint);
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    .didit-disclaimer a { color: var(--sky); text-decoration: none; }
+
+    /* Verified by Didit badge */
+    .verified-by-didit {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.35rem 0.8rem 0.35rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: border-color 0.2s;
+      margin-left: 0.5rem;
+    }
+    .verified-by-didit:hover { border-color: var(--sky-mid); }
+    .verified-by-didit img { height: 16px; width: auto; }
+  </style>
+  <!-- Ko-fi Widget -->
+  <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">idroot<span>.org</span></a>
+    <ul class="nav-links">
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#why">Why idroot</a></li>
+      <li>
+        <button onclick="openDiditModal()" class="btn-primary">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Claim your handle
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Free for verified users · Powered by AT Protocol
+    </div>
+
+    <h1>Your <em>verified</em> identity<br>on the open web</h1>
+
+    <p class="hero-sub">
+      Get a free <strong>@you.idroot.org</strong> handle for Bluesky and the AT Protocol ecosystem — verified, portable, yours forever.
+    </p>
+
+    <div class="hero-cta">
+      <button onclick="openDiditModal()" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+        Claim your handle
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+      <a href="#how-it-works" class="btn-secondary">
+        How it works
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg>
+      </a>
+    </div>
+
+    <div class="handle-preview">
+      <div class="handle-card">
+        <div class="handle-avatar">S</div>
+        <div class="handle-info">
+          <div class="handle-name">
+            Sebastian K.
+            <div class="verified-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+          <div class="handle-at">@sebastian.idroot.org</div>
+        </div>
+        <div class="handle-chip">verified</div>
+      </div>
+
+      <div style="display:flex; flex-wrap:wrap; gap:0.5rem; justify-content:center; margin-top:2rem;">
+        <a href="https://atproto.com" target="_blank" class="atproto-badge" style="margin-top:0;">
+          <span class="atproto-dot"></span>
+          Built on AT Protocol
+        </a>
+        <a href="https://didit.me" target="_blank" class="verified-by-didit">
+          <img src="https://didit.me/icons/logos/didit.svg" alt="Didit" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/>
+          <span style="display:none;font-weight:700;color:#1a1a2e;">didit</span>
+          Verified by Didit
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="section-label">How it works</div>
+    <h2>Three steps to your<br>permanent handle</h2>
+
+    <div class="how-grid">
+      <div class="step-card">
+        <span class="step-number">01</span>
+        <h3>Verify your identity</h3>
+        <p>Complete a quick identity check powered by 
+          <a href="https://didit.me" target="_blank" style="color:var(--sky);font-weight:600;text-decoration:none;">Didit</a>. 
+          Face scan + ID document — takes under 2 minutes. We store only a verification status and timestamp, nothing more.
+        </p>
+        <a href="https://didit.me" target="_blank" style="display:inline-flex;align-items:center;gap:0.4rem;margin-top:1rem;font-size:0.78rem;color:var(--ink-faint);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
+          <img src="https://didit.me/icons/logos/didit.svg" alt="Didit" style="height:14px;width:auto;" onerror="this.style.display='none'"/>
+          Powered by Didit KYC
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      <div class="step-card">
+        <span class="step-number">02</span>
+        <h3>Choose your handle</h3>
+        <p>Pick your <strong>@name.idroot.org</strong> handle. It's yours — not tied to any app or platform, works across the entire AT Protocol network.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">03</span>
+        <h3>Use it on Bluesky</h3>
+        <p>Set it as your Bluesky handle in seconds. Your DID stays the same — your followers, posts, and history all follow you automatically.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <div id="why">
+    <div class="why-section">
+      <div class="why-left">
+        <div class="section-label" style="color: #5bb8ff;">Why idroot</div>
+        <h2>Own your address on the open web</h2>
+        <p>Your Bluesky handle is your identity. Make it one that says something — and one you can trust.</p>
+      </div>
+      <ul class="why-features">
+        <li>
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <strong>Real identity, minimal data</strong><br>
+            <span>KYC verification without a surveillance trail. We don't store your documents.</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <strong>Portable across the fediverse</strong><br>
+            <span>Works on Bluesky, Bapu, and any app building on AT Protocol today or tomorrow.</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div>
+            <strong>Free, forever</strong><br>
+            <span>Verified users get their handle at no cost. No subscription, no expiry, no catch.</span>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <div>
+            <strong>Trusted by the community</strong><br>
+            <span>A verified badge next to your handle tells people you're real — not a bot, not an impersonator.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EXAMPLES -->
+  <section>
+    <div class="section-label">Example handles</div>
+    <h2>Handles that stand out</h2>
+    <div class="examples-grid">
+      <span class="example-handle">@alice.idroot.org</span>
+      <span class="example-handle">@marco.idroot.org</span>
+      <span class="example-handle">@yuki.idroot.org</span>
+      <span class="example-handle">@piotr.idroot.org</span>
+      <span class="example-handle">@amara.idroot.org</span>
+      <span class="example-handle">@leon.idroot.org</span>
+      <span class="example-handle">@sofia.idroot.org</span>
+      <span class="example-handle">@james.idroot.org</span>
+      <span class="example-handle">@mei.idroot.org</span>
+      <span class="example-handle">@rafael.idroot.org</span>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner" id="claim">
+    <div class="section-label" style="text-align:center;">Get started</div>
+    <h2>Ready to claim yours?</h2>
+    <p>Join verified users who've already secured their handle on the open web.</p>
+    <button onclick="openDiditModal()" class="btn-primary" style="font-size: 1rem; padding: 0.8rem 2rem;">
+      Claim your free handle
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+    <div style="margin-top:1rem;font-size:0.8rem;color:var(--ink-faint);display:flex;align-items:center;justify-content:center;gap:0.4rem;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Identity verified by
+      <a href="https://didit.me" target="_blank" style="color:var(--sky);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:0.25rem;">
+        <img src="https://didit.me/icons/logos/didit.svg" alt="Didit" style="height:13px;width:auto;" onerror="this.style.display='none'"/>
+        Didit
+      </a>
+      · No documents stored
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="flex-direction:column;gap:1.75rem;padding-bottom:3rem;">
+
+    <!-- Donation strip -->
+    <div style="width:100%;border:1px solid var(--border);border-radius:16px;padding:1.25rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;background:var(--white);">
+      <div>
+        <div style="font-size:0.85rem;font-weight:600;color:var(--ink);margin-bottom:0.2rem;">
+          ☕ Keep idroot.org running
+        </div>
+        <div style="font-size:0.78rem;color:var(--ink-faint);">
+          This service is free &amp; community-funded. No ads, no VC money.
+        </div>
+      </div>
+      <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+        <!-- Revolut (primary) -->
+        <a href="https://revolut.me/flek90" target="_blank"
+           style="display:inline-flex;align-items:center;gap:0.5rem;background:#191C1F;color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:100px;font-size:0.82rem;font-weight:600;transition:opacity 0.2s;"
+           onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <!-- Revolut wordmark SVG -->
+          <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="32" height="32" rx="8" fill="white"/>
+            <path d="M10 7h8.5c3.038 0 5.5 2.462 5.5 5.5S21.538 18 18.5 18H14v7h-4V7zm4 7.5h4.5a1.5 1.5 0 0 0 0-3H14v3z" fill="#191C1F"/>
+          </svg>
+          Donate via Revolut
+        </a>
+
+        <!-- Ko-fi -->
+        <div id="kofi-btn-wrap"></div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+      <a href="/" class="footer-logo">idroot<span>.org</span></a>
+
+      <ul class="footer-links">
+        <li><a href="https://bapu.app" target="_blank">Bapu.app</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="https://atproto.com" target="_blank">AT Protocol</a></li>
+      </ul>
+
+      <span class="footer-copy">© 2026 idroot.org · A community project</span>
+    </div>
+  </footer>
+
+  <!-- DIDIT VERIFICATION MODAL -->
+  <div class="didit-modal-overlay" id="diditOverlay" onclick="handleOverlayClick(event)">
+    <div class="didit-modal">
+      <button class="didit-modal-close" onclick="closeDiditModal()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="didit-logo-wrap">
+        <img src="https://didit.me/icons/logos/didit.svg" alt="Didit" style="height:22px;width:auto;" onerror="this.outerHTML='<span style=&quot;font-weight:800;font-size:1.1rem;color:#1a1a2e;&quot;>didit</span>'"/>
+        <span style="color:var(--border);font-size:1.2rem;">×</span>
+        <span style="font-family:'DM Serif Display',serif;font-size:1rem;color:var(--ink);">idroot<span style="color:var(--sky)">.org</span></span>
+      </div>
+
+      <h3>Verify to claim your handle</h3>
+      <p>A quick identity check ensures every <strong>@name.idroot.org</strong> handle belongs to a real person. Takes under 2 minutes.</p>
+
+      <div class="didit-steps">
+        <div class="didit-step">
+          <div class="didit-step-num">1</div>
+          <span>Scan your face with your camera</span>
+        </div>
+        <div class="didit-step">
+          <div class="didit-step-num">2</div>
+          <span>Show a valid government ID</span>
+        </div>
+        <div class="didit-step">
+          <div class="didit-step-num">3</div>
+          <span>Choose your <strong>@handle.idroot.org</strong></span>
+        </div>
+      </div>
+
+      <button onclick="startDiditVerification()" class="btn-primary" style="width:100%;justify-content:center;font-size:0.95rem;padding:0.8rem 1.5rem;">
+        Start verification
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </button>
+
+      <div class="didit-disclaimer">
+        Your documents are processed by <a href="https://didit.me" target="_blank">Didit</a> and never stored by idroot.org.
+        We only record a verified ✓ status. Free · No credit card needed.
+      </div>
+    </div>
+  </div>
+
+  <!-- Didit Web SDK -->
+  <script src="https://unpkg.com/@didit-protocol/sdk-web/dist/didit-sdk.umd.min.js"></script>
+
+  <script>
+    // Ko-fi widget
+    if (typeof kofiwidget2 !== 'undefined') {
+      kofiwidget2.init('Support on Ko-fi', '#72a4f2', 'L4L1SWCRA');
+      document.getElementById('kofi-btn-wrap').innerHTML = kofiwidget2.draw();
+    }
+
+    // ── Didit SDK integration ──────────────────────────────────────────────
+    // Replace WORKFLOW_ID_IN_BASE_64 with your actual Didit workflow UniLink
+    // from the Didit Console → Your Workflow → Copy Link
+    const DIDIT_WORKFLOW_URL = 'https://verify.didit.me/u/WORKFLOW_ID_IN_BASE_64';
+
+    function openDiditModal() {
+      document.getElementById('diditOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDiditModal() {
+      document.getElementById('diditOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('diditOverlay')) closeDiditModal();
+    }
+
+    function startDiditVerification() {
+      closeDiditModal();
+
+      if (typeof DiditSDK !== 'undefined' && DiditSDK.DiditSdk) {
+        const sdk = DiditSDK.DiditSdk.shared;
+
+        sdk.onComplete = (result) => {
+          if (result.type === 'completed') {
+            showVerificationSuccess(result.session?.status);
+          }
+        };
+
+        sdk.onStateChange = (state, error) => {
+          if (state === 'error') {
+            console.error('Didit verification error:', error);
+          }
+        };
+
+        sdk.startVerification({ url: DIDIT_WORKFLOW_URL });
+      } else {
+        // Fallback: redirect to hosted Didit flow
+        window.open(DIDIT_WORKFLOW_URL, '_blank');
+      }
+    }
+
+    function showVerificationSuccess(status) {
+      // Replace with your actual post-verification flow
+      // e.g. redirect to handle selection page
+      alert('Verification ' + (status || 'completed') + '! Redirecting to handle selection...');
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDiditModal();
+    });
+  </script>
+
+</body>
+</html>
