@@ -62,15 +62,6 @@ function showVerificationSuccess(status) {
 }
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDiditModal(); });
 
-// Ko-fi
-function initKofi(label) {
-  if (typeof kofiwidget2 !== 'undefined') {
-    kofiwidget2.init(label, '#72a4f2', 'L4L1SWCRA');
-    const el = document.getElementById('kofi-btn-wrap');
-    if (el) el.innerHTML = kofiwidget2.draw();
-  }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   initLangSwitcher();
 });

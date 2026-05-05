@@ -13,18 +13,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../shared.css"/>
-  <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-  <script src="https://unpkg.com/@didit-protocol/sdk-web/dist/didit-sdk.umd.min.js"></script>
+    <script src="https://unpkg.com/@didit-protocol/sdk-web/dist/didit-sdk.umd.min.js"></script>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link rel="shortcut icon" href="/favicon.ico"/>
 </head>
 <body>
 
 <nav>
   <a href="/de/index.html" class="nav-logo">idroot<span>.org</span></a>
-  <ul class="nav-links">
-    <li><a href="#how-it-works">So funktioniert's</a></li>
-    <li><a href="#why">Warum idroot</a></li>
-    <li>
-      <div class="lang-switcher">
+  <div style="display:flex;align-items:center;gap:1rem;">
+    <div class="lang-switcher">
         <button class="lang-btn" id="langBtn">
           🌐 DE
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg>
@@ -36,9 +34,13 @@
           <a href="/pt/index.html">🇧🇷 Português</a>
         </div>
       </div>
-    </li>
+  <ul class="nav-links">
+    <li><a href="#how-it-works">So funktioniert's</a></li>
+    <li><a href="#why">Warum idroot</a></li>
+
     <li><button onclick="openDiditModal()" class="btn-primary"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Handle sichern</button></li>
   </ul>
+  </div>
 </nav>
 
 <div class="hero">
@@ -119,7 +121,7 @@
   <div class="section-label" style="text-align:center;">Loslegen</div>
   <h2>Bereit, deinen zu sichern?</h2>
   <p>Schließ dich verifizierten Nutzern an, die ihren Handle im offenen Web bereits gesichert haben.</p>
-  <button onclick="openDiditModal()" class="btn-primary" style="font-size:1rem;padding:0.8rem 2rem;">Kostenlosen Handle sichern <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  <button onclick="openDiditModal()" class="btn-primary" style="font-size:1rem;padding:0.8rem 2rem;">Handle sichern <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
   <div style="margin-top:1rem;font-size:0.8rem;color:var(--ink-faint);display:flex;align-items:center;justify-content:center;gap:0.4rem;">
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
     Identität verifiziert durch <a href="https://didit.me" target="_blank" style="color:var(--sky);font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:0.25rem;"><img src="https://didit.me/icons/logos/didit.svg" alt="Didit" style="height:13px;" onerror="this.style.display='none'"/>Didit</a> · Keine Dokumente gespeichert
@@ -129,12 +131,19 @@
 <footer>
   <div class="footer-donation">
     <div><div class="footer-donation-label">☕ idroot.org am Laufen halten</div><div class="footer-donation-sub">Kostenlos &amp; community-finanziert. Keine Werbung, kein VC-Geld.</div></div>
-    <div style="display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;">
+    <div style="display:flex;flex-direction:column;gap:0.6rem;align-items:flex-start;">
       <a href="https://revolut.me/flek90" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:#191C1F;color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:100px;font-size:0.82rem;font-weight:600;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
         <svg width="16" height="16" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="white"/><path d="M10 7h8.5c3.038 0 5.5 2.462 5.5 5.5S21.538 18 18.5 18H14v7h-4V7zm4 7.5h4.5a1.5 1.5 0 0 0 0-3H14v3z" fill="#191C1F"/></svg>
         Via Revolut spenden
       </a>
-      <div id="kofi-btn-wrap"></div>
+      <a href="https://paypal.me/flek90" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:#003087;color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:100px;font-size:0.82rem;font-weight:600;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"><path d="M26.24 10.42c-.44-2.83-2.61-4.42-6.27-4.42H12.6c-.63 0-1.16.48-1.25 1.1l-2.68 17.06c-.05.29.17.54.46.54h3.81c.57 0 1.05-.43 1.14-1l1.1-6.99c.09-.57.57-1 1.14-1h2.26c4.08 0 7.21-1.67 7.9-6.61.16-1.12.02-2.16-.36-3.08-.02-.04-.04-.12-.08-.18-.04-.08-.08-.15-.14-.23-.04-.06-.08-.12-.13-.18-.1-.13-.21-.26-.34-.38-.07-.06-.14-.13-.22-.19-.11-.09-.23-.18-.36-.26-.14-.08-.28-.16-.43-.24z" fill="#003087"/><path d="M26.24 10.42c-.44-2.83-2.61-4.42-6.27-4.42H12.6c-.63 0-1.16.48-1.25 1.1l-2.68 17.06c-.05.29.17.54.46.54h3.81c.57 0 1.05-.43 1.14-1l1.1-6.99c.09-.57.57-1 1.14-1h2.26c4.08 0 7.21-1.67 7.9-6.61.16-1.12.02-2.16-.36-3.08-.02-.04-.04-.12-.08-.18-.04-.08-.08-.15-.14-.23-.04-.06-.08-.12-.13-.18-.1-.13-.21-.26-.34-.38-.07-.06-.14-.13-.22-.19-.11-.09-.23-.18-.36-.26-.14-.08-.28-.16-.43-.24z" fill="#fff"/></svg>
+        Via PayPal spenden
+      </a>
+      <a href="https://ko-fi.com/L4L1SWCRA" target="_blank" style="display:inline-flex;align-items:center;gap:0.5rem;background:#72a4f2;color:white;text-decoration:none;padding:0.5rem 1rem;border-radius:100px;font-size:0.82rem;font-weight:600;transition:opacity 0.2s;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        Auf Ko-fi unterstützen
+      </a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -148,6 +157,13 @@
     <span class="footer-copy">© 2026 idroot.org · Ein Community-Projekt</span>
   </div>
 </footer>
+
+<div style="text-align: center; padding: 1rem 2rem 2rem; background: var(--surface);">
+  <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">
+    <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" style="height: 40px; width: auto; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" />
+  </a>
+</div>
+
 
 <div class="didit-modal-overlay" id="diditOverlay" onclick="handleOverlayClick(event)">
   <div class="didit-modal">
@@ -170,6 +186,5 @@
 </div>
 
 <script src="../shared.js"></script>
-<script>initKofi('Auf Ko-fi unterstützen');</script>
 </body>
 </html>
