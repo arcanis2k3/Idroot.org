@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>idroot.org</title>
+  <script>
+    (function() {
+      var supported = ['en', 'de', 'es', 'pt'];
+      var lang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
+      var target = supported.indexOf(lang) !== -1 ? lang : 'en';
+      window.location.replace('/' + target + '/index.html');
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=/en/index.html"/>
+  </noscript>
+</head>
+<body>
+  <a href="/en/index.html">Continue to idroot.org</a>
+</body>
+</html>
