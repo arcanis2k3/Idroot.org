@@ -1,3 +1,27 @@
+
+checkLaunchGate();
+
+// Launch Gate Guard
+function checkLaunchGate() {
+  const launchDate = new Date('2026-05-17T00:00:00Z').getTime();
+  const now = new Date().getTime();
+  const isComingSoonPage = window.location.pathname.includes('coming-soon.html');
+
+  if (now < launchDate && !isComingSoonPage) {
+    // Before launch: protect normal pages
+    const current = window.location.pathname.split('/')[1]; // 'en','de','es','pt'
+    const supported = ['en', 'de', 'es', 'pt'];
+    const lang = supported.includes(current) ? current : 'en';
+    window.location.replace('/' + lang + '/coming-soon.html');
+  } else if (now >= launchDate && isComingSoonPage) {
+    // After launch: prevent accessing coming soon page
+    const current = window.location.pathname.split('/')[1]; // 'en','de','es','pt'
+    const supported = ['en', 'de', 'es', 'pt'];
+    const lang = supported.includes(current) ? current : 'en';
+    window.location.replace('/' + lang + '/index.html');
+  }
+}
+
 // Language switcher
 function initLangSwitcher() {
   const btn = document.getElementById('langBtn');
@@ -63,5 +87,6 @@ function showVerificationSuccess(status) {
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDiditModal(); });
 
 document.addEventListener('DOMContentLoaded', () => {
+  checkLaunchGate();
   initLangSwitcher();
 });

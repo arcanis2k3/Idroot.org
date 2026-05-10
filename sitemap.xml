@@ -8,6 +8,15 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://idroot.org/en/coming-soon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- English -->
   <url>
     <loc>https://idroot.org/en/index.html</loc>
@@ -37,6 +46,15 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://idroot.org/de/coming-soon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- German -->
   <url>
     <loc>https://idroot.org/de/index.html</loc>
@@ -66,6 +84,15 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://idroot.org/es/coming-soon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Spanish -->
   <url>
     <loc>https://idroot.org/es/index.html</loc>
@@ -95,6 +122,15 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://idroot.org/pt/coming-soon.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Portuguese -->
   <url>
     <loc>https://idroot.org/pt/index.html</loc>

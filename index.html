@@ -8,16 +8,24 @@
       var supported = ['en', 'de', 'es', 'pt'];
       var lang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
       var target = supported.indexOf(lang) !== -1 ? lang : 'en';
-      window.location.replace('/' + target + '/index.html');
+
+      var launchDate = new Date('2026-05-17T00:00:00Z').getTime();
+      var now = new Date().getTime();
+
+      if (now < launchDate) {
+        window.location.replace('/' + target + '/coming-soon.html');
+      } else {
+        window.location.replace('/' + target + '/index.html');
+      }
     })();
   </script>
   <noscript>
-    <meta http-equiv="refresh" content="0;url=/en/index.html"/>
+    <meta http-equiv="refresh" content="0;url=/en/coming-soon.html"/>
   </noscript>
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <link rel="shortcut icon" href="/favicon.ico"/>
 </head>
 <body>
-  <a href="/en/index.html">Continue to idroot.org</a>
+  <a href="/en/coming-soon.html">Continue to idroot.org</a>
 </body>
 </html>

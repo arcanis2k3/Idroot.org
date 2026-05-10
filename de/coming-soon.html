@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>idroot.org — Demnächst</title>
+  <meta name="description" content="Kostenlose verifizierte AT-Protocol-Handles für Bluesky. Start am 17. Mai 2026."/>
+  <link rel="alternate" hreflang="en" href="/en/coming-soon.html"/>
+  <link rel="alternate" hreflang="de" href="/de/coming-soon.html"/>
+  <link rel="alternate" hreflang="es" href="/es/coming-soon.html"/>
+  <link rel="alternate" hreflang="pt" href="/pt/coming-soon.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --sky: #0085ff; --sky-light: #e8f3ff; --sky-mid: #bddeff; --ink: #0f1923; --ink-soft: #3d5166; --ink-faint: #7a9ab0; --surface: #f7fafd; --white: #ffffff; --border: #ddeaf5; --verified: #00b877; }
+    html, body { height: 100%; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 5rem 2rem 4rem; text-align: center; overflow: hidden; position: relative; }
+    body::before { content: ''; position: fixed; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,133,255,0.07) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -60%); pointer-events: none; }
+    nav { position: fixed; top: 0; left: 0; right: 0; height: 56px; background: rgba(247,250,253,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
+    .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
+    .nav-logo span { color: var(--sky); }
+    .lang-switcher { position: relative; display: inline-flex; align-items: center; }
+    .lang-btn { display: inline-flex; align-items: center; gap: 0.35rem; background: var(--white); border: 1px solid var(--border); border-radius: 100px; padding: 0.3rem 0.75rem; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; color: var(--ink-soft); cursor: pointer; transition: border-color 0.2s, color 0.2s; }
+    .lang-btn:hover { border-color: var(--sky-mid); color: var(--sky); }
+    .lang-btn svg { transition: transform 0.2s; }
+    .lang-btn.open svg { transform: rotate(180deg); }
+    .lang-dropdown { display: none; position: absolute; top: calc(100% + 8px); right: 0; background: var(--white); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; min-width: 140px; box-shadow: 0 8px 30px rgba(15,25,35,0.1); z-index: 200; }
+    .lang-dropdown.open { display: block; }
+    .lang-dropdown a { display: flex; align-items: center; gap: 0.5rem; padding: 0.55rem 1rem; font-size: 0.85rem; font-weight: 500; color: var(--ink-soft); text-decoration: none; transition: background 0.15s, color 0.15s; }
+    .lang-dropdown a:hover { background: var(--sky-light); color: var(--sky); }
+    .lang-dropdown a.active { color: var(--sky); font-weight: 600; background: var(--sky-light); }
+    .eyebrow { display: inline-flex; align-items: center; gap: 0.45rem; background: var(--sky-light); border: 1px solid var(--sky-mid); color: var(--sky); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.85rem; border-radius: 100px; margin-bottom: 1.5rem; opacity: 0; animation: fadeUp 0.6s 0.2s ease forwards; }
+    .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--verified); box-shadow: 0 0 6px var(--verified); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+    h1 { font-family: 'DM Serif Display', serif; font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1.1; letter-spacing: -0.03em; color: var(--ink); margin-bottom: 1rem; max-width: 600px; opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards; }
+    h1 em { font-style: italic; color: var(--sky); }
+    .sub { font-size: 1rem; color: var(--ink-soft); max-width: 400px; line-height: 1.65; margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.6s 0.4s ease forwards; }
+    .countdown { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.6s 0.5s ease forwards; }
+    .countdown-block { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; }
+    .countdown-num { font-family: 'DM Serif Display', serif; font-size: clamp(2.5rem, 6vw, 3.5rem); line-height: 1; color: var(--ink); background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 0.6rem 1.1rem; min-width: 80px; box-shadow: 0 2px 12px rgba(15,25,35,0.05); letter-spacing: -0.02em; }
+    .countdown-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); }
+    .countdown-sep { font-family: 'DM Serif Display', serif; font-size: 2.5rem; color: var(--sky-mid); align-self: flex-start; padding-top: 0.5rem; line-height: 1; }
+    .handle-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--white); border: 1px solid var(--border); border-radius: 100px; padding: 0.5rem 1.1rem; font-size: 0.88rem; color: var(--sky); font-weight: 600; box-shadow: 0 2px 12px rgba(15,25,35,0.05); margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.6s 0.6s ease forwards; }
+    .handle-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--verified); }
+    footer { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid var(--border); background: rgba(247,250,253,0.88); backdrop-filter: blur(12px); padding: 0.85rem 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; font-size: 0.78rem; color: var(--ink-faint); opacity: 0; animation: fadeUp 0.6s 0.8s ease forwards; }
+    footer a { color: var(--ink-faint); text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--sky); }
+    .sep { color: var(--border); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="/de/coming-soon.html" class="nav-logo">idroot<span>.org</span></a>
+  <div class="lang-switcher">
+    <button class="lang-btn" id="langBtn">🌐 DE <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7"/></svg></button>
+    <div class="lang-dropdown" id="langDropdown">
+      <a href="/en/coming-soon.html">🇬🇧 English</a>
+      <a href="/de/coming-soon.html" class="active">🇩🇪 Deutsch</a>
+      <a href="/es/coming-soon.html">🇪🇸 Español</a>
+      <a href="/pt/coming-soon.html">🇧🇷 Português</a>
+    </div>
+  </div>
+</nav>
+
+<div class="eyebrow"><span class="dot"></span>Demnächst</div>
+<h1>Dein <em>verifizierter</em> Handle<br>im offenen Web</h1>
+<p class="sub">Kostenlose AT-Protocol-Handles für Bluesky — verifiziert, portabel, wirklich deins. Start am 17. Mai.</p>
+
+<div class="countdown">
+  <div class="countdown-block"><div class="countdown-num" id="cd-days">--</div><div class="countdown-label">Tage</div></div>
+  <div class="countdown-sep">·</div>
+  <div class="countdown-block"><div class="countdown-num" id="cd-hours">--</div><div class="countdown-label">Stunden</div></div>
+  <div class="countdown-sep">·</div>
+  <div class="countdown-block"><div class="countdown-num" id="cd-minutes">--</div><div class="countdown-label">Minuten</div></div>
+  <div class="countdown-sep">·</div>
+  <div class="countdown-block"><div class="countdown-num" id="cd-seconds">--</div><div class="countdown-label">Sekunden</div></div>
+</div>
+
+<div class="handle-pill"><span class="handle-dot"></span>@deinname.idroot.org</div>
+
+<footer>
+  <a href="https://bapu.app" target="_blank">Bapu.app</a>
+  <span class="sep">·</span>
+  <a href="/de/terms.html">Nutzungsbedingungen</a>
+  <span class="sep">·</span>
+  <a href="/de/privacy.html">Datenschutzerklärung</a>
+  <span class="sep">·</span>
+  <a href="https://atproto.com" target="_blank">AT Protocol</a>
+  <span class="sep">·</span>
+  <span>© 2026 idroot.org</span>
+</footer>
+
+<script>
+  const launch = new Date('2026-05-17T00:00:00Z');
+  function pad(n) { return String(n).padStart(2, '0'); }
+  function tick() {
+    const diff = launch - Date.now();
+    if (diff <= 0) {
+      ['days','hours','minutes','seconds'].forEach(id => document.getElementById('cd-'+id).textContent = '00');
+      window.location.replace('index.html');
+      return;
+    }
+    document.getElementById('cd-days').textContent    = pad(Math.floor(diff / 86400000));
+    document.getElementById('cd-hours').textContent   = pad(Math.floor((diff % 86400000) / 3600000));
+    document.getElementById('cd-minutes').textContent = pad(Math.floor((diff % 3600000) / 60000));
+    document.getElementById('cd-seconds').textContent = pad(Math.floor((diff % 60000) / 1000));
+  }
+  tick(); setInterval(tick, 1000);
+  const btn = document.getElementById('langBtn');
+  const dd  = document.getElementById('langDropdown');
+  btn.addEventListener('click', e => { e.stopPropagation(); btn.classList.toggle('open'); dd.classList.toggle('open'); });
+  document.addEventListener('click', () => { btn.classList.remove('open'); dd.classList.remove('open'); });
+</script>
+</body>
+</html>
