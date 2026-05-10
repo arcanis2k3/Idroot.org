@@ -5,17 +5,20 @@ checkLaunchGate();
 function checkLaunchGate() {
   const launchDate = new Date('2026-05-17T00:00:00Z').getTime();
   const now = new Date().getTime();
-  const isComingSoonPage = window.location.pathname.includes('coming-soon.html');
+  const path = window.location.pathname;
 
-  if (now < launchDate && !isComingSoonPage) {
-    // Before launch: protect normal pages
-    const current = window.location.pathname.split('/')[1]; // 'en','de','es','pt'
+  const isComingSoonPage = path.includes('coming-soon.html');
+  const isLegalPage = path.includes('privacy.html') || path.includes('terms.html') || path.includes('legal.html');
+
+  if (now < launchDate && !isComingSoonPage && !isLegalPage) {
+    // Before launch: protect normal pages (excluding legal pages)
+    const current = path.split('/')[1]; // 'en','de','es','pt'
     const supported = ['en', 'de', 'es', 'pt'];
     const lang = supported.includes(current) ? current : 'en';
     window.location.replace('/' + lang + '/coming-soon.html');
   } else if (now >= launchDate && isComingSoonPage) {
     // After launch: prevent accessing coming soon page
-    const current = window.location.pathname.split('/')[1]; // 'en','de','es','pt'
+    const current = path.split('/')[1]; // 'en','de','es','pt'
     const supported = ['en', 'de', 'es', 'pt'];
     const lang = supported.includes(current) ? current : 'en';
     window.location.replace('/' + lang + '/index.html');
