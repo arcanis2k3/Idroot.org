@@ -1,5 +1,8 @@
 
-checkLaunchGate();
+const redirected = checkLaunchGate();
+if (!redirected) {
+  autoDetectLang();
+}
 
 // Launch Gate Guard
 function checkLaunchGate() {
@@ -10,19 +13,26 @@ function checkLaunchGate() {
   const isComingSoonPage = path.includes('coming-soon.html');
   const isLegalPage = path.includes('privacy.html') || path.includes('terms.html') || path.includes('legal.html');
 
-  if (now < launchDate && !isComingSoonPage && !isLegalPage) {
-    // Before launch: protect normal pages (excluding legal pages)
+  if (isLegalPage) {
+    return false; // NEVER redirect from legal pages
+  }
+
+  if (now < launchDate && !isComingSoonPage) {
+    // Before launch: protect normal pages
     const current = path.split('/')[1]; // 'en','de','es','pt'
     const supported = ['en', 'de', 'es', 'pt'];
     const lang = supported.includes(current) ? current : 'en';
     window.location.replace('/' + lang + '/coming-soon.html');
+    return true;
   } else if (now >= launchDate && isComingSoonPage) {
     // After launch: prevent accessing coming soon page
     const current = path.split('/')[1]; // 'en','de','es','pt'
     const supported = ['en', 'de', 'es', 'pt'];
     const lang = supported.includes(current) ? current : 'en';
     window.location.replace('/' + lang + '/index.html');
+    return true;
   }
+  return false;
 }
 
 // Language switcher
@@ -43,14 +53,26 @@ function initLangSwitcher() {
 
 // Auto-detect browser language and redirect if needed
 function autoDetectLang() {
-  const current = window.location.pathname.split('/')[1]; // 'en','de','es','pt'
+  const path = window.location.pathname;
+  const current = path.split('/')[1]; // 'en','de','es','pt'
   const supported = ['en', 'de', 'es', 'pt'];
-  if (supported.includes(current)) return; // already in a lang subdir
+
+  // Only redirect if we are NOT in a supported language directory
+  if (supported.includes(current)) return;
+
   const nav = navigator.language || navigator.userLanguage || 'en';
   const code = nav.slice(0, 2).toLowerCase();
   const lang = supported.includes(code) ? code : 'en';
-  const page = window.location.pathname.replace(/^\/?/, '') || 'index.html';
-  window.location.replace('/' + lang + '/' + (page === '' ? 'index.html' : page));
+
+  // Do not redirect to index.html if we are trying to access a specific page at the root
+  let page = path.replace(/^\/?/, '');
+
+  // If it's a legal page requested at root (unlikely but possible), keep the page name
+  if (!page) {
+    page = 'index.html';
+  }
+
+  window.location.replace('/' + lang + '/' + page);
 }
 
 // Get current page filename to build lang switcher links
