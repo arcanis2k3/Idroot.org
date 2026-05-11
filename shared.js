@@ -10,15 +10,17 @@ function checkLaunchGate() {
   const now = new Date().getTime();
   const path = window.location.pathname;
 
+  // We ONLY want to redirect if we are exactly on the index.html page (or the root directory)
+  // Legal, privacy, terms, and any other future pages are exempt.
+  const isIndexPage = path.endsWith('/index.html') || path.endsWith('/') || path.split('/').pop().indexOf('.') === -1;
   const isComingSoonPage = path.includes('coming-soon.html');
-  const isLegalPage = path.includes('privacy.html') || path.includes('terms.html') || path.includes('legal.html');
 
-  if (isLegalPage) {
-    return false; // NEVER redirect from legal pages
+  if (!isIndexPage && !isComingSoonPage) {
+    return false; // Do not redirect anything else
   }
 
-  if (now < launchDate && !isComingSoonPage) {
-    // Before launch: protect normal pages
+  if (now < launchDate && isIndexPage) {
+    // Before launch: protect index page
     const current = path.split('/')[1]; // 'en','de','es','pt'
     const supported = ['en', 'de', 'es', 'pt'];
     const lang = supported.includes(current) ? current : 'en';
