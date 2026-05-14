@@ -3,12 +3,17 @@
 <head>
   <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Termos de Serviço — idroot.org</title>
-  <link rel="alternate" hreflang="en" href="/en/terms.html"/><link rel="alternate" hreflang="de" href="/de/terms.html"/><link rel="alternate" hreflang="es" href="/es/terms.html"/><link rel="alternate" hreflang="pt" href="/pt/terms.html"/>
+  <link rel="alternate" hreflang="en" href="https://idroot.org/en/terms.html"/><link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/><link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/><link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="../shared.css"/>
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <link rel="shortcut icon" href="/favicon.ico"/>
+
+  <link rel="canonical" href="https://idroot.org/pt/terms.html"/>
+  <link rel="alternate" hreflang="x-default" href="https://idroot.org/en/terms.html"/>
+
+  <meta name="robots" content="index, follow"/>
 </head>
 <body>
 <nav>
@@ -21,7 +26,7 @@
 <div class="legal-container">
   <div class="doc-label">Legal</div>
   <div class="doc-h1">Termos de Serviço</div>
-  <div class="doc-meta">Última atualização: 3 de maio de 2026 · Lei aplicável: República Federal da Alemanha · <strong>A versão alemã destes Termos é a versão oficial. Em caso de discrepância entre versões linguísticas, a versão alemã prevalecerá.</strong></div>
+  <div class="doc-meta">Última atualização: May 2026 · Lei aplicável: República Federal da Alemanha · <strong>A versão alemã destes Termos é a versão oficial. Em caso de discrepância entre versões linguísticas, a versão alemã prevalecerá.</strong></div>
 
   <div class="highlight-box"><strong>Resumo:</strong> idroot.org é um serviço gratuito, financiado pela comunidade e operado por um particular. Ele fornece handles AT Protocol verificados. Não há garantias de disponibilidade, permanência ou continuidade. Use por sua conta e risco.</div>
 
@@ -30,7 +35,15 @@
   <p class="doc-p">Este Serviço é operado por um particular, não por uma empresa. É oferecido como projeto comunitário de forma voluntária e não comercial, financiado por doações voluntárias.</p>
 
   <div class="doc-h2">2. Descrição do Serviço</div>
-  <p class="doc-p">idroot.org fornece handles AT Protocol gratuitos no formato <strong>@usuario.idroot.org</strong> a usuários que concluíram a verificação de identidade. O Serviço verifica a identidade via Didit, cria um registro DNS TXT vinculando o nome de usuário ao seu DID de AT Protocol, reserva o handle por 48 horas aguardando ativação e confirma a ativação verificando automaticamente que seu perfil de AT Protocol usa o handle emitido.</p>
+  <p class="doc-p">idroot.org fornece handles verificados e gratuitos do AT Protocol no formato <strong>@usuario.idroot.org</strong> para usuários que concluíram com êxito a verificação de identidade.</p>
+  <p class="doc-p">O Serviço funciona da seguinte forma:</p>
+  <ol class="doc-ul" style="list-style-type: decimal; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li><strong>Verificação de identidade.</strong> O usuário conclui a verificação de identidade via Didit. Após um resultado bem-sucedido, uma conta de usuário é criada na plataforma idroot.org (desenvolvida pelo backend Bapu, operado pelo mesmo controlador).</li>
+    <li><strong>Atribuição de handle.</strong> O handle verificado é atribuído imediatamente e vinculado permanentemente ao DID do AT Protocol do usuário. Não há uma janela de reserva por tempo limitado — o handle é seu após a verificação.</li>
+    <li><strong>Ativação.</strong> O usuário pode ativar o handle diretamente pelo painel idroot.org (dashboard.idroot.org) ou atualizando as configurações do seu perfil do AT Protocol (por exemplo, Configurações do Bluesky → Alterar handle) para apontar para o handle emitido.</li>
+    <li><strong>Gerenciamento de conta.</strong> Uma conta de usuário em dashboard.idroot.org é necessária para gerenciar seu handle. Através do painel, você pode alterar seu handle para um nome de usuário diferente disponível ou liberar seu handle totalmente.</li>
+  </ol>
+  <p class="doc-p">O Serviço especifica: verifica a identidade do usuário via Didit; provisiona um registro DNS TXT vinculando seu nome de usuário ao seu DID do AT Protocol; cria e mantém uma conta de usuário para gerenciamento de handle; e confirma a ativação do handle verificando se o perfil do AT Protocol foi atualizado.</p>
 
   <div class="doc-h2">3. Requisitos de uso</div>
   <p class="doc-p">Você deve ter a idade mínima exigida pela sua jurisdição para celebrar contratos vinculantes e submeter-se à verificação de identidade. Em todos os casos, você deve ter pelo menos 16 anos, possuir um documento de identidade oficial com foto válido e não estar localizado em uma jurisdição onde o uso deste Serviço seja proibido por lei.</p>
@@ -53,8 +66,12 @@
   <div class="doc-h2">9. Doações</div>
   <p class="doc-p">O Serviço é financiado por doações voluntárias. As doações não conferem direitos, prioridade ou garantias de qualquer tipo. Uma doação não constitui um contrato de serviços. As doações não são reembolsáveis.</p>
 
-  <div class="doc-h2">10. Serviços de terceiros</div>
-  <p class="doc-p">O Serviço integra-se com o <strong>Didit</strong> (verificação de identidade), a <strong>Cloudflare</strong> (DNS, CDN, análise) e a rede <strong>AT Protocol</strong>. O operador não é responsável pela disponibilidade, conduta ou práticas de dados desses terceiros.</p>
+  <div class="doc-h2">10. Serviços de Terceiros</div>
+  <p class="doc-p">O Serviço se integra aos seguintes serviços de terceiros:</p>
+  <p class="doc-p"><strong>Didit</strong> (C/ Nàpols 227, Barcelona, Espanha; hello@didit.me) — verificação de identidade. A Didit processa seu documento de identidade e dados biométricos como operadora de dados sob um Acordo de Processamento de Dados. O operador recebe apenas o resultado da verificação de aprovação/reprovação.</p>
+  <p class="doc-p"><strong>Cloudflare, Inc.</strong> (101 Townsend St, San Francisco, CA 94107, EUA; representante na UE: Cloudflare Germany GmbH, Rosental 7, c/o Mindspace, 80331 Munique, Alemanha) — DNS, CDN, proteção DDoS e análise da web. Todo o tráfego da web passa pela rede da Cloudflare.</p>
+  <p class="doc-p"><strong>IONOS SE</strong> (Elgendorfer Straße 57, 56410 Montabaur, Alemanha; HRB 24498, Amtsgericht Montabaur) — hospedagem de servidores para o backend do idroot.org. Os dados da conta do usuário e os registros do handle são armazenados na infraestrutura hospedada na IONOS.</p>
+  <p class="doc-p">O operador não é responsável pela disponibilidade, conduta ou práticas de dados desses serviços de terceiros. Os próprios termos e políticas de privacidade de cada provedor se aplicam às suas respectivas atividades de processamento.</p>
 
   <div class="doc-h2">11. Limitação de responsabilidade</div>
   <p class="doc-p">Na máxima extensão permitida pela lei aplicável, o operador não será responsável por quaisquer danos diretos, indiretos, incidentais, consequentes ou punitivos decorrentes do uso ou da impossibilidade de uso do Serviço, incluindo perda de um handle, perda de seguidores ou interrupções na sua identidade de AT Protocol.</p>
@@ -89,17 +106,7 @@
 </footer>
 
 
-<div style="text-align:center; padding-bottom: 2rem; display:flex; gap:1.5rem; justify-content:center;">
-    <a href="https://x.com/nao_seb" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-    </a>
-    <a href="https://bsky.app/profile/f90.idroot.org" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
-      <svg width="22" height="22" viewBox="0 0 600 530" fill="currentColor"><path d="M137.7 54.8c42-23.7 85.9-42.6 130.6-54.8 10.3-2.8 21.2-2.8 31.5 0 44.7 12.2 88.6 31 130.6 54.8 51.5 29.3 103.1 66.8 143 115.1 19.3 23.4 34.6 51 32.7 81.3-1.6 25-14.9 47.7-35.3 62-23.9 16.7-53.7 22.4-82.5 22.8-27.9.4-56-3-83.6-7.3-3.6-.6-6-4.2-5-7.7 18.5-62 55.4-118 103.5-164 4.5-4.3-.8-11.2-6.5-9.3-64.2 21.6-124 55.6-175.7 101.4-1.8 1.6-4.6 1.6-6.4 0-51.7-45.8-111.5-79.8-175.7-101.4-5.7-1.9-11 5-6.5 9.3 48.1 46 85 102 103.5 164 1 3.5-1.4 7.1-5 7.7-27.6 4.3-55.7 7.7-83.6 7.3-28.8-.4-58.6-6.1-82.5-22.8-20.4-14.3-33.7-37-35.3-62-1.9-30.3 13.4-57.9 32.7-81.3 39.9-48.3 91.5-85.8 143-115.1z"/></svg>
-    </a>
-    <a href="https://bsky.app/profile/bapu.app" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
-      <svg width="22" height="22" viewBox="0 0 600 530" fill="currentColor"><path d="M137.7 54.8c42-23.7 85.9-42.6 130.6-54.8 10.3-2.8 21.2-2.8 31.5 0 44.7 12.2 88.6 31 130.6 54.8 51.5 29.3 103.1 66.8 143 115.1 19.3 23.4 34.6 51 32.7 81.3-1.6 25-14.9 47.7-35.3 62-23.9 16.7-53.7 22.4-82.5 22.8-27.9.4-56-3-83.6-7.3-3.6-.6-6-4.2-5-7.7 18.5-62 55.4-118 103.5-164 4.5-4.3-.8-11.2-6.5-9.3-64.2 21.6-124 55.6-175.7 101.4-1.8 1.6-4.6 1.6-6.4 0-51.7-45.8-111.5-79.8-175.7-101.4-5.7-1.9-11 5-6.5 9.3 48.1 46 85 102 103.5 164 1 3.5-1.4 7.1-5 7.7-27.6 4.3-55.7 7.7-83.6 7.3-28.8-.4-58.6-6.1-82.5-22.8-20.4-14.3-33.7-37-35.3-62-1.9-30.3 13.4-57.9 32.7-81.3 39.9-48.3 91.5-85.8 143-115.1z"/></svg>
-    </a>
-</div>
+
 <div style="text-align: center; padding: 1rem 2rem 2rem; background: var(--surface);">
   <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer">
     <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" style="height: 40px; width: auto; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" />
