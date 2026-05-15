@@ -16,7 +16,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root { --sky: #0085ff; --sky-light: #e8f3ff; --sky-mid: #bddeff; --ink: #0f1923; --ink-soft: #3d5166; --ink-faint: #7a9ab0; --surface: #f7fafd; --white: #ffffff; --border: #ddeaf5; --verified: #00b877; }
     html, body { height: 100%; }
-    body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 5rem 2rem 4rem; text-align: center; overflow: hidden; position: relative; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--surface); color: var(--ink); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 5rem 2rem 6rem; text-align: center; overflow: hidden; position: relative; }
     body::before { content: ''; position: fixed; width: 600px; height: 600px; background: radial-gradient(circle, rgba(0,133,255,0.07) 0%, transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -60%); pointer-events: none; }
     nav { position: fixed; top: 0; left: 0; right: 0; height: 56px; background: rgba(247,250,253,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; padding: 0 2rem; z-index: 100; }
     .nav-logo { font-family: 'DM Serif Display', serif; font-size: 1.25rem; color: var(--ink); text-decoration: none; letter-spacing: -0.02em; }
@@ -44,7 +44,8 @@
     .countdown-sep { font-family: 'DM Serif Display', serif; font-size: 2.5rem; color: var(--sky-mid); align-self: flex-start; padding-top: 0.5rem; line-height: 1; }
     .handle-pill { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--white); border: 1px solid var(--border); border-radius: 100px; padding: 0.5rem 1.1rem; font-size: 0.88rem; color: var(--sky); font-weight: 600; box-shadow: 0 2px 12px rgba(15,25,35,0.05); margin-bottom: 3rem; opacity: 0; animation: fadeUp 0.6s 0.6s ease forwards; }
     .handle-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--verified); }
-    footer { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid var(--border); background: rgba(247,250,253,0.88); backdrop-filter: blur(12px); padding: 0.85rem 2rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; font-size: 0.78rem; color: var(--ink-faint); opacity: 0; animation: fadeUp 0.6s 0.8s ease forwards; }
+    footer { position: fixed; bottom: 0; left: 0; right: 0; border-top: 1px solid var(--border); background: rgba(247,250,253,0.88); backdrop-filter: blur(12px); padding: 1rem 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; font-size: 0.78rem; color: var(--ink-faint); opacity: 0; animation: fadeUp 0.6s 0.8s ease forwards; }
+    .footer-links-row { display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap; }
     footer a { color: var(--ink-faint); text-decoration: none; transition: color 0.2s; }
     footer a:hover { color: var(--sky); }
     .sep { color: var(--border); }
@@ -87,7 +88,8 @@
 <div class="handle-pill"><span class="handle-dot"></span>@deinname.idroot.org</div>
 
 <footer>
-  <a href="https://bapu.app" target="_blank">Bapu.app</a>
+  <div class="footer-links-row">
+    <a href="https://bapu.app" target="_blank">Bapu.app</a>
   <span class="sep">·</span>
   <a href="/de/terms.html">Nutzungsbedingungen</a>
   <span class="sep">·</span>
@@ -97,7 +99,26 @@
   <span class="sep">·</span>
   <a href="https://atproto.com" target="_blank">AT Protocol</a>
   <span class="sep">·</span>
-  <span>© 2026 idroot.org</span>
+  <span>© 2026 Sebastian Fleckenstein</span>
+  </div>
+  <div class="footer-socials" style="display:flex; gap:1.2rem; align-items:center; justify-content:center;">
+    <a href="https://github.com/arcanis2k3" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+    </a>
+    <a href="https://x.com/nao_seb" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://bsky.app/profile/f90.idroot.org" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/></svg>
+    </a>
+    <a href="https://bsky.app/profile/bapu.app" target="_blank" style="color:var(--ink-faint); transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--ink-faint)'">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/></svg>
+    </a>
+    <span class="sep" style="color:var(--border);">|</span>
+    <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" style="display:flex;">
+      <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" style="height: 24px; width: auto; opacity: 0.8; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" />
+    </a>
+  </div>
 </footer>
 
 <script>
