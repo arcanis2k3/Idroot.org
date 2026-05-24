@@ -17,7 +17,7 @@ function initLangSwitcher() {
 // Get current page filename to build lang switcher links
 function getCurrentPage() {
   const parts = window.location.pathname.split("/");
-  return parts[parts.length - 1] || "index.html";
+  return parts[parts.length - 1] || "index";
 }
 
 // Didit modal
