@@ -936,3 +936,54 @@ footer {
     font-size: 0.78rem;
   }
 }
+
+/* Subscribe Form */
+.subscribe-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.subscribe-form {
+  display: flex;
+  max-width: 500px;
+  margin: 2rem auto 0;
+  gap: 0.5rem;
+}
+.subscribe-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.subscribe-input:focus {
+  border-color: var(--sky);
+}
+.subscribe-message {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+.subscribe-message.success {
+  color: var(--verified);
+}
+.subscribe-message.error {
+  color: #ff4d4d;
+}
+
+@media (max-width: 480px) {
+  .subscribe-form {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+  .subscribe-input {
+    width: 100%;
+    border-radius: 100px;
+  }
+  .subscribe-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}

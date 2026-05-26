@@ -400,6 +400,7 @@
     />
 
     <meta name="robots" content="index, follow" />
+      <link rel="stylesheet" href="../shared.css" />
   </head>
   <body>
     <nav>
@@ -465,6 +466,16 @@
       <span class="handle-dot"></span>@yourname.idroot.org
     </div>
 
+
+    <div class="subscribe-section">
+      <div class="subscribe-form-container">
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="Enter your email" required>
+          <button type="submit" class="btn-primary">Subscribe now</button>
+        </form>
+        <div id="subscribeMessage" class="subscribe-message"></div>
+      </div>
+    </div>
     <footer>
       <div class="footer-links-row">
         <a href="https://bapu.app" target="_blank">Bapu.app</a>
@@ -613,6 +624,9 @@
         btn.classList.remove("open");
         dd.classList.remove("open");
       });
+
+
     </script>
+      <script src="../shared.js"></script>
   </body>
 </html>

@@ -57,6 +57,83 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeDiditModal();
 });
 
+// Subscription form handling
+async function handleSubscribe(e) {
+  e.preventDefault();
+  const form = e.target;
+  const emailInput = document.getElementById("subscribeEmail");
+  const msg = document.getElementById("subscribeMessage");
+  const btn = form.querySelector("button[type='submit']");
+
+  if (!emailInput || !msg) return;
+
+  const email = emailInput.value;
+  const lang = window.location.pathname.split("/")[1] || "en";
+
+  const messages = {
+    en: {
+      loading: "Subscribing...",
+      success: "Check your inbox to confirm!",
+      error: "Something went wrong, please try again."
+    },
+    de: {
+      loading: "Abonnieren...",
+      success: "Überprüfen Sie Ihren Posteingang zur Bestätigung!",
+      error: "Etwas ist schief gelaufen, bitte versuchen Sie es erneut."
+    },
+    es: {
+      loading: "Suscribiendo...",
+      success: "¡Revisa tu bandeja de entrada para confirmar!",
+      error: "Algo salió mal, por favor inténtalo de nuevo."
+    },
+    pt: {
+      loading: "Inscrevendo...",
+      success: "Verifique sua caixa de entrada para confirmar!",
+      error: "Algo deu errado, tente novamente."
+    }
+  };
+
+  const m = messages[lang] || messages.en;
+
+  msg.textContent = m.loading;
+  msg.className = "subscribe-message";
+  btn.disabled = true;
+
+  try {
+    const res = await fetch("https://api.bapu.app/subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email,
+        attribs: { lang }
+      })
+    });
+
+    if (res.ok) {
+      msg.textContent = m.success;
+      msg.className = "subscribe-message success";
+      form.reset();
+    } else {
+      msg.textContent = m.error;
+      msg.className = "subscribe-message error";
+    }
+  } catch (err) {
+    console.error("Subscribe error:", err);
+    msg.textContent = m.error;
+    msg.className = "subscribe-message error";
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function initSubscribeForm() {
+  const form = document.getElementById("subscribeForm");
+  if (form) {
+    form.addEventListener("submit", handleSubscribe);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initLangSwitcher();
+  initSubscribeForm();
 });
