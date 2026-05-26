@@ -100,17 +100,20 @@ async function handleSubscribe(e) {
   btn.disabled = true;
 
   try {
-    const res = await fetch("https://api.bapu.app/subscribe", {
+    const res = await fetch("https://api.bapu.app/api/subscribe", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email,
-        attribs: { lang }
+        lang,
+        source: "idroot.org"
       })
     });
 
-    if (res.ok) {
-      msg.textContent = m.success;
+    const data = await res.json().catch(() => ({}));
+
+    if (res.ok && data.success) {
+      msg.textContent = data.message || m.success;
       msg.className = "subscribe-message success";
       form.reset();
     } else {
