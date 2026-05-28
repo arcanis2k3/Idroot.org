@@ -63,7 +63,6 @@ const API_BASE_URL = "https://api2.idroot.org";
 async function handleSubscribe(e) {
   e.preventDefault();
   const form = e.target;
-  const nameInput = document.getElementById("subscribeName");
   const emailInput = document.getElementById("subscribeEmail");
   const msg = document.getElementById("subscribeMessage");
   const btn = form.querySelector("button[type='submit']");
@@ -71,7 +70,6 @@ async function handleSubscribe(e) {
   if (!emailInput || !msg) return;
 
   const email = emailInput.value;
-  const name = nameInput ? nameInput.value : undefined;
   const lang = window.location.pathname.split("/")[1] || "en";
 
   const messages = {
@@ -109,7 +107,6 @@ async function handleSubscribe(e) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         email,
-        name,
         lang,
         source: "landing_page"
       })

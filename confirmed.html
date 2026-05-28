@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>idroot.org</title>
+    <script>
+      (function () {
+        var supported = ["en", "de", "es", "pt"];
+        var lang = (navigator.language || navigator.userLanguage || "en")
+          .slice(0, 2)
+          .toLowerCase();
+        var target = supported.indexOf(lang) !== -1 ? lang : "en";
+
+        // Preserve query parameters
+        var query = window.location.search;
+        window.location.replace("/" + target + "/confirmed.html" + query);
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/en/confirmed.html" />
+    </noscript>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="robots" content="noindex, follow" />
+  </head>
+  <body>
+    <a href="/en/confirmed.html">Continue to idroot.org</a>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmado — idroot.org</title>
+    <link rel="alternate" hreflang="en" href="https://idroot.org/en/confirmed.html" />
+    <link rel="alternate" hreflang="de" href="https://idroot.org/de/confirmed.html" />
+    <link rel="alternate" hreflang="es" href="https://idroot.org/es/confirmed.html" />
+    <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/confirmed.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared.css" />
+    <style>
+      .confirmed-hero {
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 2rem;
+      }
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--sky-light);
+        color: var(--sky);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        animation: fadeUp 0.6s ease both;
+      }
+      .confirmed-title {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        color: var(--ink);
+        margin-bottom: 1rem;
+        animation: fadeUp 0.6s 0.1s ease both;
+      }
+      .confirmed-sub {
+        font-size: 1.2rem;
+        color: var(--ink-soft);
+        max-width: 600px;
+        margin-bottom: 3rem;
+        animation: fadeUp 0.6s 0.2s ease both;
+      }
+      .handle-display {
+        font-weight: 700;
+        color: var(--sky);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/pt/" class="nav-logo">idroot<span>.org</span></a>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langBtn">
+          🌐 PT
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="/en/confirmed.html">🇬🇧 English</a>
+          <a href="/de/confirmed.html">🇩🇪 Deutsch</a>
+          <a href="/es/confirmed.html">🇪🇸 Español</a>
+          <a href="/pt/confirmed.html" class="active">🇧🇷 Português</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="confirmed-hero">
+      <div class="success-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h1 class="confirmed-title">Tudo pronto!</h1>
+      <p class="confirmed-sub" id="confirmationMessage">
+        Obrigado por se juntar a nós. Seu handle está confirmado.
+      </p>
+      <a href="/pt/" class="btn-primary">Voltar ao início</a>
+    </div>
+
+    <footer>
+      <div class="footer-bottom">
+        <a href="/pt/" class="footer-logo">idroot<span>.org</span></a>
+        <ul class="footer-links">
+          <li><a href="/pt/terms.html">Termos</a></li>
+          <li><a href="/pt/privacy.html">Privacidade</a></li>
+          <li><a href="/pt/legal.html">Aviso Legal</a></li>
+          <li><a href="/pt/feedback.html">Feedback</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Sebastian Fleckenstein</div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const handle = params.get('handle');
+        const msgElement = document.getElementById('confirmationMessage');
+
+        if (name && handle) {
+          msgElement.innerHTML = `Bem-vindo, <strong>${decodeURIComponent(name)}</strong>! Seu handle <span class="handle-display">@${decodeURIComponent(handle)}</span> foi assinado com sucesso.`;
+        } else if (name) {
+          msgElement.innerHTML = `Bem-vindo, <strong>${decodeURIComponent(name)}</strong>! Você foi assinado com sucesso.`;
+        } else if (handle) {
+          msgElement.innerHTML = `Seu handle <span class="handle-display">@${decodeURIComponent(handle)}</span> foi assinado com sucesso.`;
+        }
+      });
+    </script>
+    <script src="../shared.js"></script>
+  </body>
+</html>
