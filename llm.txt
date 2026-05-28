@@ -1,15 +1,19 @@
 --- index.html ---
 idroot.org — Your verified handle on the open web
+idroot .org
+🌐 EN
+🇬🇧 English
+🇩🇪 Deutsch
+🇪🇸 Español
+🇧🇷 Português
+How it works
+Why idroot
+Claim your handle
 Verified for all users · Powered by AT
-        Protocol
-Your
-verified
-identity
-on the open web
-Get your
-@you.idroot.org
-handle for Bluesky and the
-        AT Protocol ecosystem — verified, portable, yours forever.
+Protocol
+Your  verified  identity on the open web
+Get your  @you.idroot.org  handle for Bluesky and the
+AT Protocol ecosystem — verified, portable, yours forever.
 Claim your handle
 How it works
 S
@@ -19,57 +23,39 @@ verified
 Built on AT Protocol
 Verified by Didit
 How it works
-Three steps to your
-permanent handle
+Three steps to your permanent handle
 01
 Verify your identity
 Complete a quick identity check powered by
-Didit
-. Face scan + ID document — takes under 2 minutes. We store only a
-            verification status and timestamp.
+Didit . Face scan + ID document — takes under 2 minutes. We store only a
+verification status and timestamp.
 Powered by Didit KYC
 02
 Choose your handle
-Pick your
-@name.idroot.org
-handle. It's yours — not
-            tied to any app or platform, works across the entire AT Protocol
-            network.
+Pick your  @name.idroot.org  handle. It's yours — not
+tied to any app or platform, works across the entire AT Protocol
+network.
 03
 Activate on Bluesky
 Go to Bluesky Settings → Change handle → enter your new
-@name.idroot.org
-. Our system detects the switch
-            automatically within 48 hours and locks in your handle permanently.
+@name.idroot.org . Our system detects the switch
+automatically within 48 hours and locks in your handle permanently.
 Why idroot
 Own your address on the open web
 Your Bluesky handle is your identity. Make it one that says
-            something — and one you can trust.
-Real identity, minimal data
-KYC verification without a surveillance trail. We don't store
-                your documents.
-Portable across the fediverse
-Works on Bluesky, Bapu, and any app building on AT Protocol
-                today or tomorrow.
-Yours, forever
-Verified users get their handle at no cost. No subscription, no
-                expiry, no catch.
-Trusted by the community
-A verified badge tells people you're real — not a bot, not an
-                impersonator.
+something — and one you can trust.
+Real identity, minimal data   KYC verification without a surveillance trail. We don't store
+your documents.
+Portable across the fediverse   Works on Bluesky, Bapu, and any app building on AT Protocol
+today or tomorrow.
+Yours, forever   Verified users get their handle at no cost. No subscription, no
+expiry, no catch.
+Trusted by the community   A verified badge tells people you're real — not a bot, not an
+impersonator.
 Sponsor on GitHub
 Example handles
 Handles that stand out
-@alice.idroot.org
-@marco.idroot.org
-@yuki.idroot.org
-@piotr.idroot.org
-@amara.idroot.org
-@leon.idroot.org
-@sofia.idroot.org
-@james.idroot.org
-@mei.idroot.org
-@rafael.idroot.org
+@alice.idroot.org  @marco.idroot.org  @yuki.idroot.org  @piotr.idroot.org  @amara.idroot.org  @leon.idroot.org  @sofia.idroot.org  @james.idroot.org  @mei.idroot.org  @rafael.idroot.org
 Get started
 Ready to claim yours?
 Join verified users who've already secured their handle on the open web.
@@ -77,6 +63,9 @@ Claim your handle
 Identity verified by
 Didit
 · No documents stored
+Newsletter
+Subscribe for updates
+Subscribe now
 ☕ Keep idroot.org running
 Open & community-funded. No ads, no VC money.
 Revolut
@@ -97,36 +86,38 @@ AT Protocol
 ·
 © 2026 Sebastian Fleckenstein
 |
+didit '
+"
+/>
 ×
-idroot
-.org
+idroot .org
 Verify to claim your handle
 A quick identity check ensures every
-@name.idroot.org
-handle belongs to a real person.
-          Takes under 2 minutes.
+@name.idroot.org  handle belongs to a real person.
+Takes under 2 minutes.
 1
 Scan your face with your camera
 2
 Show a valid government ID
 3
-Choose your
-@handle.idroot.org
+Choose your  @handle.idroot.org
 Start verification
 Your documents are processed by
-Didit
-and never stored
-          by idroot.org. We only record a verified ✓ status. No credit
-          card needed.
+Didit  and never stored
+by idroot.org. We only record a verified ✓ status. No credit
+card needed.
 
 
 --- coming-soon.html ---
 idroot.org — Coming Soon
+idroot .org
+🌐 EN
+🇬🇧 English
+🇩🇪 Deutsch
+🇪🇸 Español
+🇧🇷 Português
 Fine-tuning for perfection. Thank you for your patience
-Your
-verified
-handle
-on the open web
+Your  verified  handle on the open web
 AT Protocol handles for Bluesky — verified, portable, truly yours. We want to make sure the systems work perfectly for this sensitive task. Thank you for your support and stay tuned! Launching Sunday, May 31, at 12 PM ET.
 --
 Days
@@ -147,9 +138,7 @@ Terms of Service
 ·
 Privacy Policy
 ·
-Legal Notice
-·
-Feedback
+Legal Notice   ·   Feedback
 ·
 AT Protocol
 ·
@@ -159,6 +148,12 @@ AT Protocol
 
 --- feedback.html ---
 Feedback — idroot.org
+idroot .org
+🌐 EN
+🇬🇧 English
+🇩🇪 Deutsch
+🇪🇸 Español
+🇧🇷 Português
 Back to home
 Get in touch
 Feedback
@@ -172,8 +167,7 @@ Feature Request
 Support
 Message
 Send Message
-idroot
-.org
+idroot .org
 Terms
 Privacy
 Legal
@@ -183,11 +177,16 @@ Feedback
 
 --- confirmed.html ---
 Confirmed — idroot.org
+idroot .org
+🌐 EN
+🇬🇧 English
+🇩🇪 Deutsch
+🇪🇸 Español
+🇧🇷 Português
 You're all set!
 Thank you for joining us. Your handle is now confirmed.
 Back to home
-idroot
-.org
+idroot .org
 Terms
 Privacy
 Legal
@@ -197,19 +196,20 @@ Feedback
 
 --- legal.html ---
 Legal Notice — idroot.org
+idroot .org
+🌐 EN
+🇬🇧 English  🇩🇪 Deutsch  🇪🇸 Español  🇧🇷 Português
+Back
 Legal
 Legal Notice
 Last updated: May 3, 2026 · GDPR compliant · Governing law: Federal
-        Republic of Germany ·
+Republic of Germany ·
 The German version of this Legal Notice is authoritative. In case of
-          discrepancy between language versions, the German version shall
-          prevail.
+discrepancy between language versions, the German version shall
+prevail.
 Responsible for Content
-Sebastian Fleckenstein
-Erthalstr. 6.
-97816
-        Lohr am Main, Germany
-Email:
+Sebastian Fleckenstein  Erthalstr. 6. 97816
+Lohr am Main, Germany Email:
 contact@idroot.org
 This service is operated by a private individual.
 Bapu.app
@@ -228,37 +228,37 @@ AT Protocol
 
 --- privacy.html ---
 Privacy Policy — idroot.org
+idroot .org
+🌐 EN
+🇬🇧 English  🇩🇪 Deutsch  🇪🇸 Español  🇧🇷 Português
+Back
 Legal
 Privacy Policy
 Last updated: May 15, 2026 · GDPR compliant · Governing law: Federal
-        Republic of Germany ·
+Republic of Germany ·
 The German version of this Privacy Policy is authoritative. In case
-          of discrepancy between language versions, the German version shall
-          prevail.
-Plain-language summary:
-We collect the minimum data
-        necessary to run this service. We do not sell your data. We do not run
-        advertising. Your identity documents are processed by Didit and never
-        stored by us — we only store whether your verification passed. You can
-        request deletion of your data at any time.
+of discrepancy between language versions, the German version shall
+prevail.
+Plain-language summary:  We collect the minimum data
+necessary to run this service. We do not sell your data. We do not run
+advertising. Your identity documents are processed by Didit and never
+stored by us — we only store whether your verification passed. You can
+request deletion of your data at any time.
 1. Controller
-Sebastian Fleckenstein
-Erthalstr. 6.
-97816
-        Lohr am Main, Germany
-Email:
+Sebastian Fleckenstein  Erthalstr. 6. 97816
+Lohr am Main, Germany Email:
 contact@idroot.org
 This service is operated by a private individual. No Data Protection
-        Officer (DPO) is required or appointed. For all data protection
-        enquiries, please use the contact above.
+Officer (DPO) is required or appointed. For all data protection
+enquiries, please use the contact above.
 2. Applicable law
 Processing is governed by Regulation (EU) 2016/679 (GDPR), the
-        Bundesdatenschutzgesetz (BDSG), and the
-        Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).
+Bundesdatenschutzgesetz (BDSG), and the
+Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG).
 3. Data we collect and why
 3.1 Handle registration and account creation
 When you register a handle, a user account is created on the idroot.org
-        platform. The following data is collected and stored:
+platform. The following data is collected and stored:
 Data
 Purpose
 Legal basis (GDPR)
@@ -273,7 +273,7 @@ Art. 6(1)(b) — contract
 Duration of account + 30 days
 Didit verification status & timestamp
 Confirm a real, unique person owns the handle; prevent duplicate
-              registrations
+registrations
 Art. 6(1)(b) — contract; Art. 6(1)(f) — legitimate interest
 Duration of account + 30 days
 Date and record of acceptance of Terms of Service
@@ -285,167 +285,130 @@ Service notifications
 Art. 6(1)(a) — consent
 Until consent is withdrawn
 User account data is stored on the idroot.org backend, hosted on IONOS
-        SE infrastructure in Germany (see § 6.3). Account management is
-        available at dashboard.idroot.org.
+SE infrastructure in Germany (see § 6.3). Account management is
+available at dashboard.idroot.org.
 We do not store identity documents, facial scan data, or any other
-          biometric data.
+biometric data.
 This is processed exclusively by Didit.
 3.2 Server logs
 Server logs are generated on infrastructure hosted by IONOS SE (see §
-        6.3). This server automatically records IP address, timestamp, HTTP
-        method, URL, response code, and user agent for each request.
-Legal basis:
-Art. 6(1)(f) GDPR — legitimate interest in
-        system security and legal compliance (§ 100 TKG). Retained for
-7 days
-, then automatically deleted.
+6.3). This server automatically records IP address, timestamp, HTTP
+method, URL, response code, and user agent for each request.
+Legal basis:  Art. 6(1)(f) GDPR — legitimate interest in
+system security and legal compliance (§ 100 TKG). Retained for
+7 days , then automatically deleted.
 3.3 Web analytics
-We use
-Cloudflare Web Analytics
-— cookieless, no
-        personal identifiers, no cross-site tracking. Only anonymised aggregate
-        data (page views, country-level, referrers).
-Legal basis:
-Art. 6(1)(f) GDPR — legitimate interest.
-        No consent banner required.
+We use  Cloudflare Web Analytics  — cookieless, no
+personal identifiers, no cross-site tracking. Only anonymised aggregate
+data (page views, country-level, referrers).
+Legal basis:  Art. 6(1)(f) GDPR — legitimate interest.
+No consent banner required.
 4. What we do not collect
 We do not collect or store identity documents or biometric data; track
-        users across websites; use advertising cookies or third-party marketing
-        trackers; sell, rent, or share personal data commercially; or profile
-        users or make automated decisions with legal effects.
+users across websites; use advertising cookies or third-party marketing
+trackers; sell, rent, or share personal data commercially; or profile
+users or make automated decisions with legal effects.
 5. Cookies
 idroot.org does not set tracking or analytics cookies. Cloudflare may
-        set strictly necessary technical cookies as part of its CDN/security
-        infrastructure; these do not require consent under applicable law.
+set strictly necessary technical cookies as part of its CDN/security
+infrastructure; these do not require consent under applicable law.
 6. Data Processors and Third Parties
 6.1 Didit (identity verification)
-Didit
-C/ Nàpols 227, Barcelona, Spain
-Contact:
-hello@didit.me
-Privacy policy:
+Didit  C/ Nàpols 227, Barcelona, Spain Contact:
+hello@didit.me  Privacy policy:
 didit.me/en/terms/privacy-policy/
-Didit acts as a
-data processor
-under a Data Processing
-        Agreement (Art. 28 GDPR). When you verify your identity, your ID
-        document and biometric (facial scan) data are processed by Didit. We
-        receive only a pass/fail outcome and a timestamp. Didit stores
-        verification data by default in the EU (AWS infrastructure). Didit is
-        ISO 27001 certified and GDPR-compliant.
+Didit acts as a  data processor  under a Data Processing
+Agreement (Art. 28 GDPR). When you verify your identity, your ID
+document and biometric (facial scan) data are processed by Didit. We
+receive only a pass/fail outcome and a timestamp. Didit stores
+verification data by default in the EU (AWS infrastructure). Didit is
+ISO 27001 certified and GDPR-compliant.
 Data processed by Didit may be transferred outside the EEA. Such
-        transfers are governed by Standard Contractual Clauses (Art. 46(2)(c)
-        GDPR) and/or applicable adequacy decisions.
+transfers are governed by Standard Contractual Clauses (Art. 46(2)(c)
+GDPR) and/or applicable adequacy decisions.
 6.2 Cloudflare (DNS, CDN, security, analytics)
-Cloudflare, Inc.
-101 Townsend St, San Francisco,
-        CA 94107, USA
-EU representative and German contact point:
-Cloudflare Germany GmbH
-Rosental 7, c/o Mindspace, 80331 München, Germany
-Privacy
-        policy:
+Cloudflare, Inc.  101 Townsend St, San Francisco,
+CA 94107, USA  EU representative and German contact point:  Cloudflare Germany GmbH  Rosental 7, c/o Mindspace, 80331 München, Germany Privacy
+policy:
 cloudflare.com/privacypolicy/
 All web traffic passes through Cloudflare's network. Cloudflare provides
-        DNS, CDN, DDoS protection, and cookieless web analytics. Cloudflare is
-        certified under the EU-US Data Privacy Framework (DPF) and processes
-        personal data (including IP addresses and technical access data) as a
-        data processor under a Data Processing Addendum (DPA). Transfers to the
-        US are made under the EU-US DPF and Standard Contractual Clauses per
-        Art. 46(2)(c) GDPR.
+DNS, CDN, DDoS protection, and cookieless web analytics. Cloudflare is
+certified under the EU-US Data Privacy Framework (DPF) and processes
+personal data (including IP addresses and technical access data) as a
+data processor under a Data Processing Addendum (DPA). Transfers to the
+US are made under the EU-US DPF and Standard Contractual Clauses per
+Art. 46(2)(c) GDPR.
 We use Cloudflare Web Analytics, which is cookieless and collects only
-        anonymised aggregate data (page views, country-level, referrers). No
-        personal identifiers are collected via analytics. No consent banner is
-        required for this use.
-Legal basis:
-Art. 6(1)(f) GDPR —
-        legitimate interest in secure and performant website operation.
+anonymised aggregate data (page views, country-level, referrers). No
+personal identifiers are collected via analytics. No consent banner is
+required for this use.  Legal basis:  Art. 6(1)(f) GDPR —
+legitimate interest in secure and performant website operation.
 Cloudflare may set strictly necessary technical cookies as part of its
-        CDN and security infrastructure. These do not require consent under
-        applicable law (§ 25(2) TDDDG).
+CDN and security infrastructure. These do not require consent under
+applicable law (§ 25(2) TDDDG).
 6.3 Backend hosting (IONOS SE)
-IONOS SE
-Elgendorfer Straße 57, 56410 Montabaur,
-        Germany
-HRB 24498, Amtsgericht Montabaur
-Data Protection
-        Officer:
-datenschutz@ionos.de
+IONOS SE  Elgendorfer Straße 57, 56410 Montabaur,
+Germany HRB 24498, Amtsgericht Montabaur Data Protection
+Officer:  datenschutz@ionos.de
 The idroot.org backend — including all user account data (DID, handle,
-        verification status, terms acceptance record, optional email) — is
-        hosted on servers operated by IONOS SE in Germany. IONOS SE acts as a
-data processor
-under an order processing agreement
-        (Art. 28 GDPR). No personal data from the backend is transferred outside
-        the EEA in the course of hosting.
-Legal basis:
-Art. 6(1)(b) GDPR — processing necessary
-        for the performance of the contract (handle provisioning and account
-        management); Art. 6(1)(f) GDPR — legitimate interest in secure and
-        reliable infrastructure operation.
+verification status, terms acceptance record, optional email) — is
+hosted on servers operated by IONOS SE in Germany. IONOS SE acts as a
+data processor  under an order processing agreement
+(Art. 28 GDPR). No personal data from the backend is transferred outside
+the EEA in the course of hosting.
+Legal basis:  Art. 6(1)(b) GDPR — processing necessary
+for the performance of the contract (handle provisioning and account
+management); Art. 6(1)(f) GDPR — legitimate interest in secure and
+reliable infrastructure operation.
 6.4 AT Protocol network
 When you activate your handle, a public DNS TXT record is created
-        associating your username with your DID. This is public by design — it
-        is how AT Protocol handle resolution works and is not a disclosure of
-        personal data by idroot.org beyond what is inherent to the protocol.
+associating your username with your DID. This is public by design — it
+is how AT Protocol handle resolution works and is not a disclosure of
+personal data by idroot.org beyond what is inherent to the protocol.
 7. International data transfers
 Where data is transferred outside the EEA (Cloudflare infrastructure in
-        the US), transfers are made under the EU-US Data Privacy Framework and
-        Standard Contractual Clauses per Art. 46(2)(c) GDPR.
+the US), transfers are made under the EU-US Data Privacy Framework and
+Standard Contractual Clauses per Art. 46(2)(c) GDPR.
 8. Your GDPR rights
-Contact
-contact@idroot.org
-to
-        exercise any of the following rights. We respond within one month (Art.
-        12(3) GDPR).
-Access (Art. 15):
-Request confirmation of processing
-          and a copy of your data.
-Rectification (Art. 16):
-Request correction of
-          inaccurate data.
-Erasure (Art. 17):
-Request deletion of your data.
-          This will also delete your handle and DNS record.
-Restriction (Art. 18):
-Request restricted processing
-          in certain circumstances.
-Portability (Art. 20):
-Request your data in a
-          structured, machine-readable format where processing is based on
-          consent or contract.
-Object (Art. 21):
-Object to processing based on
-          legitimate interest.
-Withdraw consent (Art. 7(3)):
-Withdraw consent at any
-          time without affecting the lawfulness of prior processing.
-Lodge a complaint (Art. 77):
-You may complain to the
-BfDI
-(German
-          Federal Commissioner for Data Protection) or the supervisory authority
-          in your EU member state.
+Contact  contact@idroot.org  to
+exercise any of the following rights. We respond within one month (Art.
+12(3) GDPR).
+Access (Art. 15):  Request confirmation of processing
+and a copy of your data.
+Rectification (Art. 16):  Request correction of
+inaccurate data.
+Erasure (Art. 17):  Request deletion of your data.
+This will also delete your handle and DNS record.
+Restriction (Art. 18):  Request restricted processing
+in certain circumstances.
+Portability (Art. 20):  Request your data in a
+structured, machine-readable format where processing is based on
+consent or contract.
+Object (Art. 21):  Object to processing based on
+legitimate interest.
+Withdraw consent (Art. 7(3)):  Withdraw consent at any
+time without affecting the lawfulness of prior processing.
+Lodge a complaint (Art. 77):  You may complain to the
+BfDI  (German
+Federal Commissioner for Data Protection) or the supervisory authority
+in your EU member state.
 9. Data security
 We implement TLS encryption in transit, access controls, server-side
-        encryption at rest, and automated log deletion. In the event of a breach
-        likely to risk your rights, we will notify the competent supervisory
-        authority within 72 hours and affected individuals where required (Art.
-        33–34 GDPR).
+encryption at rest, and automated log deletion. In the event of a breach
+likely to risk your rights, we will notify the competent supervisory
+authority within 72 hours and affected individuals where required (Art.
+33–34 GDPR).
 10. Children
 Identity verification requires a government-issued ID and users must
-        meet the applicable minimum age. We do not knowingly collect data from
-        children below this threshold and will delete such data if discovered.
+meet the applicable minimum age. We do not knowingly collect data from
+children below this threshold and will delete such data if discovered.
 11. Changes to this Privacy Policy
 We may update this Privacy Policy at any time. Changes will be posted
-        here with an updated date. Where changes are material, we will make
-        reasonable efforts to notify users who have provided an email address.
+here with an updated date. Where changes are material, we will make
+reasonable efforts to notify users who have provided an email address.
 12. Contact
-Sebastian Fleckenstein
-Erthalstr. 6.
-97816
-        Lohr am Main, Germany
-Email:
+Sebastian Fleckenstein  Erthalstr. 6. 97816
+Lohr am Main, Germany Email:
 contact@idroot.org
 Bapu.app
 ·
@@ -463,157 +426,139 @@ AT Protocol
 
 --- terms.html ---
 Terms of Service — idroot.org
+idroot .org
+🌐 EN
+🇬🇧 English  🇩🇪 Deutsch  🇪🇸 Español  🇧🇷 Português
+Back
 Legal
 Terms of Service
 Last updated: May 15, 2026 · Governing law: Federal Republic of Germany
-        ·
+·
 The German version of these Terms is authoritative. In case of
-          discrepancy between language versions, the German version shall
-          prevail.
-Plain-language summary:
-idroot.org is a
-        community-funded service run by a private individual. It provides
-        verified AT Protocol handles. There are no guarantees of uptime,
-        permanence, or continuity. Use it at your own risk, and please be a
-        decent human being.
+discrepancy between language versions, the German version shall
+prevail.
+Plain-language summary:  idroot.org is a
+community-funded service run by a private individual. It provides
+verified AT Protocol handles. There are no guarantees of uptime,
+permanence, or continuity. Use it at your own risk, and please be a
+decent human being.
 1. Operator
-Sebastian Fleckenstein
-Erthalstr. 6.
-97816
-        Lohr am Main, Germany
-Email:
+Sebastian Fleckenstein  Erthalstr. 6. 97816
+Lohr am Main, Germany Email:
 contact@idroot.org
 This Service is operated by a private individual, not a company. It is
-        provided as a community project on a voluntary, non-commercial basis,
-        funded by voluntary donations.
+provided as a community project on a voluntary, non-commercial basis,
+funded by voluntary donations.
 2. Description of the Service
 idroot.org provides verified AT Protocol handles in the format
-@username.idroot.org
-to users who have successfully
-        completed identity verification.
+@username.idroot.org  to users who have successfully
+completed identity verification.
 The Service works as follows:
-Identity verification.
-The user completes identity
-          verification via Didit. Upon a successful outcome, a user account is
-          created on the idroot.org platform (powered by the Bapu backend,
-          operated by the same controller).
-Handle assignment.
-The verified handle is assigned
-          immediately and permanently linked to the user's AT Protocol DID.
-          There is no time-limited reservation window — the handle is yours upon
-          verification.
-Activation.
-The user may activate the handle directly
-          via the idroot.org dashboard (dashboard.idroot.org) or by updating
-          their AT Protocol profile settings (e.g. Bluesky Settings → Change
-          handle) to point to the issued handle.
-Account management.
-A user account at
-          dashboard.idroot.org is required to manage your handle. Through the
-          dashboard, you may change your handle to a different available
-          username, or release your handle entirely.
+Identity verification.  The user completes identity
+verification via Didit. Upon a successful outcome, a user account is
+created on the idroot.org platform (powered by the Bapu backend,
+operated by the same controller).
+Handle assignment.  The verified handle is assigned
+immediately and permanently linked to the user's AT Protocol DID.
+There is no time-limited reservation window — the handle is yours upon
+verification.
+Activation.  The user may activate the handle directly
+via the idroot.org dashboard (dashboard.idroot.org) or by updating
+their AT Protocol profile settings (e.g. Bluesky Settings → Change
+handle) to point to the issued handle.
+Account management.  A user account at
+dashboard.idroot.org is required to manage your handle. Through the
+dashboard, you may change your handle to a different available
+username, or release your handle entirely.
 The Service specifically: verifies user identity via Didit; provisions a
-        DNS TXT record linking your username to your AT Protocol DID; creates
-        and maintains a user account for handle management; and confirms handle
-        activation by verifying your AT Protocol profile has been updated.
+DNS TXT record linking your username to your AT Protocol DID; creates
+and maintains a user account for handle management; and confirms handle
+activation by verifying your AT Protocol profile has been updated.
 3. Eligibility
 You must meet the minimum age required by your jurisdiction to enter
-        into a binding agreement and to submit to identity verification. In all
-        cases you must be at least 16 years of age. You must be able to complete
-        identity verification with a valid government-issued photo ID and must
-        not be located in a jurisdiction where use of this Service is prohibited
-        by law.
+into a binding agreement and to submit to identity verification. In all
+cases you must be at least 16 years of age. You must be able to complete
+identity verification with a valid government-issued photo ID and must
+not be located in a jurisdiction where use of this Service is prohibited
+by law.
 4. Handle Assignment and Activation
 Upon successful identity verification, your chosen handle is assigned
-        immediately. The DNS TXT record is provisioned without delay. You may
-        activate the handle via dashboard.idroot.org or directly through your AT
-        Protocol client (e.g. Bluesky Settings → Change handle). There is no
-        time-limited reservation window.
+immediately. The DNS TXT record is provisioned without delay. You may
+activate the handle via dashboard.idroot.org or directly through your AT
+Protocol client (e.g. Bluesky Settings → Change handle). There is no
+time-limited reservation window.
 You may change your active handle to a different available username at
-        any time through dashboard.idroot.org, subject to availability. You may
-        also release your handle at any time; released handles become available
-        to other verified users.
+any time through dashboard.idroot.org, subject to availability. You may
+also release your handle at any time; released handles become available
+to other verified users.
 5. Acceptable use
 You agree not to use the Service to impersonate any person,
-        organisation, or brand; register handles that are defamatory, obscene,
-        hateful, or unlawful; circumvent or manipulate the identity verification
-        process; register handles on behalf of third parties without their
-        consent; claim handles in bulk or automated fashion; or violate the laws
-        of Germany or your country of residence.
+organisation, or brand; register handles that are defamatory, obscene,
+hateful, or unlawful; circumvent or manipulate the identity verification
+process; register handles on behalf of third parties without their
+consent; claim handles in bulk or automated fashion; or violate the laws
+of Germany or your country of residence.
 6. One handle per verified identity
 Each verified identity is entitled to one active handle at a time.
-        Attempting to register multiple handles through repeated or fraudulent
-        verification is prohibited and may result in permanent suspension.
+Attempting to register multiple handles through repeated or fraudulent
+verification is prohibited and may result in permanent suspension.
 7. Suspension and termination
-Important:
-The operator reserves the right to suspend,
-        revoke, or delete any handle at any time, with or without prior notice,
-        and without stating a reason. You have no legal entitlement to permanent
-        retention of a handle. Handles are provisioned on a best-effort,
-        goodwill basis.
+Important:  The operator reserves the right to suspend,
+revoke, or delete any handle at any time, with or without prior notice,
+and without stating a reason. You have no legal entitlement to permanent
+retention of a handle. Handles are provisioned on a best-effort,
+goodwill basis.
 8. No guarantee of service continuity
-The Service is provided
-"as is"
-and
-"as available"
-without warranty of any kind. The
-        operator does not guarantee continuous or error-free operation,
-        indefinite availability, preservation of handles if the Service is
-        discontinued, or any specific level of DNS uptime. If the Service is to
-        be discontinued, the operator will make reasonable efforts to provide
-        advance notice but is under no legal obligation to do so.
+The Service is provided  "as is"  and
+"as available"  without warranty of any kind. The
+operator does not guarantee continuous or error-free operation,
+indefinite availability, preservation of handles if the Service is
+discontinued, or any specific level of DNS uptime. If the Service is to
+be discontinued, the operator will make reasonable efforts to provide
+advance notice but is under no legal obligation to do so.
 9. Donations
 The Service is funded by voluntary donations. Donations confer no
-        rights, entitlements, priority, or guarantees of any kind. A donation
-        does not constitute a contract for services. Donations are
-        non-refundable.
+rights, entitlements, priority, or guarantees of any kind. A donation
+does not constitute a contract for services. Donations are
+non-refundable.
 10. Third-Party Services
 The Service integrates with the following third-party services:
-Didit
-(C/ Nàpols 227, Barcelona, Spain; hello@didit.me)
-        — identity verification. Didit processes your identity document and
-        biometric data as a data processor under a Data Processing Agreement.
-        The operator receives only a pass/fail verification outcome.
-Cloudflare, Inc.
-(101 Townsend St, San Francisco, CA
-        94107, USA; EU representative: Cloudflare Germany GmbH, Rosental 7, c/o
-        Mindspace, 80331 München, Germany) — DNS, CDN, DDoS protection, and web
-        analytics. All web traffic passes through Cloudflare's network.
-IONOS SE
-(Elgendorfer Straße 57, 56410 Montabaur,
-        Germany; HRB 24498, Amtsgericht Montabaur) — server hosting for the
-        idroot.org backend. User account data and handle records are stored on
-        IONOS-hosted infrastructure.
+Didit  (C/ Nàpols 227, Barcelona, Spain; hello@didit.me)
+— identity verification. Didit processes your identity document and
+biometric data as a data processor under a Data Processing Agreement.
+The operator receives only a pass/fail verification outcome.
+Cloudflare, Inc.  (101 Townsend St, San Francisco, CA
+94107, USA; EU representative: Cloudflare Germany GmbH, Rosental 7, c/o
+Mindspace, 80331 München, Germany) — DNS, CDN, DDoS protection, and web
+analytics. All web traffic passes through Cloudflare's network.
+IONOS SE  (Elgendorfer Straße 57, 56410 Montabaur,
+Germany; HRB 24498, Amtsgericht Montabaur) — server hosting for the
+idroot.org backend. User account data and handle records are stored on
+IONOS-hosted infrastructure.
 The operator is not responsible for the availability, conduct, or data
-        practices of these third-party services. Each provider's own terms and
-        privacy policies apply to their respective processing activities.
+practices of these third-party services. Each provider's own terms and
+privacy policies apply to their respective processing activities.
 11. Limitation of liability
 To the maximum extent permitted by applicable law, the operator shall
-        not be liable for any direct, indirect, incidental, consequential, or
-        punitive damages arising from your use of or inability to use the
-        Service, including loss of a handle, loss of followers, or disruption to
-        your AT Protocol identity.
+not be liable for any direct, indirect, incidental, consequential, or
+punitive damages arising from your use of or inability to use the
+Service, including loss of a handle, loss of followers, or disruption to
+your AT Protocol identity.
 12. Governing law and jurisdiction
 These Terms are governed by the laws of the
-Federal Republic of Germany
-. Any disputes shall be
-        subject to the exclusive jurisdiction of the competent courts in
-        Germany. EU consumers may also bring proceedings in their country of
-        residence under applicable EU consumer protection law.
+Federal Republic of Germany . Any disputes shall be
+subject to the exclusive jurisdiction of the competent courts in
+Germany. EU consumers may also bring proceedings in their country of
+residence under applicable EU consumer protection law.
 13. Changes to these Terms
 The operator may modify these Terms at any time. Changes will be posted
-        on this page with an updated date. Continued use of the Service after
-        changes are posted constitutes acceptance.
+on this page with an updated date. Continued use of the Service after
+changes are posted constitutes acceptance.
 14. Contact / Impressum
-Sebastian Fleckenstein
-Erthalstr. 6.
-97816
-        Lohr am Main, Germany
-Email:
-contact@idroot.org
-Responsible for content pursuant to § 18 Abs. 2 MStV:
-Sebastian Fleckenstein
-, address as above.
+Sebastian Fleckenstein  Erthalstr. 6. 97816
+Lohr am Main, Germany Email:
+contact@idroot.org   Responsible for content pursuant to § 18 Abs. 2 MStV:
+Sebastian Fleckenstein , address as above.
 Bapu.app
 ·
 Terms of Service

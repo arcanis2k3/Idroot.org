@@ -1,0 +1,6 @@
+127.0.0.1 - - [28/May/2026 14:56:56] "GET /en/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [28/May/2026 14:56:56] "GET /shared.css HTTP/1.1" 200 -
+127.0.0.1 - - [28/May/2026 14:56:56] "GET /BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png HTTP/1.1" 200 -
+127.0.0.1 - - [28/May/2026 14:56:56] "GET /shared.js HTTP/1.1" 200 -
+127.0.0.1 - - [28/May/2026 14:56:56] "GET /en/coming-soon.html HTTP/1.1" 200 -
+127.0.0.1 - - [28/May/2026 14:56:58] "GET /de/feedback.html HTTP/1.1" 200 -
