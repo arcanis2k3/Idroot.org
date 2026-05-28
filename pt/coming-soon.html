@@ -376,6 +376,7 @@
     />
 
     <meta name="robots" content="index, follow" />
+      <link rel="stylesheet" href="../shared.css" />
   </head>
   <body>
     <nav>
@@ -440,6 +441,16 @@
       <span class="handle-dot"></span>@seunome.idroot.org
     </div>
 
+
+    <div class="subscribe-section">
+      <div class="subscribe-form-container">
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" class="subscribe-input" id="subscribeEmail" placeholder="Seu e-mail" required>
+          <button type="submit" class="btn-primary">Inscreva-se agora</button>
+        </form>
+        <div id="subscribeMessage" class="subscribe-message"></div>
+      </div>
+    </div>
     <footer>
       <div class="footer-links-row">
         <a href="https://bapu.app" target="_blank">Bapu.app</a>
@@ -448,7 +459,7 @@
         <span class="sep">·</span>
         <a href="/pt/privacy.html">Política de Privacidade</a>
         <span class="sep">·</span>
-        <a href="/pt/legal.html">Aviso Legal</a>
+        <a href="/pt/legal.html">Aviso Legal</a> <span class="sep" style="color: var(--border)">·</span> <a href="/pt/feedback.html" style="color: var(--ink-faint); text-decoration: none">Feedback</a>
         <span class="sep">·</span>
         <a href="https://atproto.com" target="_blank">AT Protocol</a>
         <span class="sep">·</span>
@@ -587,6 +598,9 @@
         btn.classList.remove("open");
         dd.classList.remove("open");
       });
+
+
     </script>
+      <script src="../shared.js"></script>
   </body>
 </html>

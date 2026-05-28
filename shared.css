@@ -936,3 +936,113 @@ footer {
     font-size: 0.78rem;
   }
 }
+
+/* Subscribe Form */
+.subscribe-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.subscribe-form {
+  display: flex;
+  max-width: 500px;
+  margin: 2rem auto 0;
+  gap: 0.5rem;
+}
+.subscribe-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.subscribe-input:focus {
+  border-color: var(--sky);
+}
+.subscribe-message {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+.subscribe-message.success {
+  color: var(--verified);
+}
+.subscribe-message.error {
+  color: #ff4d4d;
+}
+
+/* Feedback Form */
+.feedback-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 30px rgba(15, 25, 35, 0.05);
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+.form-input, .form-textarea, .form-select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--surface);
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--sky);
+  background: var(--white);
+}
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.feedback-status {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  text-align: center;
+}
+.feedback-status.success {
+  color: var(--verified);
+}
+.feedback-status.error {
+  color: #ff4d4d;
+}
+
+@media (max-width: 480px) {
+  .subscribe-form {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+  .subscribe-input {
+    width: 100%;
+    border-radius: 100px;
+  }
+  .subscribe-form .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}
