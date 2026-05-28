@@ -57,7 +57,7 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeDiditModal();
 });
 
-const API_BASE_URL = "https://api2.idroot.org";
+const API_BASE_URL = "https://idroot.org";
 
 // Subscription form handling
 async function handleSubscribe(e) {
