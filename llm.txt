@@ -1,0 +1,44 @@
+idroot.org — Your verified handle on the open web
+
+Get your verified AT Protocol handle for Bluesky. @you.idroot.org — verified, portable, yours forever.
+
+Your verified identity on the open web
+Get your @you.idroot.org handle for Bluesky and the AT Protocol ecosystem — verified, portable, yours forever.
+
+How it works
+Three steps to your permanent handle
+
+01 Verify your identity
+Complete a quick identity check powered by Didit. Face scan + ID document — takes under 2 minutes. We store only a verification status and timestamp.
+
+02 Choose your handle
+Pick your @name.idroot.org handle. It's yours — not tied to any app or platform, works across the entire AT Protocol network.
+
+03 Activate on Bluesky
+Go to Bluesky Settings → Change handle → enter your new @name.idroot.org. Our system detects the switch automatically within 48 hours and locks in your handle permanently.
+
+Why idroot
+Own your address on the open web
+Your Bluesky handle is your identity. Make it one that says something — and one you can trust.
+
+Real identity, minimal data
+KYC verification without a surveillance trail. We don't store your documents.
+
+Portable across the fediverse
+Works on Bluesky, Bapu, and any app building on AT Protocol today or tomorrow.
+
+Yours, forever
+Verified users get their handle at no cost. No subscription, no expiry, no catch.
+
+Trusted by the community
+A verified badge tells people you're real — not a bot, not an impersonator.
+
+Example handles: @alice.idroot.org, @marco.idroot.org, @yuki.idroot.org, @piotr.idroot.org, @amara.idroot.org, @leon.idroot.org, @sofia.idroot.org, @james.idroot.org, @mei.idroot.org, @rafael.idroot.org.
+
+Ready to claim yours?
+Join verified users who've already secured their handle on the open web.
+
+Identity verified by Didit · No documents stored.
+
+Terms of Service · Privacy Policy · Legal Notice · Feedback · AT Protocol · Bapu.app
+© 2026 Sebastian Fleckenstein
