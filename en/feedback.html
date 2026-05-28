@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback — idroot.org</title>
+    <meta name="description" content="Send us your feedback or suggestions about idroot.org." />
+    <link rel="alternate" hreflang="en" href="https://idroot.org/en/feedback.html" />
+    <link rel="alternate" hreflang="de" href="https://idroot.org/de/feedback.html" />
+    <link rel="alternate" hreflang="es" href="https://idroot.org/es/feedback.html" />
+    <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/feedback.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/en/" class="nav-logo">idroot<span>.org</span></a>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langBtn">
+          🌐 EN
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="/en/feedback.html" class="active">🇬🇧 English</a>
+          <a href="/de/feedback.html">🇩🇪 Deutsch</a>
+          <a href="/es/feedback.html">🇪🇸 Español</a>
+          <a href="/pt/feedback.html">🇧🇷 Português</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="feedback-container">
+      <a href="/en/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back to home
+      </a>
+
+      <div style="margin-top: 2rem; text-align: center;">
+        <span class="doc-label">Get in touch</span>
+        <h1 class="doc-h1">Feedback</h1>
+        <p class="doc-p">We'd love to hear from you. Whether it's a bug report, a feature request, or just a friendly hello.</p>
+      </div>
+
+      <form class="feedback-form" id="feedbackForm">
+        <div class="form-group">
+          <label for="feedbackName">Name (optional)</label>
+          <input type="text" id="feedbackName" class="form-input" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="feedbackEmail">Email (optional)</label>
+          <input type="email" id="feedbackEmail" class="form-input" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="feedbackCategory">Category</label>
+          <select id="feedbackCategory" class="form-select">
+            <option value="general">General Feedback</option>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="support">Support</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="feedbackMessage">Message</label>
+          <textarea id="feedbackMessage" class="form-textarea" placeholder="How can we help?" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="justify-content: center;">Send Message</button>
+        <div id="feedbackStatus" class="feedback-status"></div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-bottom">
+        <a href="/en/" class="footer-logo">idroot<span>.org</span></a>
+        <ul class="footer-links">
+          <li><a href="/en/terms.html">Terms</a></li>
+          <li><a href="/en/privacy.html">Privacy</a></li>
+          <li><a href="/en/legal.html">Legal</a></li>
+          <li><a href="/en/feedback.html">Feedback</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Sebastian Fleckenstein</div>
+      </div>
+    </footer>
+
+    <script src="../shared.js"></script>
+  </body>
+</html>

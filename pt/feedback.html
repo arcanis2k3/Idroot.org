@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback — idroot.org</title>
+    <meta name="description" content="Envie-nos seu feedback ou sugestões sobre o idroot.org." />
+    <link rel="alternate" hreflang="en" href="https://idroot.org/en/feedback.html" />
+    <link rel="alternate" hreflang="de" href="https://idroot.org/de/feedback.html" />
+    <link rel="alternate" hreflang="es" href="https://idroot.org/es/feedback.html" />
+    <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/feedback.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/pt/" class="nav-logo">idroot<span>.org</span></a>
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langBtn">
+          🌐 PT
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="/en/feedback.html">🇬🇧 English</a>
+          <a href="/de/feedback.html">🇩🇪 Deutsch</a>
+          <a href="/es/feedback.html">🇪🇸 Español</a>
+          <a href="/pt/feedback.html" class="active">🇧🇷 Português</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="feedback-container">
+      <a href="/pt/" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Voltar para a página inicial
+      </a>
+
+      <div style="margin-top: 2rem; text-align: center;">
+        <span class="doc-label">Entre em contato</span>
+        <h1 class="doc-h1">Feedback</h1>
+        <p class="doc-p">Gostaríamos muito de ouvir você. Seja um relato de bug, uma solicitação de recurso ou apenas um olá amigável.</p>
+      </div>
+
+      <form class="feedback-form" id="feedbackForm">
+        <div class="form-group">
+          <label for="feedbackName">Nome (opcional)</label>
+          <input type="text" id="feedbackName" class="form-input" placeholder="Seu nome">
+        </div>
+        <div class="form-group">
+          <label for="feedbackEmail">E-mail (opcional)</label>
+          <input type="email" id="feedbackEmail" class="form-input" placeholder="seu@email.com">
+        </div>
+        <div class="form-group">
+          <label for="feedbackCategory">Categoria</label>
+          <select id="feedbackCategory" class="form-select">
+            <option value="general">Feedback Geral</option>
+            <option value="bug">Relato de Bug</option>
+            <option value="feature">Solicitação de Recurso</option>
+            <option value="support">Suporte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="feedbackMessage">Mensagem</label>
+          <textarea id="feedbackMessage" class="form-textarea" placeholder="Como podemos ajudar?" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="justify-content: center;">Enviar Mensagem</button>
+        <div id="feedbackStatus" class="feedback-status"></div>
+      </form>
+    </div>
+
+    <footer>
+      <div class="footer-bottom">
+        <a href="/pt/" class="footer-logo">idroot<span>.org</span></a>
+        <ul class="footer-links">
+          <li><a href="/pt/terms.html">Termos</a></li>
+          <li><a href="/pt/privacy.html">Privacidade</a></li>
+          <li><a href="/pt/legal.html">Aviso Legal</a> <span class="sep" style="color: var(--border)">·</span> <a href="/pt/feedback.html" style="color: var(--ink-faint); text-decoration: none">Feedback</a></li>
+          <li><a href="/pt/feedback.html">Feedback</a></li>
+        </ul>
+        <div class="footer-copy">© 2026 Sebastian Fleckenstein</div>
+      </div>
+    </footer>
+
+    <script src="../shared.js"></script>
+  </body>
+</html>
