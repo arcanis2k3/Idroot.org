@@ -6,7 +6,7 @@
     <title>idroot.org — Dein verifizierter Handle im offenen Web</title>
     <meta
       name="description"
-      content="Hol dir deinen verifizierten AT-Protocol-Handle für Bluesky. @du.idroot.org — verifiziert, portabel, für immer deins."
+      content="Hol dir deinen verifizierten AT Protocol Handle für Bluesky. @du.idroot.org — verifiziert, portabel, für immer dein."
     />
     <link
       rel="alternate"
@@ -27,6 +27,11 @@
       rel="alternate"
       hreflang="pt"
       href="https://idroot.org/pt/index.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://idroot.org/ja/index.html"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,6 +87,7 @@
             <a href="/de/index.html" class="active">🇩🇪 Deutsch</a>
             <a href="/es/index.html">🇪🇸 Español</a>
             <a href="/pt/index.html">🇧🇷 Português</a>
+            <a href="/ja/index.html">🇯🇵 日本語</a>
           </div>
         </div>
         <ul class="nav-links">
@@ -96,379 +102,181 @@
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2.5"
+                stroke-width="3"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" /></svg
-              >Handle sichern
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+              Handle holen
             </button>
           </li>
         </ul>
       </div>
     </nav>
 
-    <div class="hero">
-      <div class="hero-eyebrow">
-        <span class="dot"></span>Verifiziert für alle Nutzer · Basiert auf
-        AT Protocol
-      </div>
-      <h1>Deine <em>verifizierte</em> Identität<br />im offenen Web</h1>
-      <p class="hero-sub">
-        Sichere dir deinen <strong>@du.idroot.org</strong>-Handle
-        für Bluesky und das AT-Protocol-Ökosystem — verifiziert, portabel, für
-        immer deins.
-      </p>
-      <div class="hero-cta">
-        <button
-          onclick="openDiditModal()"
-          class="btn-primary"
-          style="font-size: 1rem; padding: 0.75rem 1.75rem"
-        >
-          Handle sichern
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-        <a href="#how-it-works" class="btn-secondary"
-          >So funktioniert's
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M19 9l-7 7-7-7" /></svg
-        ></a>
-      </div>
-      <div class="handle-preview">
-        <div class="handle-card">
-          <div class="handle-avatar">S</div>
-          <div class="handle-info">
-            <div class="handle-name">
-              Sebastian K.
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="badge">AT Protocol Identität</div>
+          <h1>
+            Dein <em>verifizierter</em> Handle<br /><span class="highlight"
+              >im offenen Web</span
+            >
+          </h1>
+          <p class="hero-subtitle">
+            Hol dir deinen verifizierten Handle für Bluesky und andere AT
+            Protocol Apps. idroot.org nutzt staatliche Identitätsprüfung, um
+            deine eindeutige Identität sicherzustellen.
+          </p>
+
+          <div class="cta-group">
+            <button onclick="openDiditModal()" class="btn-primary">
+              Meinen Handle holen
+            </button>
+            <a href="#how-it-works" class="btn-secondary">So funktioniert's</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Verifiziert</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">EU</span>
+              <span class="stat-label">Datenschutz</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">DNS</span>
+              <span class="stat-label">Automatisch</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="features">
+        <div class="section-header">
+          <h2>Drei einfache Schritte</h2>
+          <p>Keine komplexe Einrichtung. Wir erledigen alles für dich.</p>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">1</div>
+            <h3>Identität prüfen</h3>
+            <p>
+              Nutze Didit, um deine Identität sicher mit staatlichen Dokumenten
+              zu verifizieren. Die Daten werden sicher in der EU verarbeitet.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">2</div>
+            <h3>Handle wählen</h3>
+            <p>
+              Wähle deinen verfügbaren Handle (z.B. @name.idroot.org). Dies wird
+              deine verifizierte Identität.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">3</div>
+            <h3>Verbinden & Los</h3>
+            <p>
+              Gib einfach deinen neuen Handle in den Bluesky-Einstellungen ein.
+              DNS-Einträge werden automatisch konfiguriert.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="split-section">
+        <div class="split-content">
+          <div class="badge-alt">Warum idroot?</div>
+          <h2>Vertrauen ist die<br />neue Währung</h2>
+          <p>
+            In einer dezentralen Welt wie Bluesky zählt es, wer du bist. Ein
+            idroot-Handle zeigt der Welt, dass du ein echter Mensch bist.
+          </p>
+          <ul class="check-list">
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Identitätsdiebstahl verhindern
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Beweise, dass du kein Bot bist
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Professionelle Präsenz
+            </li>
+          </ul>
+        </div>
+        <div class="split-image">
+          <div class="handle-preview">
+            <div class="preview-top">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="preview-body">
+              <div class="user-info">
+                <div class="avatar"></div>
+                <div class="names">
+                  <div class="display-name">Dein Name</div>
+                  <div class="handle-name">@name.idroot.org</div>
+                </div>
+              </div>
               <div class="verified-badge">
                 <svg
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  fill="currentColor"
                 >
-                  <polyline points="20 6 9 17 4 12" />
+                  <path
+                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
+                  />
                 </svg>
+                ID verifiziert
               </div>
             </div>
-            <div class="handle-at">@sebastian.idroot.org</div>
           </div>
-          <div class="handle-chip">verifiziert</div>
         </div>
-        <div class="badge-row">
-          <a href="https://atproto.com" target="_blank" class="atproto-badge"
-            ><span class="atproto-dot"></span>Basiert auf AT Protocol</a
-          >
-          <a href="https://didit.me" target="_blank" class="verified-by-didit"
-            ><img
-              src="https://didit.me/icons/logos/didit.svg"
-              alt="Didit"
-              onerror="this.style.display = 'none'"
-            />
-            Verifiziert durch Didit</a
-          >
-        </div>
-      </div>
-    </div>
-
-    <section id="how-it-works">
-      <div class="section-label">So funktioniert's</div>
-      <h2>Drei Schritte zu deinem<br />dauerhaften Handle</h2>
-      <div class="how-grid">
-        <div class="step-card">
-          <span class="step-number">01</span>
-          <h3>Identität verifizieren</h3>
-          <p>
-            Schließe eine schnelle Identitätsprüfung über
-            <a
-              href="https://didit.me"
-              target="_blank"
-              style="color: var(--sky); font-weight: 600; text-decoration: none"
-              >Didit</a
-            >
-            ab. Gesichtsscan + Ausweisdokument — dauert unter 2 Minuten. Wir
-            speichern nur einen Verifizierungsstatus und einen Zeitstempel.
-          </p>
-          <a
-            href="https://didit.me"
-            target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              margin-top: 1rem;
-              font-size: 0.78rem;
-              color: var(--ink-faint);
-              text-decoration: none;
-            "
-            onmouseover="this.style.color = 'var(--sky)'"
-            onmouseout="this.style.color = 'var(--ink-faint)'"
-          >
-            <img
-              src="https://didit.me/icons/logos/didit.svg"
-              alt="Didit"
-              style="height: 14px"
-              onerror="this.style.display = 'none'"
-            />
-            Powered by Didit KYC
-            <svg
-              width="10"
-              height="10"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path
-                d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-              />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-          </a>
-        </div>
-        <div class="step-card">
-          <span class="step-number">02</span>
-          <h3>Handle wählen</h3>
-          <p>
-            Wähle deinen <strong>@name.idroot.org</strong>-Handle. Er gehört dir
-            — nicht an eine App oder Plattform gebunden, funktioniert im
-            gesamten AT-Protocol-Netzwerk.
-          </p>
-        </div>
-        <div class="step-card">
-          <span class="step-number">03</span>
-          <h3>Auf Bluesky aktivieren</h3>
-          <p>
-            Gehe zu Bluesky-Einstellungen → Handle ändern → trage deinen neuen
-            <strong>@name.idroot.org</strong>-Handle ein. Unser System erkennt
-            den Wechsel automatisch innerhalb von 48 Stunden und bestätigt
-            deinen Handle dauerhaft.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <div id="why">
-      <div class="why-section">
-        <div class="why-left">
-          <div class="section-label" style="color: #5bb8ff">Warum idroot</div>
-          <h2>Besitz deine Adresse im offenen Web</h2>
-          <p>
-            Dein Bluesky-Handle ist deine Identität. Mach daraus etwas, das für
-            dich spricht — und dem du vertrauen kannst.
-          </p>
-        </div>
-        <ul class="why-features">
-          <li>
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-              </svg>
-            </div>
-            <div>
-              <strong>Echte Identität, minimale Daten</strong><br /><span
-                >KYC-Verifizierung ohne Überwachungsspur. Wir speichern keine
-                Dokumente.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="10" />
-                <path
-                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-                />
-              </svg>
-            </div>
-            <div>
-              <strong>Portabel im Fediverse</strong><br /><span
-                >Funktioniert auf Bluesky, Bapu und jeder App, die heute oder
-                morgen auf AT Protocol aufbaut.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-                />
-              </svg>
-            </div>
-            <div>
-              <strong>Deins, für immer</strong><br /><span
-                >Verifizierte Nutzer erhalten ihren Handle ohne Kosten. Kein
-                Abo, kein Ablaufdatum, kein Haken.</span
-              >
-            </div>
-          </li>
-          <li>
-            <div class="why-icon">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path
-                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                />
-              </svg>
-            </div>
-            <div>
-              <strong>Von der Community vertraut</strong><br /><span
-                >Ein verifiziertes Häkchen zeigt, dass du real bist — kein Bot,
-                kein Imitator.</span
-              >
-            </div>
-          </li>
-          <li>
-            <a href="https://github.com/sponsors/arcanis2k3" target="_blank"
-              >Auf GitHub sponsern</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section>
-      <div class="section-label">Beispiel-Handles</div>
-      <h2>Handles, die auffallen</h2>
-      <div class="examples-grid">
-        <span class="example-handle">@alice.idroot.org</span
-        ><span class="example-handle">@marco.idroot.org</span
-        ><span class="example-handle">@yuki.idroot.org</span
-        ><span class="example-handle">@piotr.idroot.org</span
-        ><span class="example-handle">@amara.idroot.org</span
-        ><span class="example-handle">@leon.idroot.org</span
-        ><span class="example-handle">@sofia.idroot.org</span
-        ><span class="example-handle">@james.idroot.org</span
-        ><span class="example-handle">@mei.idroot.org</span
-        ><span class="example-handle">@rafael.idroot.org</span>
-      </div>
-    </section>
-
-    <div class="cta-banner" id="claim">
-      <div class="section-label" style="text-align: center">Loslegen</div>
-      <h2>Bereit, deinen zu sichern?</h2>
-      <p>
-        Schließ dich verifizierten Nutzern an, die ihren Handle im offenen Web
-        bereits gesichert haben.
-      </p>
-      <button
-        onclick="openDiditModal()"
-        class="btn-primary"
-        style="font-size: 1rem; padding: 0.8rem 2rem"
-      >
-        Handle sichern
-        <svg
-          width="14"
-          height="14"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
-      </button>
-      <div
-        style="
-          margin-top: 1rem;
-          font-size: 0.8rem;
-          color: var(--ink-faint);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.4rem;
-        "
-      >
-        <svg
-          width="12"
-          height="12"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        </svg>
-        Identität verifiziert durch
-        <a
-          href="https://didit.me"
-          target="_blank"
-          style="
-            color: var(--sky);
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-          "
-          ><img
-            src="https://didit.me/icons/logos/didit.svg"
-            alt="Didit"
-            style="height: 13px"
-            onerror="this.style.display = 'none'"
-          />Didit</a
-        >
-        · Keine Dokumente gespeichert
-      </div>
-    </div>
+      </section>
+    </main>
 
     <footer
       style="
@@ -482,117 +290,6 @@
         margin-top: auto;
       "
     >
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background: var(--surface);
-          border: 1px solid var(--border);
-          border-radius: 12px;
-          padding: 1rem 1.5rem;
-          margin-bottom: 2rem;
-          flex-wrap: wrap;
-          gap: 1rem;
-        "
-      >
-        <div>
-          <div style="font-size: 0.9rem; font-weight: 600; color: var(--ink)">
-            ☕ idroot.org am Laufen halten
-          </div>
-          <div
-            style="
-              font-size: 0.8rem;
-              color: var(--ink-faint);
-              margin-top: 0.2rem;
-            "
-          >
-            Offen & community-finanziert. Keine Werbung, kein VC-Geld.
-          </div>
-        </div>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap">
-          <a
-            href="https://revolut.me/flek90"
-            target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              background: #191c1f;
-              color: white;
-              text-decoration: none;
-              padding: 0.4rem 0.8rem;
-              border-radius: 100px;
-              font-size: 0.75rem;
-              font-weight: 600;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '0.85'"
-            onmouseout="this.style.opacity = '1'"
-            >Revolut</a
-          >
-          <a
-            href="https://paypal.me/flek90"
-            target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              background: #003087;
-              color: white;
-              text-decoration: none;
-              padding: 0.4rem 0.8rem;
-              border-radius: 100px;
-              font-size: 0.75rem;
-              font-weight: 600;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '0.85'"
-            onmouseout="this.style.opacity = '1'"
-            >PayPal</a
-          >
-          <a
-            href="https://ko-fi.com/L4L1SWCRA"
-            target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              background: #72a4f2;
-              color: white;
-              text-decoration: none;
-              padding: 0.4rem 0.8rem;
-              border-radius: 100px;
-              font-size: 0.75rem;
-              font-weight: 600;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '0.85'"
-            onmouseout="this.style.opacity = '1'"
-            >Ko-fi</a
-          >
-          <a
-            href="https://github.com/sponsors/arcanis2k3"
-            target="_blank"
-            style="
-              display: inline-flex;
-              align-items: center;
-              gap: 0.4rem;
-              background: #ea4aaa;
-              color: white;
-              text-decoration: none;
-              padding: 0.4rem 0.8rem;
-              border-radius: 100px;
-              font-size: 0.75rem;
-              font-weight: 600;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '0.85'"
-            onmouseout="this.style.opacity = '1'"
-            >GitHub</a
-          >
-        </div>
-      </div>
       <div
         class="footer-links-row"
         style="
@@ -617,7 +314,7 @@
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a
-          href="/de/privacy.html"
+          href="/de/privacy-policy.html"
           style="color: var(--ink-faint); text-decoration: none"
           >Datenschutzerklärung</a
         >
@@ -731,99 +428,12 @@
       </div>
     </footer>
 
-    <div
-      class="didit-modal-overlay"
-      id="diditOverlay"
-      onclick="handleOverlayClick(event)"
-    >
-      <div class="didit-modal">
-        <button class="didit-modal-close" onclick="closeDiditModal()">
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
-        <div class="didit-logo-wrap">
-          <img
-            src="https://didit.me/icons/logos/didit.svg"
-            alt="Didit"
-            style="height: 22px"
-            onerror="
-              this.outerHTML =
-                '<span style=&quot;font-weight:800;font-size:1.1rem;&quot;>didit</span>'
-            "
-          />
-          <span style="color: var(--border); font-size: 1.2rem">×</span>
-          <span
-            style="
-              font-family: &quot;DM Serif Display&quot;, serif;
-              font-size: 1rem;
-            "
-            >idroot<span style="color: var(--sky)">.org</span></span
-          >
-        </div>
-        <h3>Verifiziere dich für deinen Handle</h3>
-        <p>
-          Eine kurze Identitätsprüfung stellt sicher, dass jeder
-          <strong>@name.idroot.org</strong>-Handle einer echten Person gehört.
-          Dauert unter 2 Minuten.
-        </p>
-        <div class="didit-steps">
-          <div class="didit-step">
-            <div class="didit-step-num">1</div>
-            <span>Gesichtsscan mit deiner Kamera</span>
-          </div>
-          <div class="didit-step">
-            <div class="didit-step-num">2</div>
-            <span>Gültigen Personalausweis / Reisepass vorzeigen</span>
-          </div>
-          <div class="didit-step">
-            <div class="didit-step-num">3</div>
-            <span>Deinen <strong>@handle.idroot.org</strong> wählen</span>
-          </div>
-        </div>
-        <button
-          onclick="startDiditVerification()"
-          class="btn-primary"
-          style="
-            width: 100%;
-            justify-content: center;
-            font-size: 0.95rem;
-            padding: 0.8rem 1.5rem;
-          "
-        >
-          Verifizierung starten
-          <svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
-        <div class="didit-disclaimer">
-          Deine Dokumente werden von
-          <a href="https://didit.me" target="_blank">Didit</a> verarbeitet und
-          niemals von idroot.org gespeichert. Wir speichern nur ein
-          ✓-Verifizierungsstatus. Keine Kreditkarte nötig.
-        </div>
-      </div>
-    </div>
-
     <script src="../shared.js"></script>
+    <script>
+      function openDiditModal() {
+        // Didit integration placeholder
+        alert("Identitätsprüfung in Kürze verfügbar.");
+      }
+    </script>
   </body>
 </html>

@@ -1,10 +1,15 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://idroot.org/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
     <loc>https://idroot.org/en/coming-soon.html</loc>
@@ -15,26 +20,18 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/coming-soon.html"/>
   </url>
   <url>
-    <loc>https://idroot.org/en/index.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/index.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
-  </url>
-  <url>
-    <loc>https://idroot.org/en/privacy.html</loc>
+    <loc>https://idroot.org/en/privacy-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/privacy-policy.html"/>
   </url>
   <url>
     <loc>https://idroot.org/en/terms.html</loc>
@@ -45,6 +42,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/terms.html"/>
   </url>
   <url>
     <loc>https://idroot.org/en/legal.html</loc>
@@ -55,16 +53,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/legal.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/legal.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
-  </url>
-  <url>
-    <loc>https://idroot.org/de/coming-soon.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
   </url>
   <url>
     <loc>https://idroot.org/de/index.html</loc>
@@ -75,16 +64,29 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
-    <loc>https://idroot.org/de/privacy.html</loc>
+    <loc>https://idroot.org/de/coming-soon.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/coming-soon.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/de/privacy-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/privacy-policy.html"/>
   </url>
   <url>
     <loc>https://idroot.org/de/terms.html</loc>
@@ -95,6 +97,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/terms.html"/>
   </url>
   <url>
     <loc>https://idroot.org/de/legal.html</loc>
@@ -105,16 +108,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/legal.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/legal.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
-  </url>
-  <url>
-    <loc>https://idroot.org/es/coming-soon.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
   </url>
   <url>
     <loc>https://idroot.org/es/index.html</loc>
@@ -125,16 +119,29 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
-    <loc>https://idroot.org/es/privacy.html</loc>
+    <loc>https://idroot.org/es/coming-soon.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/coming-soon.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/es/privacy-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/privacy-policy.html"/>
   </url>
   <url>
     <loc>https://idroot.org/es/terms.html</loc>
@@ -145,6 +152,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/terms.html"/>
   </url>
   <url>
     <loc>https://idroot.org/es/legal.html</loc>
@@ -155,16 +163,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/legal.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/legal.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
-  </url>
-  <url>
-    <loc>https://idroot.org/pt/coming-soon.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
   </url>
   <url>
     <loc>https://idroot.org/pt/index.html</loc>
@@ -175,16 +174,29 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
-    <loc>https://idroot.org/pt/privacy.html</loc>
+    <loc>https://idroot.org/pt/coming-soon.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/coming-soon.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/pt/privacy-policy.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/privacy-policy.html"/>
   </url>
   <url>
     <loc>https://idroot.org/pt/terms.html</loc>
@@ -195,6 +207,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/terms.html"/>
   </url>
   <url>
     <loc>https://idroot.org/pt/legal.html</loc>
@@ -205,5 +218,61 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/legal.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/legal.html"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/coming-soon.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/coming-soon.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/coming-soon.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/privacy-policy.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/privacy-policy.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/privacy-policy.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/terms.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/terms.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/legal.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
   </url>
 </urlset>
