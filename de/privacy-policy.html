@@ -7,22 +7,27 @@
     <link
       rel="alternate"
       hreflang="en"
-      href="https://idroot.org/en/privacy.html"
+      href="https://idroot.org/en/privacy-policy.html"
     />
     <link
       rel="alternate"
       hreflang="de"
-      href="https://idroot.org/de/privacy.html"
+      href="https://idroot.org/de/privacy-policy.html"
     />
     <link
       rel="alternate"
       hreflang="es"
-      href="https://idroot.org/es/privacy.html"
+      href="https://idroot.org/es/privacy-policy.html"
     />
     <link
       rel="alternate"
       hreflang="pt"
-      href="https://idroot.org/pt/privacy.html"
+      href="https://idroot.org/pt/privacy-policy.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://idroot.org/ja/privacy-policy.html"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,11 +39,11 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
 
-    <link rel="canonical" href="https://idroot.org/de/privacy.html" />
+    <link rel="canonical" href="https://idroot.org/de/privacy-policy.html" />
     <link
       rel="alternate"
       hreflang="x-default"
-      href="https://idroot.org/en/privacy.html"
+      href="https://idroot.org/en/privacy-policy.html"
     />
 
     <meta name="robots" content="index, follow" />
@@ -64,10 +69,11 @@
             </svg>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <a href="/en/privacy.html">🇬🇧 English</a
-            ><a href="/de/privacy.html" class="active">🇩🇪 Deutsch</a
-            ><a href="/es/privacy.html">🇪🇸 Español</a
-            ><a href="/pt/privacy.html">🇧🇷 Português</a>
+            <a href="/en/privacy-policy.html">🇬🇧 English</a
+            ><a href="/de/privacy-policy.html" class="active">🇩🇪 Deutsch</a
+            ><a href="/es/privacy-policy.html">🇪🇸 Español</a
+            ><a href="/pt/privacy-policy.html">🇧🇷 Português</a
+            ><a href="/ja/privacy-policy.html">🇯🇵 日本語</a>
           </div>
         </div>
         <a href="/de/index.html" class="nav-back"
@@ -91,7 +97,7 @@
       <div class="doc-label">Rechtliches</div>
       <div class="doc-h1">Datenschutzerklärung</div>
       <div class="doc-meta">
-        Zuletzt aktualisiert: 15. Mai 2026 · DSGVO-konform · Anwendbares Recht:
+        Zuletzt aktualisiert: 30. Mai 2026 · DSGVO-konform · Anwendbares Recht:
         Bundesrepublik Deutschland ·
         <strong
           >Diese deutsche Fassung der Datenschutzerklärung ist die maßgebliche
@@ -196,13 +202,96 @@
             <td style="padding: 0.5rem">Dauer des Kontos + 30 Tage</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border)">
-            <td style="padding: 0.5rem">E-Mail-Adresse (optional)</td>
-            <td style="padding: 0.5rem">Servicebenachrichtigungen</td>
-            <td style="padding: 0.5rem">Art. 6(1)(a) — Einwilligung</td>
-            <td style="padding: 0.5rem">Bis zum Widerruf der Einwilligung</td>
+            <td style="padding: 0.5rem">E-Mail-Adresse</td>
+            <td style="padding: 0.5rem">
+              Benachrichtigungen über Änderungen der Nutzungsbedingungen und
+              Datenschutzrichtlinie; monatlicher Newsletter (nur mit
+              ausdrücklicher Einwilligung)
+            </td>
+            <td style="padding: 0.5rem">
+              Art. 6(1)(b) — Vertrag (Kontomitteilungen); Art. 6(1)(a) —
+              Einwilligung (Newsletter)
+            </td>
+            <td style="padding: 0.5rem">Dauer des Kontos + 30 Tage</td>
           </tr>
         </tbody>
       </table>
+
+      <div class="doc-h3">3.1.1 AT Protocol Authentifizierung und Session</div>
+      <p class="doc-p">
+        Zur Verknüpfung Ihres AT Protocol Kontos mit idroot.org wird eine
+        authentifizierte Session mit Ihrem AT Protocol PDS (Personal Data
+        Server) hergestellt. Dies kann über eines der folgenden Verfahren
+        erfolgen:
+      </p>
+      <ul class="doc-ul">
+        <li>
+          <strong>Passwort / App Password:</strong> Wird ausschließlich zur
+          Erstellung der AT Protocol Session verwendet und danach nicht
+          gespeichert.
+        </li>
+        <li>
+          <strong>OAuth:</strong> Zugriff erfolgt ausschließlich über den
+          `atproto` Scope, der auf die Authentifizierung und das Lesen
+          grundlegender Profildaten beschränkt ist.
+        </li>
+      </ul>
+      <p class="doc-p">
+        Folgende Daten werden im Rahmen der Authentifizierung verarbeitet:
+      </p>
+      <table
+        style="
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 1rem;
+          font-size: 0.9rem;
+          text-align: left;
+        "
+      >
+        <thead>
+          <tr style="border-bottom: 2px solid var(--border)">
+            <th style="padding: 0.5rem">Daten</th>
+            <th style="padding: 0.5rem">Zweck</th>
+            <th style="padding: 0.5rem">Rechtsgrundlage (DSGVO)</th>
+            <th style="padding: 0.5rem">Aufbewahrung</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 0.5rem">Passwort / App Password</td>
+            <td style="padding: 0.5rem">Erstellung der AT Protocol Session</td>
+            <td style="padding: 0.5rem">Art. 6(1)(b) — Vertrag</td>
+            <td style="padding: 0.5rem">
+              Wird nach Session-Erstellung nicht gespeichert
+            </td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 0.5rem">Access Token / Refresh Token</td>
+            <td style="padding: 0.5rem">
+              Aufrechterhaltung der authentifizierten Session
+            </td>
+            <td style="padding: 0.5rem">Art. 6(1)(b) — Vertrag</td>
+            <td style="padding: 0.5rem">Dauer der aktiven Session</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 0.5rem">
+              E-Mail-Adresse (via AT Protocol `getSession`)
+            </td>
+            <td style="padding: 0.5rem">
+              Wird beim Authentifizierungsvorgang vom AT Protocol PDS
+              übermittelt und für Kontomitteilungen gespeichert (siehe 3.1)
+            </td>
+            <td style="padding: 0.5rem">Art. 6(1)(b) — Vertrag</td>
+            <td style="padding: 0.5rem">Dauer des Kontos + 30 Tage</td>
+          </tr>
+        </tbody>
+      </table>
+      <blockquote>
+        Wir fragen ausschließlich die zur Authentifizierung und Kontoerstellung
+        notwendigen Daten ab. Wir führen keine Aktionen (z.B. Posts, Follows) in
+        Ihrem Namen durch, ohne dass Sie diese ausdrücklich in der Anwendung
+        auslösen.
+      </blockquote>
       <p class="doc-p">
         Benutzerkontodaten werden im idroot.org-Backend gespeichert, das auf der
         Infrastruktur von IONOS SE in Deutschland (siehe § 6.3) gehostet wird.
@@ -223,7 +312,7 @@
         für jede Anfrage. <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f
         DSGVO — berechtigtes Interesse an Systemsicherheit und Erfüllung
         gesetzlicher Pflichten (§ 100 TKG). Speicherdauer:
-        <strong>7 Tage</strong>, danach automatische Löschung.
+        <strong>90 Tage</strong>, danach automatische Löschung.
       </p>
 
       <div class="doc-h3">3.3 Webanalyse</div>
@@ -462,7 +551,7 @@
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a
-          href="/de/privacy.html"
+          href="/de/privacy-policy.html"
           style="color: var(--ink-faint); text-decoration: none"
           >Datenschutzerklärung</a
         >
@@ -476,3 +565,106 @@
         <a
           href="https://atproto.com"
           target="_blank"
+          style="color: var(--ink-faint); text-decoration: none"
+          >AT Protocol</a
+        >
+        <span class="sep" style="color: var(--border)">·</span>
+        <span>© 2026 Sebastian Fleckenstein</span>
+      </div>
+      <div
+        class="footer-socials"
+        style="
+          text-align: center;
+          display: flex;
+          gap: 1.5rem;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <a
+          href="https://github.com/arcanis2k3"
+          target="_blank"
+          style="color: var(--ink-faint); transition: color 0.2s"
+          onmouseover="this.style.color = 'var(--sky)'"
+          onmouseout="this.style.color = 'var(--ink-faint)'"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://x.com/nao_seb"
+          target="_blank"
+          style="color: var(--ink-faint); transition: color 0.2s"
+          onmouseover="this.style.color = 'var(--sky)'"
+          onmouseout="this.style.color = 'var(--ink-faint)'"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://bsky.app/profile/f90.idroot.org"
+          target="_blank"
+          style="color: var(--ink-faint); transition: color 0.2s"
+          onmouseover="this.style.color = 'var(--sky)'"
+          onmouseout="this.style.color = 'var(--ink-faint)'"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://bsky.app/profile/bapu.app"
+          target="_blank"
+          style="color: var(--ink-faint); transition: color 0.2s"
+          onmouseover="this.style.color = 'var(--sky)'"
+          onmouseout="this.style.color = 'var(--ink-faint)'"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
+            />
+          </svg>
+        </a>
+        <span class="sep" style="color: var(--border)">|</span>
+        <a
+          href="https://www.cloudflare.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="display: flex"
+        >
+          <img
+            src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png"
+            alt="Protected by Cloudflare"
+            style="
+              height: 24px;
+              width: auto;
+              opacity: 0.8;
+              transition: opacity 0.2s;
+            "
+            onmouseover="this.style.opacity = '1'"
+            onmouseout="this.style.opacity = '0.8'"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="../shared.js"></script>
+  </body>
+</html>

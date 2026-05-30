@@ -1,0 +1,33 @@
+# idroot.org - Public Digital Identity for AT Protocol
+
+idroot.org provides verified handles for the AT Protocol (Bluesky and other apps) using government-issued ID verification via Didit.
+
+## Navigation
+
+- [English Home](https://idroot.org/en/index.html)
+- [German Home](https://idroot.org/de/index.html)
+- [Spanish Home](https://idroot.org/es/index.html)
+- [Portuguese Home](https://idroot.org/pt/index.html)
+- [Japanese Home](https://idroot.org/ja/index.html)
+
+## Legal Information
+
+- [Privacy Policy (EN)](https://idroot.org/en/privacy-policy.html)
+- [Terms of Service (EN)](https://idroot.org/en/terms.html)
+- [Legal Notice (EN)](https://idroot.org/en/legal.html)
+
+## Privacy Policy - Section 3.1 & 3.1.1 Summary
+
+We collect:
+- AT Protocol DID (Contract) - Duration + 30 days
+- Handle (Contract) - Duration + 30 days
+- Verification Status (Contract/Interest) - Duration + 30 days
+- Terms Acceptance (Legal/Contract) - Duration + 30 days
+- Email (Contract for notifications / Consent for newsletter) - Duration + 30 days
+
+Authentication:
+- Uses App Passwords (not stored) or OAuth (atproto scope).
+- Stores session tokens and email from PDS.
+- No unauthorized actions (posts/follows) are performed.
+
+Responsible Party: Sebastian Fleckenstein, Erthalstr. 6., 97816 Lohr am Main, Germany.

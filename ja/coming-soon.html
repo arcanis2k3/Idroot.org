@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="de">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>idroot.org — Demnächst</title>
+    <title>近日公開 — idroot.org</title>
     <meta
       name="description"
-      content="Verifizierte AT-Protocol-Handles für Bluesky. Start am Sonntag, 31. Mai 2026, 12 Uhr ET."
+      content="Bluesky用の認証済みAT Protocolハンドル。2026年5月31日（日）午後12時（ET）に公開予定。"
     />
     <link
       rel="alternate"
@@ -93,6 +93,8 @@
         transform: translate(-50%, -60%);
         pointer-events: none;
       }
+
+      /* Nav */
       nav {
         position: fixed;
         top: 0;
@@ -118,6 +120,8 @@
       .nav-logo span {
         color: var(--sky);
       }
+
+      /* Lang switcher */
       .lang-switcher {
         position: relative;
         display: inline-flex;
@@ -189,6 +193,20 @@
         font-weight: 600;
         background: var(--sky-light);
       }
+
+      /* Content */
+      .logo {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.5rem;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 2.5rem;
+        opacity: 0;
+        animation: fadeUp 0.6s 0.1s ease forwards;
+      }
+      .logo span {
+        color: var(--sky);
+      }
       .eyebrow {
         display: inline-flex;
         align-items: center;
@@ -247,6 +265,8 @@
         opacity: 0;
         animation: fadeUp 0.6s 0.4s ease forwards;
       }
+
+      /* Countdown */
       .countdown {
         display: flex;
         gap: 1.5rem;
@@ -290,6 +310,7 @@
         padding-top: 0.5rem;
         line-height: 1;
       }
+
       .handle-pill {
         display: inline-flex;
         align-items: center;
@@ -312,6 +333,8 @@
         border-radius: 50%;
         background: var(--verified);
       }
+
+      /* Footer */
       footer {
         position: fixed;
         bottom: 0;
@@ -349,6 +372,7 @@
       .sep {
         color: var(--border);
       }
+
       @keyframes fadeUp {
         from {
           opacity: 0;
@@ -373,7 +397,7 @@
       }
     </style>
 
-    <link rel="canonical" href="https://idroot.org/de/coming-soon.html" />
+    <link rel="canonical" href="https://idroot.org/ja/coming-soon.html" />
     <link
       rel="alternate"
       hreflang="x-default"
@@ -384,12 +408,12 @@
   </head>
   <body>
     <nav>
-      <a href="/de/coming-soon.html" class="nav-logo"
+      <a href="/ja/coming-soon.html" class="nav-logo"
         >idroot<span>.org</span></a
       >
       <div class="lang-switcher">
         <button class="lang-btn" id="langBtn">
-          🌐 DE
+          🌐 JA
           <svg
             width="12"
             height="12"
@@ -405,56 +429,57 @@
         </button>
         <div class="lang-dropdown" id="langDropdown">
           <a href="/en/coming-soon.html">🇬🇧 English</a>
-          <a href="/de/coming-soon.html" class="active">🇩🇪 Deutsch</a>
+          <a href="/de/coming-soon.html">🇩🇪 Deutsch</a>
           <a href="/es/coming-soon.html">🇪🇸 Español</a>
           <a href="/pt/coming-soon.html">🇧🇷 Português</a>
-            <a href="/ja/coming-soon.html">🇯🇵 日本語</a>
+          <a href="/ja/coming-soon.html" class="active">🇯🇵 日本語</a>
         </div>
       </div>
     </nav>
 
     <div class="eyebrow">
-      <span class="dot"></span>Feinabstimmung für Perfektion. Vielen Dank für Ihre Geduld</div>
-    <h1>Dein <em>verifizierter</em> Handle<br />im offenen Web</h1>
+      <span class="dot"></span>現在、最終調整中です。
+    </div>
+    <h1>認証済みハンドルを<br /><em>オープンウェブ</em>へ</h1>
     <p class="sub">
-      AT-Protocol-Handles für Bluesky — verifiziert, portabel, wirklich deins. Wir möchten sicherstellen, dass die Systeme für diese sensible Aufgabe perfekt funktionieren. Vielen Dank für Ihre Unterstützung und bleiben Sie dran! Start am Sonntag, 31. Mai, um 18 Uhr MESZ (12 Uhr ET).
+      Bluesky用の認証済みAT Protocolハンドル — ポータブルで、永久にあなたのもの。この重要な機能が完璧に動作するよう準備を進めています。2026年5月31日（日）午後12時（ET）に公開予定です。お楽しみに！
     </p>
 
     <div class="countdown">
       <div class="countdown-block">
         <div class="countdown-num" id="cd-days">--</div>
-        <div class="countdown-label">Tage</div>
+        <div class="countdown-label">日</div>
       </div>
       <div class="countdown-sep">·</div>
       <div class="countdown-block">
         <div class="countdown-num" id="cd-hours">--</div>
-        <div class="countdown-label">Stunden</div>
+        <div class="countdown-label">時間</div>
       </div>
       <div class="countdown-sep">·</div>
       <div class="countdown-block">
         <div class="countdown-num" id="cd-minutes">--</div>
-        <div class="countdown-label">Minuten</div>
+        <div class="countdown-label">分</div>
       </div>
       <div class="countdown-sep">·</div>
       <div class="countdown-block">
         <div class="countdown-num" id="cd-seconds">--</div>
-        <div class="countdown-label">Sekunden</div>
+        <div class="countdown-label">秒</div>
       </div>
     </div>
 
     <div class="handle-pill">
-      <span class="handle-dot"></span>@deinname.idroot.org
+      <span class="handle-dot"></span>@名前.idroot.org
     </div>
 
     <footer>
       <div class="footer-links-row">
         <a href="https://bapu.app" target="_blank">Bapu.app</a>
         <span class="sep">·</span>
-        <a href="/de/terms.html">Nutzungsbedingungen</a>
+        <a href="/ja/terms.html">利用規約</a>
         <span class="sep">·</span>
-        <a href="/de/privacy-policy.html">Datenschutzerklärung</a>
+        <a href="/ja/privacy-policy.html">プライバシーポリシー</a>
         <span class="sep">·</span>
-        <a href="/de/legal.html">Impressum</a>
+        <a href="/ja/legal.html">法的通知</a>
         <span class="sep">·</span>
         <a href="https://atproto.com" target="_blank">AT Protocol</a>
         <span class="sep">·</span>
@@ -582,6 +607,7 @@
       }
       tick();
       setInterval(tick, 1000);
+
       const btn = document.getElementById("langBtn");
       const dd = document.getElementById("langDropdown");
       btn.addEventListener("click", (e) => {
