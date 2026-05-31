@@ -9,11 +9,16 @@
         window.location.replace("/confirmed.html?" + urlParams.toString());
       })();
     </script>
-    <noscript>
-      <meta http-equiv="refresh" content="0;url=/confirmed.html" />
-    </noscript>
   </head>
   <body>
-    <p>Authenticating, please wait...</p>
+    <noscript>
+      <div style="font-family: sans-serif; text-align: center; padding: 4rem 2rem; color: #0f1923;">
+        <h1 style="font-size: 1.5rem; margin-bottom: 1rem;">JavaScript Required</h1>
+        <p style="color: #3d5166; max-width: 400px; margin: 0 auto; line-height: 1.6;">
+          JavaScript is required to complete the authentication process and securely transfer your session to the dashboard. Please enable JavaScript in your browser settings and try again.
+        </p>
+      </div>
+    </noscript>
+    <p style="text-align: center; padding-top: 2rem; font-family: sans-serif; color: #7a9ab0;">Authenticating, please wait...</p>
   </body>
 </html>
