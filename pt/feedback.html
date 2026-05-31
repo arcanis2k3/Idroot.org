@@ -1,37 +1,37 @@
 <!doctype html>
-<html lang="de">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>idroot.org — Dein verifizierter Handle im offenen Web</title>
+    <title>Sugestões — idroot.org</title>
     <meta
       name="description"
-      content="Hol dir deinen verifizierten AT Protocol Handle für Bluesky. @du.idroot.org — verifiziert, portabel, für immer dein."
+      content="Sugestões para idroot.org – Compartilhe seus pensamentos e sugestões."
     />
     <link
       rel="alternate"
       hreflang="en"
-      href="https://idroot.org/en/index.html"
+      href="https://idroot.org/en/feedback.html"
     />
     <link
       rel="alternate"
       hreflang="de"
-      href="https://idroot.org/de/index.html"
+      href="https://idroot.org/de/feedback.html"
     />
     <link
       rel="alternate"
       hreflang="es"
-      href="https://idroot.org/es/index.html"
+      href="https://idroot.org/es/feedback.html"
     />
     <link
       rel="alternate"
       hreflang="pt"
-      href="https://idroot.org/pt/index.html"
+      href="https://idroot.org/pt/feedback.html"
     />
     <link
       rel="alternate"
       hreflang="ja"
-      href="https://idroot.org/ja/index.html"
+      href="https://idroot.org/ja/feedback.html"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,35 +40,67 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../shared.css" />
-    <script src="https://unpkg.com/@didit-protocol/sdk-web/dist/didit-sdk.umd.min.js"></script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    <script>
-      (function () {
-        var launchDate = new Date("2026-05-31T16:00:00Z").getTime();
-        var now = new Date().getTime();
-        if (now < launchDate) {
-          window.location.replace("coming-soon.html");
-        }
-      })();
-    </script>
 
-    <link rel="canonical" href="https://idroot.org/de/index.html" />
+    <link rel="canonical" href="https://idroot.org/pt/feedback.html" />
     <link
       rel="alternate"
       hreflang="x-default"
-      href="https://idroot.org/en/index.html"
+      href="https://idroot.org/en/feedback.html"
     />
 
     <meta name="robots" content="index, follow" />
+    <style>
+      #feedback-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        margin-top: 2rem;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: left;
+      }
+      .form-group label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--ink);
+      }
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        font-family: inherit;
+        font-size: 0.95rem;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: var(--white);
+        color: var(--ink);
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: var(--sky-mid);
+        box-shadow: 0 0 0 4px var(--sky-light);
+      }
+      #form-status {
+        margin-top: 1.5rem;
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <nav>
-      <a href="/de/index.html" class="nav-logo">idroot<span>.org</span></a>
+      <a href="/pt/index.html" class="nav-logo">idroot<span>.org</span></a>
       <div style="display: flex; align-items: center; gap: 1rem">
         <div class="lang-switcher">
           <button class="lang-btn" id="langBtn">
-            🌐 DE
+            🌐 PT
             <svg
               width="12"
               height="12"
@@ -83,200 +115,88 @@
             </svg>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <a href="/en/index.html">🇬🇧 English</a>
-            <a href="/de/index.html" class="active">🇩🇪 Deutsch</a>
-            <a href="/es/index.html">🇪🇸 Español</a>
-            <a href="/pt/index.html">🇧🇷 Português</a>
-            <a href="/ja/index.html">🇯🇵 日本語</a>
+            <a href="/en/feedback.html">🇬🇧 English</a>
+            <a href="/de/feedback.html">🇩🇪 Deutsch</a>
+            <a href="/es/feedback.html">🇪🇸 Español</a>
+            <a href="/pt/feedback.html" class="active">🇧🇷 Português</a>
+            <a href="/ja/feedback.html">🇯🇵 日本語</a>
           </div>
         </div>
-        <ul class="nav-links">
-          <li><a href="#how-it-works">So funktioniert's</a></li>
-          <li><a href="#why">Warum idroot</a></li>
-
-          <li>
-            <a href="https://dashboard.idroot.org" class="btn-primary">
-              <svg
-                width="13"
-                height="13"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 5v14M5 12h14" />
-              </svg>
-              Handle holen
-            </a>
-          </li>
-        </ul>
+        <a href="/pt/index.html" class="nav-back"
+          ><svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Voltar</a
+        >
       </div>
     </nav>
 
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="badge">AT Protocol Identität</div>
-          <h1>
-            Dein <em>verifizierter</em> Handle<br /><span class="highlight"
-              >im offenen Web</span
-            >
-          </h1>
-          <p class="hero-subtitle">
-            Hol dir deinen verifizierten Handle für Bluesky und andere AT
-            Protocol Apps. idroot.org nutzt staatliche Identitätsprüfung, um
-            deine eindeutige Identität sicherzustellen.
-          </p>
+    <div class="legal-container">
+      <div class="doc-label">Suporte</div>
+      <div class="doc-h1">Sugestões</div>
+      <p class="doc-p">
+        Valorizamos seu feedback! Utilize o formulário abaixo para compartilhar seus pensamentos, sugestões ou relatar qualquer problema que tenha encontrado.
+      </p>
 
-          <div class="cta-group">
-            <a href="https://dashboard.idroot.org" class="btn-primary">
-              Meinen Handle holen
-            </a>
-            <a href="#how-it-works" class="btn-secondary">So funktioniert's</a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-value">100%</span>
-              <span class="stat-label">Verifiziert</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">EU</span>
-              <span class="stat-label">Datenschutz</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">DNS</span>
-              <span class="stat-label">Automatisch</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="how-it-works" class="features">
-        <div class="section-header">
-          <h2>Drei einfache Schritte</h2>
-          <p>Keine komplexe Einrichtung. Wir erledigen alles für dich.</p>
+      <form id="feedback-form" onsubmit="handleFeedbackSubmit(event)">
+        <div class="form-group">
+          <label for="name">Nome (Opcional)</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" />
         </div>
 
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">1</div>
-            <h3>Identität prüfen</h3>
-            <p>
-              Nutze Didit, um deine Identität sicher mit staatlichen Dokumenten
-              zu verifizieren. Die Daten werden sicher in der EU verarbeitet.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">2</div>
-            <h3>Handle wählen</h3>
-            <p>
-              Wähle deinen verfügbaren Handle (z.B. @name.idroot.org). Dies wird
-              deine verifizierte Identität.
-            </p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">3</div>
-            <h3>Verbinden & Los</h3>
-            <p>
-              Gib einfach deinen neuen Handle in den Bluesky-Einstellungen ein.
-              DNS-Einträge werden automatisch konfiguriert.
-            </p>
-          </div>
+        <div class="form-group">
+          <label for="email">E-mail (Opcional)</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+          />
         </div>
-      </section>
 
-      <section id="why" class="split-section">
-        <div class="split-content">
-          <div class="badge-alt">Warum idroot?</div>
-          <h2>Vertrauen ist die<br />neue Währung</h2>
-          <p>
-            In einer dezentralen Welt wie Bluesky zählt es, wer du bist. Ein
-            idroot-Handle zeigt der Welt, dass du ein echter Mensch bist.
-          </p>
-          <ul class="check-list">
-            <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Identitätsdiebstahl verhindern
-            </li>
-            <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Beweise, dass du kein Bot bist
-            </li>
-            <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Professionelle Präsenz
-            </li>
-          </ul>
+        <div class="form-group">
+          <label for="category">Categoria</label>
+          <select id="category" name="category">
+            <option value="Feedback geral">Feedback geral</option>
+            <option value="Relato de bug">Relato de bug</option>
+            <option value="Solicitação de recurso">Solicitação de recurso</option>
+            <option value="Outro">Outro</option>
+          </select>
         </div>
-        <div class="split-image">
-          <div class="handle-preview">
-            <div class="preview-top">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <div class="preview-body">
-              <div class="user-info">
-                <div class="avatar"></div>
-                <div class="names">
-                  <div class="display-name">Dein Name</div>
-                  <div class="handle-name">@name.idroot.org</div>
-                </div>
-              </div>
-              <div class="verified-badge">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                  />
-                </svg>
-                ID verifiziert
-              </div>
-            </div>
-          </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="Diga-nos o que você tem em mente..."
+          ></textarea>
         </div>
-      </section>
-    </main>
+
+        <button
+          type="submit"
+          class="btn-primary"
+          data-loading-text="Enviando..."
+          data-success-text="Obrigado! Seu feedback foi recebido."
+          data-error-text="Algo deu errado. Por favor, tente novamente mais tarde."
+        >
+          Enviar sugestões
+        </button>
+      </form>
+
+      <div id="form-status"></div>
+    </div>
 
     <footer
       style="
@@ -308,21 +228,21 @@
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a
-          href="/de/terms.html"
+          href="/pt/terms.html"
           style="color: var(--ink-faint); text-decoration: none"
-          >Nutzungsbedingungen</a
+          >Termos de Serviço</a
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a
-          href="/de/privacy-policy.html"
+          href="/pt/privacy-policy.html"
           style="color: var(--ink-faint); text-decoration: none"
-          >Datenschutzerklärung</a
+          >Política de Privacidade</a
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a
-          href="/de/legal.html"
+          href="/pt/legal.html"
           style="color: var(--ink-faint); text-decoration: none"
-          >Impressum</a
+          >Aviso Legal</a
         >
         <span class="sep" style="color: var(--border)">·</span>
         <a

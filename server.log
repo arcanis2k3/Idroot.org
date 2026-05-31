@@ -1,9 +1,8 @@
-127.0.0.1 - - [30/May/2026 16:29:06] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:06] "GET /en/coming-soon.html HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:06] "GET /BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:07] "GET /ja/index.html HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:07] "GET /shared.css HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:07] "GET /shared.js HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:08] "GET /ja/coming-soon.html HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:08] "GET /ja/privacy-policy.html HTTP/1.1" 200 -
-127.0.0.1 - - [30/May/2026 16:29:10] "GET /de/privacy-policy.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:04] "GET /en/feedback.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:04] "GET /shared.css HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:04] "GET /BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:04] "GET /shared.js HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:10] "GET /de/feedback.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:11] "GET /de/hilfe-und-kontakt.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:12] "GET /en/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2026 14:20:13] "GET /en/coming-soon.html HTTP/1.1" 200 -
