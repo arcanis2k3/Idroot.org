@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const supported = ["en", "de", "es", "pt", "ja"];
+        const lang = (navigator.language || navigator.userLanguage || "en")
+          .slice(0, 2)
+          .toLowerCase();
+        const target = supported.indexOf(lang) !== -1 ? lang : "en";
+
+        window.location.replace("/" + target + "/confirmed.html?" + urlParams.toString());
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/en/confirmed.html" />
+    </noscript>
+  </head>
+  <body>
+    <p>Redirecting to confirmation page...</p>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "client_id": "did:web:idroot.org",
+  "client_name": "idroot.org",
+  "client_uri": "https://dashboard.idroot.org",
+  "logo_uri": "https://idroot.org/favicon.png",
+  "tos_uri": "https://idroot.org/en/terms.html",
+  "policy_uri": "https://idroot.org/en/privacy-policy.html",
+  "redirect_uris": [
+    "https://idroot.org/confirmed.html",
+    "https://dashboard.idroot.org/",
+    "https://dashboard.idroot.org/auth/callback",
+    "https://api2.bapu.app/auth"
+  ],
+  "scope": "atproto",
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "token_endpoint_auth_method": "none",
+  "application_type": "web",
+  "dpop_bound_access_tokens": true
+}

@@ -1,0 +1,15 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:idroot.org",
+  "alsoKnownAs": ["https://idroot.org/client-metadata.json"],
+  "service": [
+    {
+      "id": "#atproto_oauth",
+      "type": "AtprotoOAuthClient",
+      "serviceEndpoint": "https://idroot.org/client-metadata.json"
+    }
+  ]
+}

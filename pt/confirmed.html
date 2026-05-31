@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificação Bem-sucedida — idroot.org</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style>
+      .confirmed-hero {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+      }
+      .success-icon {
+        width: 80px;
+        height: 80px;
+        background: var(--sky-light);
+        color: var(--sky);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 20px rgba(0, 133, 255, 0.1);
+      }
+      .success-icon svg {
+        width: 40px;
+        height: 40px;
+      }
+      .user-greeting {
+        font-family: "DM Serif Display", serif;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        color: var(--ink);
+        margin-bottom: 1rem;
+      }
+      .user-handle {
+        color: var(--sky);
+      }
+      .status-card {
+        background: var(--white);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 2rem;
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 20px rgba(15, 25, 35, 0.05);
+      }
+      .loader {
+        width: 20px;
+        height: 20px;
+        border: 2px solid var(--sky-light);
+        border-top: 2px solid var(--sky);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/pt/index.html" class="nav-logo">idroot<span>.org</span></a>
+    </nav>
+
+    <main class="confirmed-hero">
+      <div class="success-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+
+      <h1 class="user-greeting">Bem-vindo, <span id="userName" class="user-handle">...</span>!</h1>
+      <p class="hero-sub" style="margin-bottom: 1rem;">Verificação bem-sucedida. Estamos configurando sua conta.</p>
+
+      <div class="status-card">
+        <p id="statusText" style="font-size: 0.9rem; color: var(--ink-soft);">
+          <span class="loader"></span> Finalizando configuração...
+        </p>
+      </div>
+
+      <p style="font-size: 0.8rem; color: var(--ink-faint);">Redirecionando você para o painel em breve.</p>
+    </main>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const handle = urlParams.get('handle') || 'Explorer';
+        const did = urlParams.get('did');
+
+        document.getElementById('userName').textContent = handle.startsWith('@') ? handle : '@' + handle;
+
+        setTimeout(() => {
+          document.getElementById('statusText').innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--verified)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 0.4rem;"><polyline points="20 6 9 17 4 12"></polyline></svg> Configuração concluída!';
+
+          setTimeout(() => {
+            const dashboardUrl = new URL("https://dashboard.idroot.org/");
+            urlParams.forEach((value, key) => {
+              dashboardUrl.searchParams.set(key, value);
+            });
+            window.location.href = dashboardUrl.toString();
+          }, 1500);
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

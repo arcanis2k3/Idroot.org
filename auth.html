@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Authenticating...</title>
+    <script>
+      (function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        window.location.replace("/confirmed.html?" + urlParams.toString());
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/confirmed.html" />
+    </noscript>
+  </head>
+  <body>
+    <p>Authenticating, please wait...</p>
+  </body>
+</html>
