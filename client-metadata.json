@@ -8,6 +8,7 @@
   "redirect_uris": [
     "https://idroot.org/confirmed.html",
     "https://dashboard.idroot.org/",
+    "https://dashboard.idroot.org/auth",
     "https://dashboard.idroot.org/auth/callback",
     "https://api2.bapu.app/auth"
   ],
