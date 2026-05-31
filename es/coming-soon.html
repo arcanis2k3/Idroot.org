@@ -387,12 +387,35 @@
       <a href="/es/coming-soon.html" class="nav-logo"
         >idroot<span>.org</span></a
       >
-      <div class="lang-switcher">
-        <button class="lang-btn" id="langBtn">
-          🌐 ES
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            🌐 ES
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/en/coming-soon.html">🇬🇧 English</a>
+            <a href="/de/coming-soon.html">🇩🇪 Deutsch</a>
+            <a href="/es/coming-soon.html" class="active">🇪🇸 Español</a>
+            <a href="/pt/coming-soon.html">🇧🇷 Português</a>
+            <a href="/ja/coming-soon.html">🇯🇵 日本語</a>
+          </div>
+        </div>
+        <a href="https://dashboard.idroot.org" class="btn-primary" style="padding: 0.35rem 0.8rem; font-size: 0.75rem;">
           <svg
-            width="12"
-            height="12"
+            width="13"
+            height="13"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -400,16 +423,11 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <path d="M19 9l-7 7-7-7" />
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
           </svg>
-        </button>
-        <div class="lang-dropdown" id="langDropdown">
-          <a href="/en/coming-soon.html">🇬🇧 English</a>
-          <a href="/de/coming-soon.html">🇩🇪 Deutsch</a>
-          <a href="/es/coming-soon.html" class="active">🇪🇸 Español</a>
-          <a href="/pt/coming-soon.html">🇧🇷 Português</a>
-            <a href="/ja/coming-soon.html">🇯🇵 日本語</a>
-        </div>
+          Dashboard
+        </a>
       </div>
     </nav>
 

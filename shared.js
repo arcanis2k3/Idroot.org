@@ -20,43 +20,70 @@ function getCurrentPage() {
   return parts[parts.length - 1] || "index.html";
 }
 
-// Didit modal
-const DIDIT_WORKFLOW_URL = "https://verify.didit.me/u/WORKFLOW_ID_IN_BASE_64";
-
-function openDiditModal() {
-  document.getElementById("diditOverlay").classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-function closeDiditModal() {
-  document.getElementById("diditOverlay").classList.remove("active");
-  document.body.style.overflow = "";
-}
-function handleOverlayClick(e) {
-  if (e.target === document.getElementById("diditOverlay")) closeDiditModal();
-}
-function startDiditVerification() {
-  closeDiditModal();
-  if (typeof DiditSDK !== "undefined" && DiditSDK.DiditSdk) {
-    const sdk = DiditSDK.DiditSdk.shared;
-    sdk.onComplete = (result) => {
-      if (result.type === "completed")
-        showVerificationSuccess(result.session?.status);
-    };
-    sdk.onStateChange = (state, error) => {
-      if (state === "error") console.error("Didit error:", error);
-    };
-    sdk.startVerification({ url: DIDIT_WORKFLOW_URL });
-  } else {
-    window.open(DIDIT_WORKFLOW_URL, "_blank");
-  }
-}
-function showVerificationSuccess(status) {
-  alert("Verification " + (status || "completed") + "!");
-}
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeDiditModal();
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   initLangSwitcher();
+});
+
+// API Configuration
+const API_BASE_URL = 'https://api2.bapu.app';
+
+// Feedback form handler
+async function handleFeedbackSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+  const status = document.getElementById('form-status');
+  const btn = form.querySelector('button[type="submit"]');
+  const originalBtnText = btn.textContent;
+
+  const formData = new FormData(form);
+  const data = Object.fromEntries(formData.entries());
+
+  // Disable form
+  btn.disabled = true;
+  btn.textContent = btn.dataset.loadingText || 'Sending...';
+  status.style.display = 'none';
+  status.className = '';
+
+  try {
+    const response = await fetch(`${API_BASE_URL}/feedback`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      status.textContent = btn.dataset.successText || 'Thank you! Your feedback has been received.';
+      status.className = 'highlight-box';
+      status.style.display = 'block';
+    } else {
+      throw new Error('Failed to send feedback');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
+    status.className = 'warning-box';
+    status.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = originalBtnText;
+  }
+}
+
+// Handle automatic language redirection for feedback
+function handleFeedbackRedirect() {
+  if (window.location.pathname === '/feedback' || window.location.pathname === '/feedback.html') {
+    const supported = ["en", "de", "es", "pt", "ja"];
+    const lang = (navigator.language || navigator.userLanguage || "en")
+      .slice(0, 2)
+      .toLowerCase();
+    const target = supported.indexOf(lang) !== -1 ? lang : "en";
+    window.location.replace("/" + target + "/feedback.html");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  handleFeedbackRedirect();
 });
