@@ -1,89 +1,96 @@
-// Language switcher
-function initLangSwitcher() {
-  const btn = document.getElementById("langBtn");
-  const dropdown = document.getElementById("langDropdown");
-  if (!btn || !dropdown) return;
-  btn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    btn.classList.toggle("open");
-    dropdown.classList.toggle("open");
-  });
-  document.addEventListener("click", () => {
-    btn.classList.remove("open");
-    dropdown.classList.remove("open");
-  });
-}
-
-// Get current page filename to build lang switcher links
-function getCurrentPage() {
-  const parts = window.location.pathname.split("/");
-  return parts[parts.length - 1] || "index.html";
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  initLangSwitcher();
-});
-
-// API Configuration
+// Configuration
 const API_BASE_URL = 'https://api2.bapu.app';
 
-// Feedback form handler
-async function handleFeedbackSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-  const status = document.getElementById('form-status');
-  const btn = form.querySelector('button[type="submit"]');
-  const originalBtnText = btn.textContent;
+// Language Switcher Logic
+function initLangSwitcher() {
+  const langBtn = document.getElementById('langBtn');
+  const langDropdown = document.getElementById('langDropdown');
 
-  const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
+  if (!langBtn || !langDropdown) return;
 
-  // Disable form
-  btn.disabled = true;
-  btn.textContent = btn.dataset.loadingText || 'Sending...';
-  status.style.display = 'none';
-  status.className = '';
+  langBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown.classList.toggle('show');
+  });
 
-  try {
-    const response = await fetch(`${API_BASE_URL}/feedback`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    });
-
-    if (response.ok) {
-      form.style.display = 'none';
-      status.textContent = btn.dataset.successText || 'Thank you! Your feedback has been received.';
-      status.className = 'highlight-box';
-      status.style.display = 'block';
-    } else {
-      throw new Error('Failed to send feedback');
-    }
-  } catch (error) {
-    console.error('Error:', error);
-    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
-    status.className = 'warning-box';
-    status.style.display = 'block';
-    btn.disabled = false;
-    btn.textContent = originalBtnText;
-  }
+  document.addEventListener('click', () => {
+    langDropdown.classList.remove('show');
+  });
 }
 
-// Handle automatic language redirection for feedback
+// Redirect logic for root pages
 function handleFeedbackRedirect() {
-  if (window.location.pathname === '/feedback' || window.location.pathname === '/feedback.html') {
-    const supported = ["en", "de", "es", "pt", "ja"];
-    const lang = (navigator.language || navigator.userLanguage || "en")
-      .slice(0, 2)
-      .toLowerCase();
-    const target = supported.indexOf(lang) !== -1 ? lang : "en";
-    window.location.replace("/" + target + "/feedback.html");
-  }
+    const path = window.location.pathname;
+    if (path === '/feedback' || path === '/feedback.html' || path === '/hilfe-und-kontakt' || path === '/hilfe-und-kontakt.html') {
+        const supported = ['en', 'de', 'es', 'pt', 'ja'];
+        const browserLang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2).toLowerCase();
+        const targetLang = supported.indexOf(browserLang) !== -1 ? browserLang : 'en';
+
+        if (path.includes('hilfe-und-kontakt') && targetLang === 'de') {
+             window.location.replace('/de/hilfe-und-kontakt.html');
+        } else {
+             window.location.replace(`/${targetLang}/feedback.html`);
+        }
+    }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+// Feedback Form Submission
+async function handleFeedbackSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const statusDiv = document.getElementById('form-status');
+
+    if (!submitBtn || !statusDiv) return;
+
+    const originalBtnText = submitBtn.innerHTML;
+    const loadingText = submitBtn.getAttribute('data-loading-text') || 'Sending...';
+    const successText = submitBtn.getAttribute('data-success-text') || 'Thank you! Your feedback has been received.';
+    const errorText = submitBtn.getAttribute('data-error-text') || 'Something went wrong. Please try again later.';
+
+    // Disable form
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = loadingText;
+    statusDiv.style.display = 'none';
+
+    const formData = new FormData(form);
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        category: formData.get('category'),
+        message: formData.get('message'),
+        lang: document.documentElement.lang || 'en',
+        source: 'feedback_form'
+    };
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/feedback`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            form.reset();
+            statusDiv.innerHTML = `<p style="color: #059669; font-weight: 500;">${successText}</p>`;
+            statusDiv.style.display = 'block';
+            submitBtn.innerHTML = originalBtnText;
+        } else {
+            throw new Error('API Error');
+        }
+    } catch (error) {
+        statusDiv.innerHTML = `<p style="color: #dc2626; font-weight: 500;">${errorText}</p>`;
+        statusDiv.style.display = 'block';
+        submitBtn.innerHTML = originalBtnText;
+    } finally {
+        submitBtn.disabled = false;
+    }
+}
+
+// Initialize on DOM Load
+document.addEventListener('DOMContentLoaded', () => {
+  initLangSwitcher();
   handleFeedbackRedirect();
 });

@@ -1,354 +1,77 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feedback — idroot.org</title>
-    <meta
-      name="description"
-      content="Feedback für idroot.org – Teile deine Gedanken und Vorschläge."
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://idroot.org/en/feedback.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="de"
-      href="https://idroot.org/de/feedback.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="es"
-      href="https://idroot.org/es/feedback.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="pt"
-      href="https://idroot.org/pt/feedback.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="ja"
-      href="https://idroot.org/ja/feedback.html"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../shared.css" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-
-    <link rel="canonical" href="https://idroot.org/de/feedback.html" />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://idroot.org/en/feedback.html"
-    />
-
-    <meta name="robots" content="index, follow" />
-    <style>
-      #feedback-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.25rem;
-        margin-top: 2rem;
-      }
-      .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: left;
-      }
-      .form-group label {
-        font-size: 0.85rem;
-        font-weight: 600;
-        color: var(--ink);
-      }
-      .form-group input,
-      .form-group select,
-      .form-group textarea {
-        font-family: inherit;
-        font-size: 0.95rem;
-        padding: 0.75rem 1rem;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        background: var(--white);
-        color: var(--ink);
-        transition: border-color 0.2s, box-shadow 0.2s;
-      }
-      .form-group input:focus,
-      .form-group select:focus,
-      .form-group textarea:focus {
-        outline: none;
-        border-color: var(--sky-mid);
-        box-shadow: 0 0 0 4px var(--sky-light);
-      }
-      #form-status {
-        margin-top: 1.5rem;
-        display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="/de/index.html" class="nav-logo">idroot<span>.org</span></a>
-      <div style="display: flex; align-items: center; gap: 1rem">
-        <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn">
-            🌐 DE
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="lang-dropdown" id="langDropdown">
-            <a href="/en/feedback.html">🇬🇧 English</a>
-            <a href="/de/feedback.html" class="active">🇩🇪 Deutsch</a>
-            <a href="/es/feedback.html">🇪🇸 Español</a>
-            <a href="/pt/feedback.html">🇧🇷 Português</a>
-            <a href="/ja/feedback.html">🇯🇵 日本語</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hilfe & Kontakt — idroot.org</title>
+  <link rel="alternate" hreflang="en" href="https://idroot.org/en/feedback.html" />
+  <link rel="alternate" hreflang="de" href="https://idroot.org/de/feedback.html" />
+  <link rel="alternate" hreflang="es" href="https://idroot.org/es/feedback.html" />
+  <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/feedback.html" />
+  <link rel="alternate" hreflang="ja" href="https://idroot.org/ja/feedback.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../shared.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <style>
+    #feedback-form { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; text-align: left; }
+    .form-group label { font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+    .form-group input, .form-group select, .form-group textarea { font-family: inherit; font-size: 0.95rem; padding: 0.75rem 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--white); color: var(--ink); transition: border-color 0.2s, box-shadow 0.2s; }
+    #form-status { margin-top: 1.5rem; display: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/de/index.html" class="nav-logo">idroot<span>.org</span></a>
+    <div style="display: flex; align-items: center; gap: 1rem">
+      <div class="lang-switcher">
+        <button class="lang-btn" id="langBtn">🌐 DE <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9l-7 7-7-7" /></svg></button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="/en/feedback.html" >🇬🇧 English</a>
+          <a href="/de/feedback.html" class="active">🇩🇪 Deutsch</a>
+          <a href="/es/feedback.html" >🇪🇸 Español</a>
+          <a href="/pt/feedback.html" >🇧🇷 Português</a>
+          <a href="/ja/feedback.html" >🇯🇵 日本語</a>
         </div>
-        <a href="https://dashboard.idroot.org" class="btn-primary">
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          Dashboard
-        </a>
       </div>
-    </nav>
-
-    <div class="legal-container">
-      <div class="doc-label">Support</div>
-      <div class="doc-h1">Feedback</div>
-      <p class="doc-p">
-        Wir freuen uns über dein Feedback! Bitte nutze das folgende Formular, um uns deine Gedanken, Vorschläge oder Probleme mitzuteilen.
-      </p>
-
-      <form id="feedback-form" onsubmit="handleFeedbackSubmit(event)">
-        <div class="form-group">
-          <label for="name">Name (Optional)</label>
-          <input type="text" id="name" name="name" placeholder="Dein Name" />
-        </div>
-
-        <div class="form-group">
-          <label for="email">E-Mail (Optional)</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="deine@email.de"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="category">Kategorie</label>
-          <select id="category" name="category">
-            <option value="Allgemeines Feedback">Allgemeines Feedback</option>
-            <option value="Fehlerbericht">Fehlerbericht</option>
-            <option value="Funktionswunsch">Funktionswunsch</option>
-            <option value="Sonstiges">Sonstiges</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Nachricht</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="6"
-            required
-            placeholder="Was möchtest du uns mitteilen?"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="btn-primary"
-          data-loading-text="Wird gesendet..."
-          data-success-text="Vielen Dank! Dein Feedback ist bei uns eingegangen."
-          data-error-text="Etwas ist schiefgelaufen. Bitte versuche es später erneut."
-        >
-          Feedback senden
-        </button>
-      </form>
-
-      <div id="form-status"></div>
+      <a href="https://dashboard.idroot.org" class="btn-primary"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg> Dashboard</a>
     </div>
-
-    <footer
-      style="
-        border-top: 1px solid var(--border);
-        padding: 2rem;
-        text-align: center;
-        font-size: 0.8rem;
-        color: var(--ink-faint);
-        max-width: 740px;
-        margin: 0 auto;
-        margin-top: auto;
-      "
-    >
-      <div
-        class="footer-links-row"
-        style="
-          display: flex;
-          justify-content: center;
-          gap: 0.5rem;
-          flex-wrap: wrap;
-          margin-bottom: 0.8rem;
-        "
-      >
-        <a
-          href="https://bapu.app"
-          target="_blank"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Bapu.app</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/terms.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Nutzungsbedingungen</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/privacy-policy.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Datenschutzerklärung</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/legal.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Impressum</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="https://atproto.com"
-          target="_blank"
-          style="color: var(--ink-faint); text-decoration: none"
-          >AT Protocol</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <span>© 2026 Sebastian Fleckenstein</span>
-      </div>
-      <div
-        class="footer-socials"
-        style="
-          text-align: center;
-          display: flex;
-          gap: 1.5rem;
-          justify-content: center;
-          align-items: center;
-        "
-      >
-        <a
-          href="https://github.com/arcanis2k3"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            ></path>
-          </svg>
-        </a>
-        <a
-          href="https://x.com/nao_seb"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://bsky.app/profile/f90.idroot.org"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://bsky.app/profile/bapu.app"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
-            />
-          </svg>
-        </a>
-        <span class="sep" style="color: var(--border)">|</span>
-        <a
-          href="https://www.cloudflare.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: flex"
-        >
-          <img
-            src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png"
-            alt="Protected by Cloudflare"
-            style="
-              height: 24px;
-              width: auto;
-              opacity: 0.8;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '1'"
-            onmouseout="this.style.opacity = '0.8'"
-          />
-        </a>
-      </div>
-    </footer>
-
-    <script src="../shared.js"></script>
-  </body>
+  </nav>
+  <div class="legal-container">
+    <div class="doc-label">Support</div>
+    <div class="doc-h1">Hilfe & Kontakt</div>
+    <p class="doc-p">Wir freuen uns von dir zu hören! Bitte nutze das folgende Formular, um uns deine Gedanken, Vorschläge oder Probleme mitzuteilen.</p>
+    <form id="feedback-form" onsubmit="handleFeedbackSubmit(event)">
+      <div class="form-group"><label for="name">Name (Optional)</label><input type="text" id="name" name="name" /></div>
+      <div class="form-group"><label for="email">E-Mail (Optional)</label><input type="email" id="email" name="email" /></div>
+      <div class="form-group"><label for="category">Kategorie</label><select id="category" name="category"><option value="Allgemeines Feedback">Allgemeines Feedback</option><option value="Fehlerbericht">Fehlerbericht</option><option value="Funktionswunsch">Funktionswunsch</option><option value="Sonstiges">Sonstiges</option></select></div>
+      <div class="form-group"><label for="message">Nachricht</label><textarea id="message" name="message" rows="6" required></textarea></div>
+      <button type="submit" class="btn-primary" data-loading-text="Wird gesendet..." data-success-text="Vielen Dank! Dein Feedback ist bei uns eingegangen." data-error-text="Etwas ist schiefgelaufen. Bitte versuche es später erneut.">Feedback senden</button>
+    </form>
+    <div id="form-status"></div>
+  </div>
+  <footer style="border-top: 1px solid var(--border); padding: 2rem; text-align: center; font-size: 0.8rem; color: var(--ink-faint); max-width: 740px; margin: 0 auto; margin-top: auto;">
+    <div class="footer-links-row" style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.8rem;">
+      <a href="https://bapu.app" target="_blank" style="color: var(--ink-faint); text-decoration: none">Bapu.app</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="/de/terms.html" style="color: var(--ink-faint); text-decoration: none">Nutzungsbedingungen</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="/de/privacy-policy.html" style="color: var(--ink-faint); text-decoration: none">Datenschutzerklärung</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="/de/legal.html" style="color: var(--ink-faint); text-decoration: none">Impressum</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="https://dashboard.idroot.org" style="color: var(--ink-faint); text-decoration: none">Dashboard</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="/de/hilfe-und-kontakt.html" style="color: var(--ink-faint); text-decoration: none">Hilfe & Kontakt</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <a href="https://atproto.com" target="_blank" style="color: var(--ink-faint); text-decoration: none">AT Protocol</a>
+      <span class="sep" style="color: var(--border)">·</span>
+      <span>© 2026 Sebastian Fleckenstein</span>
+    </div>
+  </footer>
+  <script src="../shared.js"></script>
+</body>
 </html>

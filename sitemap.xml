@@ -12,23 +12,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
-    <loc>https://idroot.org/en/feedback.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/feedback.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/feedback.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/feedback.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/feedback.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/feedback.html"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/feedback.html"/>
-  </url>
-  <url>
-    <loc>https://idroot.org/de/hilfe-und-kontakt.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/hilfe-und-kontakt.html"/>
-  </url>
-  <url>
     <loc>https://idroot.org/en/coming-soon.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
