@@ -998,6 +998,11 @@ footer {
   background: #f0f6fd;
 }
 
+#form-status {
+  margin-top: 1.5rem;
+  display: none;
+}
+
 /* Nav back (legal pages) */
 .nav-back {
   font-size: 0.85rem;

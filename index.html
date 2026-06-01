@@ -10,15 +10,7 @@
           .slice(0, 2)
           .toLowerCase();
         var target = supported.indexOf(lang) !== -1 ? lang : "en";
-
-        var launchDate = new Date("2026-05-31T16:00:00Z").getTime();
-        var now = new Date().getTime();
-
-        if (now < launchDate) {
-          window.location.replace("/" + target + "/coming-soon.html");
-        } else {
-          window.location.replace("/" + target + "/index.html");
-        }
+        window.location.replace("/" + target + "/index.html");
       })();
     </script>
     <noscript>
@@ -33,6 +25,6 @@
     <meta name="robots" content="noindex, follow" />
   </head>
   <body>
-    <a href="/en/coming-soon.html">Continue to idroot.org</a>
+    <a href="/en/index.html">Continue to idroot.org</a>
   </body>
 </html>
