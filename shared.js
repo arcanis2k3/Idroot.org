@@ -3,14 +3,28 @@ function initLangSwitcher() {
   const btn = document.getElementById("langBtn");
   const dropdown = document.getElementById("langDropdown");
   if (!btn || !dropdown) return;
+
   btn.addEventListener("click", (e) => {
     e.stopPropagation();
     btn.classList.toggle("open");
     dropdown.classList.toggle("open");
   });
+
   document.addEventListener("click", () => {
     btn.classList.remove("open");
     dropdown.classList.remove("open");
+  });
+
+  // Dynamically update dropdown links to preserve current page filename
+  const currentPage = getCurrentPage();
+  const links = dropdown.querySelectorAll('a');
+  links.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('/') && href.includes('/index.html')) {
+        // Only update if it's a relative path to index.html
+        const lang = href.split('/')[1];
+        link.setAttribute('href', `/${lang}/${currentPage}`);
+    }
   });
 }
 

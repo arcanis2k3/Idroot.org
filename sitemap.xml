@@ -12,6 +12,61 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/index.html"/>
   </url>
   <url>
+    <loc>https://idroot.org/en/status.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/status.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/de/status.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/status.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/es/status.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/status.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/pt/status.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/status.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html"/>
+  </url>
+  <url>
+    <loc>https://idroot.org/ja/status.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://idroot.org/status.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html"/>
+  </url>
+  <url>
     <loc>https://idroot.org/en/feedback.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

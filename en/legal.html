@@ -51,47 +51,18 @@
   <body>
     <nav>
       <a href="/en/index.html" class="nav-logo">idroot<span>.org</span></a>
-      <div style="display: flex; align-items: center; gap: 1rem">
-        <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn">
-            🌐 EN
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div class="lang-dropdown" id="langDropdown">
-            <a href="/en/legal.html" class="active">🇬🇧 English</a
-            ><a href="/de/legal.html">🇩🇪 Deutsch</a
-            ><a href="/es/legal.html">🇪🇸 Español</a
-            ><a href="/pt/legal.html">🇧🇷 Português</a>
-            <a href="/ja/legal.html">🇯🇵 日本語</a>
-          </div>
-        </div>
-        <a href="/en/index.html" class="nav-back"
-          ><svg
-            width="14"
-            height="14"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M19 12H5M12 5l-7 7 7 7" />
-          </svg>
-          Back</a
-        >
-      </div>
+      <ul class="nav-links">
+
+          <li>
+            <a href="https://dashboard.idroot.org" class="btn-primary">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              Dashboard
+            </a>
+          </li>
+      </ul>
     </nav>
     <div class="legal-container">
       <div class="doc-label">Legal</div>
@@ -167,8 +138,7 @@
           style="color: var(--ink-faint); text-decoration: none"
           >AT Protocol</a
         >
-        <span class="sep" style="color: var(--border)">·</span>
-        <span>© 2026 Sebastian Fleckenstein</span>
+
         <span class="sep">·</span>
         <a href="https://dashboard.idroot.org">Dashboard</a>
         <span class="sep">·</span>
@@ -267,6 +237,24 @@
           />
         </a>
       </div>
+
+      <div class="footer-copyright">© 2026 Sebastian Fleckenstein</div>
+
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            🌐 EN
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/en/index.html">🇬🇧 English</a>
+            <a href="/de/index.html">🇩🇪 Deutsch</a>
+            <a href="/es/index.html">🇪🇸 Español</a>
+            <a href="/pt/index.html">🇧🇷 Português</a>
+            <a href="/ja/index.html">🇯🇵 日本語</a>
+          </div>
+        </div>
     </footer>
 
     <script src="../shared.js"></script>

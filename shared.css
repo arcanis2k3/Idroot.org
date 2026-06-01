@@ -120,6 +120,13 @@ nav {
   box-shadow: 0 8px 30px rgba(15, 25, 35, 0.1);
   z-index: 200;
 }
+
+/* Footer-specific language dropdown positioning */
+footer .lang-dropdown {
+  top: auto;
+  bottom: calc(100% + 8px);
+}
+
 .lang-dropdown.open {
   display: block;
 }
@@ -760,6 +767,77 @@ footer {
 .footer-socials .sep {
   color: var(--border);
   font-size: 1.2rem;
+}
+
+.footer-copyright {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+}
+
+/* Status Page Styles */
+.status-current {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0 3rem;
+  box-shadow: 0 4px 12px rgba(15, 25, 35, 0.03);
+}
+
+.status-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.status-indicator::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.4;
+  animation: pulse 2s infinite;
+}
+
+.status-indicator.operational { background: var(--verified); }
+.status-indicator.warning     { background: #e0a800; }
+.status-indicator.down        { background: #dc3545; }
+
+.status-text h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.25rem;
+}
+
+.status-text p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.incident-item {
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem 0;
+}
+
+.incident-item:last-child {
+  border-bottom: none;
+}
+
+.incident-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink-faint);
+  margin-bottom: 0.5rem;
 }
 
 .protected-badge {
