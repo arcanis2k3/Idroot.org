@@ -40,17 +40,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../shared.css" />
+    <script src="https://unpkg.com/@didit-protocol/sdk-web/dist/didit-sdk.umd.min.js"></script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    <script>
-      (function () {
-        var launchDate = new Date("2026-05-31T16:00:00Z").getTime();
-        var now = new Date().getTime();
-        if (now < launchDate) {
-          window.location.replace("coming-soon.html");
-        }
-      })();
-    </script>
+
 
     <link rel="canonical" href="https://idroot.org/de/index.html" />
     <link
@@ -94,274 +87,304 @@
           <li><a href="#why">Warum idroot</a></li>
 
           <li>
-            <a href="https://dashboard.idroot.org" class="btn-primary"><svg
+            <a href="https://dashboard.idroot.org" class="btn-primary">
+              <svg
                 width="13"
                 height="13"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="3"
+                stroke-width="2.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path d="M12 5v14M5 12h14" />
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
               </svg>
-              Handle holen</a>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <div class="badge">AT Protocol Identität</div>
-          <h1>
-            Dein <em>verifizierter</em> Handle<br /><span class="highlight"
-              >im offenen Web</span
+      <div class="hero">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>Verifizierte Identität · AT Protocol
+        </div>
+        <h1>
+          Deine <em>verifizierte</em> Identität<br />im offenen Web
+        </h1>
+        <p class="hero-sub">
+          Hol dir deinen <strong>@name.idroot.org</strong> Handle für Bluesky und das AT Protocol Ökosystem. Verifiziert, portabel und für immer dein.
+        </p>
+        <div class="hero-cta">
+          <a
+            href="https://dashboard.idroot.org"
+            class="btn-primary"
+            style="font-size: 1rem; padding: 0.75rem 1.75rem"
+          >
+            Meinen Handle holen
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-          </h1>
-          <p class="hero-subtitle">
-            Hol dir deinen verifizierten Handle für Bluesky und andere AT
-            Protocol Apps. idroot.org nutzt staatliche Identitätsprüfung, um
-            deine eindeutige Identität sicherzustellen.
-          </p>
-
-          <div class="cta-group">
-            <a href="https://dashboard.idroot.org" class="btn-primary">Dashboard</a>
-            <a href="#how-it-works" class="btn-secondary">So funktioniert's</a>
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#how-it-works" class="btn-secondary"
+            >So funktioniert's
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 9l-7 7-7-7" /></svg
+          ></a>
+        </div>
+        <div class="handle-preview">
+          <div class="handle-card">
+            <div class="handle-avatar">S</div>
+            <div class="handle-info">
+              <div class="handle-name">
+                Sebastian K.
+                <div class="verified-badge">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </div>
+              </div>
+              <div class="handle-at">@sebastian.idroot.org</div>
+            </div>
+            <div class="handle-chip">Verifiziert</div>
           </div>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-value">100%</span>
-              <span class="stat-label">Verifiziert</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">EU</span>
-              <span class="stat-label">Datenschutz</span>
-            </div>
-            <div class="stat">
-              <span class="stat-value">DNS</span>
-              <span class="stat-label">Automatisch</span>
-            </div>
+          <div class="badge-row">
+            <a href="https://atproto.com" target="_blank" class="atproto-badge"
+              ><span class="atproto-dot"></span>Basiert auf AT Protocol</a
+            >
+            <a href="https://didit.me" target="_blank" class="verified-by-didit"
+              ><img
+                src="https://didit.me/icons/logos/didit.svg"
+                alt="Didit"
+                onerror="this.style.display = 'none'"
+              />
+              Verifiziert durch Didit</a
+            >
           </div>
         </div>
-      </section>
+      </div>
 
-      <section id="how-it-works" class="features">
-        <div class="section-header">
-          <h2>Drei einfache Schritte</h2>
-          <p>Keine komplexe Einrichtung. Wir erledigen alles für dich.</p>
-        </div>
-
-        <div class="feature-grid">
-          <div class="feature-card">
-            <div class="feature-icon">1</div>
+      <section id="how-it-works">
+        <div class="section-label">Ablauf</div>
+        <h2>Drei einfache Schritte zu<br />deinem permanenten Handle</h2>
+        <div class="how-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
             <h3>Identität prüfen</h3>
             <p>
-              Nutze Didit, um deine Identität sicher mit staatlichen Dokumenten
-              zu verifizieren. Die Daten werden sicher in der EU verarbeitet.
+              Nutze <a
+                href="https://didit.me"
+                target="_blank"
+                style="color: var(--sky); font-weight: 600; text-decoration: none"
+                >Didit</a
+              > für eine schnelle Identitätsprüfung. In weniger als 2 Minuten mit Gesichtsscan und Ausweis abgeschlossen.
             </p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">2</div>
+          <div class="step-card">
+            <span class="step-number">02</span>
             <h3>Handle wählen</h3>
             <p>
-              Wähle deinen verfügbaren Handle (z.B. @name.idroot.org). Dies wird
-              deine verifizierte Identität.
+              Wähle deinen verfügbaren <strong>@name.idroot.org</strong> Handle. Dieser ist unabhängig von einzelnen Apps und funktioniert im gesamten AT Protocol Netzwerk.
             </p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">3</div>
+          <div class="step-card">
+            <span class="step-number">03</span>
             <h3>Verbinden & Los</h3>
             <p>
-              Gib einfach deinen neuen Handle in den Bluesky-Einstellungen ein.
-              DNS-Einträge werden automatisch konfiguriert.
+              Gib deinen neuen Handle in den Bluesky-Einstellungen ein. Unser System erkennt die Änderung automatisch und sichert deinen Handle dauerhaft.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="why" class="split-section">
-        <div class="split-content">
-          <div class="badge-alt">Warum idroot?</div>
-          <h2>Vertrauen ist die<br />neue Währung</h2>
-          <p>
-            In einer dezentralen Welt wie Bluesky zählt es, wer du bist. Ein
-            idroot-Handle zeigt der Welt, dass du ein echter Mensch bist.
-          </p>
-          <ul class="check-list">
+      <div id="why">
+        <div class="why-section">
+          <div class="why-left">
+            <div class="section-label" style="color: #5bb8ff">Warum idroot?</div>
+            <h2>Deine Adresse im<br />offenen Web</h2>
+            <p>
+              Dein Handle ist deine Identität auf Bluesky. Mach sie vertrauenswürdig und aussagekräftig.
+            </p>
+          </div>
+          <ul class="why-features">
             <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Identitätsdiebstahl verhindern
+              <div class="why-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <strong>Starke Verifizierung, minimale Daten</strong><br /><span
+                  >KYC-Prüfung, die keine Spuren hinterlässt.</span
+                >
+              </div>
             </li>
             <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Beweise, dass du kein Bot bist
+              <div class="why-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <strong>Portabel über das Fediverse</strong><br /><span
+                  >Funktioniert mit Bluesky, Bapu und jeder App, die heute und morgen auf AT Protocol basiert.</span
+                >
+              </div>
             </li>
             <li>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              Professionelle Präsenz
+              <div class="why-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <strong>Für immer dein</strong><br /><span
+                  >Verifizierte Nutzer erhalten ihren Handle kostenlos. Keine Abos, kein Ablauf, kein Haken.</span
+                >
+              </div>
+            </li>
+            <li>
+              <div class="why-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <strong>Vertrauen der Community</strong><br /><span
+                  >Das Verifizierungsabzeichen zeigt, dass du eine echte Person bist, kein Bot oder Impersonator.</span
+                >
+              </div>
             </li>
           </ul>
         </div>
-        <div class="split-image">
-          <div class="handle-preview">
-            <div class="preview-top">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <div class="preview-body">
-              <div class="user-info">
-                <div class="avatar"></div>
-                <div class="names">
-                  <div class="display-name">Dein Name</div>
-                  <div class="handle-name">@name.idroot.org</div>
-                </div>
-              </div>
-              <div class="verified-badge">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"
-                  />
-                </svg>
-                ID verifiziert
-              </div>
-            </div>
-          </div>
+      </div>
+
+      <div class="humble-note">
+        <p>
+          Wir sind noch nicht perfekt (unser Kaffeevollautomat ignoriert uns
+          immer noch), aber deine Identität ist bei uns sicher.
+        </p>
+      </div>
+
+      <section>
+        <div class="section-label">Beispiele</div>
+        <h2>Handles, die auffallen</h2>
+        <div class="examples-grid">
+          <span class="example-handle">@alice.idroot.org</span
+          ><span class="example-handle">@marco.idroot.org</span
+          ><span class="example-handle">@yuki.idroot.org</span
+          ><span class="example-handle">@piotr.idroot.org</span
+          ><span class="example-handle">@amara.idroot.org</span
+          ><span class="example-handle">@leon.idroot.org</span
+          ><span class="example-handle">@sofia.idroot.org</span
+          ><span class="example-handle">@james.idroot.org</span
+          ><span class="example-handle">@mei.idroot.org</span
+          ><span class="example-handle">@rafael.idroot.org</span>
         </div>
       </section>
-    </main>
 
-    <footer
-      style="
-        border-top: 1px solid var(--border);
-        padding: 2rem;
-        text-align: center;
-        font-size: 0.8rem;
-        color: var(--ink-faint);
-        max-width: 740px;
-        margin: 0 auto;
-        margin-top: auto;
-      "
-    >
-      <div
-        class="footer-links-row"
-        style="
-          display: flex;
-          justify-content: center;
-          gap: 0.5rem;
-          flex-wrap: wrap;
-          margin-bottom: 0.8rem;
-        "
-      >
-        <a
-          href="https://bapu.app"
-          target="_blank"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Bapu.app</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/terms.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Nutzungsbedingungen</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/privacy-policy.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Datenschutzerklärung</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/legal.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Impressum</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="https://atproto.com"
-          target="_blank"
-          style="color: var(--ink-faint); text-decoration: none"
-          >AT Protocol</a
-        >
-        <span class="sep" style="color: var(--border)">·</span>
-        <span>© 2026 Sebastian Fleckenstein</span>
-
-        <span class="sep" style="color: var(--border)">·</span>
+      <div class="cta-banner" id="claim">
+        <div class="section-label" style="text-align: center">Jetzt starten</div>
+        <h2>Bereit für deinen Handle?</h2>
+        <p>
+          Schließe dich tausenden verifizierten Nutzern an, die ihre Identität im offenen Web gesichert haben.
+        </p>
         <a
           href="https://dashboard.idroot.org"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Dashboard</a
+          class="btn-primary"
+          style="font-size: 1rem; padding: 0.8rem 2rem"
         >
-        <span class="sep" style="color: var(--border)">·</span>
-        <a
-          href="/de/hilfe-und-kontakt.html"
-          style="color: var(--ink-faint); text-decoration: none"
-          >Hilfe & Kontakt</a
-        >
-      </div>
-      <div
-        class="footer-socials"
-        style="
-          text-align: center;
-          display: flex;
-          gap: 1.5rem;
-          justify-content: center;
-          align-items: center;
-        "
-      >
-        <a
-          href="https://github.com/arcanis2k3"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
+          Meinen Handle holen
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <div
+          style="
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--ink-faint);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+          "
         >
           <svg
-            width="20"
-            height="20"
+            width="12"
+            height="12"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -369,74 +392,90 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <path
-              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-            ></path>
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
           </svg>
-        </a>
-        <a
-          href="https://x.com/nao_seb"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://bsky.app/profile/f90.idroot.org"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://bsky.app/profile/bapu.app"
-          target="_blank"
-          style="color: var(--ink-faint); transition: color 0.2s"
-          onmouseover="this.style.color = 'var(--sky)'"
-          onmouseout="this.style.color = 'var(--ink-faint)'"
-        >
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"
-            />
-          </svg>
-        </a>
-        <span class="sep" style="color: var(--border)">|</span>
-        <a
-          href="https://www.cloudflare.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: flex"
-        >
-          <img
-            src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png"
-            alt="Protected by Cloudflare"
+          ID-Verifizierung durch
+          <a
+            href="https://didit.me"
+            target="_blank"
             style="
-              height: 24px;
-              width: auto;
-              opacity: 0.8;
-              transition: opacity 0.2s;
+              color: var(--sky);
+              font-weight: 600;
+              text-decoration: none;
+              display: inline-flex;
+              align-items: center;
+              gap: 0.25rem;
             "
-            onmouseover="this.style.opacity = '1'"
-            onmouseout="this.style.opacity = '0.8'"
-          />
+            ><img
+              src="https://didit.me/icons/logos/didit.svg"
+              alt="Didit"
+              style="height: 13px"
+              onerror="this.style.display = 'none'"
+            />Didit</a
+          >
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-support">
+        <div class="support-info">
+          <h4>☕ idroot.org unterstützen</h4>
+          <p>Betrieben als öffentliches Gut. Keine Werbung, kein VC-Geld.</p>
+        </div>
+        <div class="support-actions">
+          <a href="https://revolut.me/flek90" target="_blank" class="support-btn revolut">Revolut</a>
+          <a href="https://paypal.me/flek90" target="_blank" class="support-btn paypal">PayPal</a>
+          <a href="https://ko-fi.com/L4L1SWCRA" target="_blank" class="support-btn kofi">Ko-fi</a>
+          <a href="https://github.com/sponsors/arcanis2k3" target="_blank" class="support-btn github">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-links-row">
+        <a href="https://bapu.app" target="_blank">Bapu.app</a>
+        <span class="sep">·</span>
+        <a href="/de/terms.html">Nutzungsbedingungen</a>
+        <span class="sep">·</span>
+        <a href="/de/privacy-policy.html">Datenschutzerklärung</a>
+        <span class="sep">·</span>
+        <a href="/de/legal.html">Impressum</a>
+        <span class="sep">·</span>
+        <a href="https://atproto.com" target="_blank">AT Protocol</a>
+        <span class="sep">·</span>
+        <span>© 2026 Sebastian Fleckenstein</span>
+        <span class="sep">·</span>
+        <a href="https://dashboard.idroot.org">Dashboard</a>
+        <span class="sep">·</span>
+        <a href="/de/hilfe-und-kontakt.html">Hilfe & Kontakt</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/arcanis2k3" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://x.com/nao_seb" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://bsky.app/profile/f90.idroot.org" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/>
+          </svg>
+        </a>
+        <a href="https://bsky.app/profile/bapu.app" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/>
+          </svg>
+        </a>
+        <span class="sep">|</span>
+        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="protected-badge">
+          <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" />
         </a>
       </div>
     </footer>
 
     <script src="../shared.js"></script>
-
   </body>
 </html>
