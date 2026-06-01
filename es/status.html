@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estado del Servicio — idroot.org</title>
+    <link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html" />
+    <link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html" />
+    <link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html" />
+    <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html" />
+    <link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../shared.css" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <body>
+    <nav>
+      <a href="/es/index.html" class="nav-logo">idroot<span>.org</span></a>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn">
+            🌐 ES
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <a href="/en/status.html">🇬🇧 English</a>
+            <a href="/de/status.html">🇩🇪 Deutsch</a>
+            <a href="/es/status.html" class="active">🇪🇸 Español</a>
+            <a href="/pt/status.html">🇧🇷 Português</a>
+            <a href="/ja/status.html">🇯🇵 日本語</a>
+          </div>
+        </div>
+        <a href="/es/index.html" class="nav-back">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+          Volver
+        </a>
+      </div>
+    </nav>
+
+    <div class="legal-container">
+      <div class="doc-label">Sistema</div>
+      <div class="doc-h1">Estado del Servicio</div>
+
+      <div class="status-current">
+        <div class="status-indicator warning"></div>
+        <div class="status-text">
+          <h3>Interrupción Parcial del Servicio</h3>
+          <p>Algunos usuarios pueden experimentar problemas durante el inicio de sesión OAuth o después de una verificación exitosa.</p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>Actualización de Estado:</strong> Actualmente solo el mecanismo OAuth está afectado. El inicio de sesión mediante <strong>handle + contraseña</strong> sigue siendo plenamente funcional. El proceso de verificación de identidad en sí <strong>no se ve afectado</strong>.
+      </div>
+
+      <div class="doc-h2">Historial de Incidentes</div>
+
+      <div class="incident-item">
+        <div class="incident-date">1 de junio de 2026</div>
+        <div class="incident-details">
+          <p class="doc-p"><strong>En curso:</strong> Informes de fallos en el inicio de sesión OAuth y retrasos en la provisión de handles. El inicio de sesión por handle/contraseña está disponible como alternativa. Nuestro equipo está investigando la causa raíz.</p>
+        </div>
+      </div>
+
+      <div class="incident-item">
+        <div class="incident-date">31 de mayo de 2026</div>
+        <div class="incident-details">
+          <p class="doc-p"><strong>Resuelto:</strong> Fallos de autenticación intermitentes reportados por usuarios que utilizan proveedores específicos de AT Protocol PDS. El monitoreo continúa activo.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="footer-support">
+        <div class="support-info">
+          <h4>☕ Apoya a idroot.org</h4>
+          <p>Operado como un bien público. Sin anuncios, sin financiación de capital de riesgo.</p>
+        </div>
+        <div class="support-actions">
+          <a href="https://revolut.me/flek90" target="_blank" class="support-btn revolut">Revolut</a>
+          <a href="https://paypal.me/flek90" target="_blank" class="support-btn paypal">PayPal</a>
+          <a href="https://ko-fi.com/L4L1SWCRA" target="_blank" class="support-btn kofi">Ko-fi</a>
+          <a href="https://github.com/sponsors/arcanis2k3" target="_blank" class="support-btn github">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-links-row">
+        <a href="https://bapu.app" target="_blank">Bapu.app</a>
+        <span class="sep">·</span>
+        <a href="/es/status.html">Estado</a>
+        <span class="sep">·</span>
+        <a href="/es/terms.html">Términos de Servicio</a>
+        <span class="sep">·</span>
+        <a href="/es/privacy-policy.html">Política de Privacidad</a>
+        <span class="sep">·</span>
+        <a href="/es/legal.html">Aviso Legal</a>
+        <span class="sep">·</span>
+        <a href="https://atproto.com" target="_blank">AT Protocol</a>
+        <span class="sep">·</span>
+        <a href="https://dashboard.idroot.org">Panel de Control</a>
+        <span class="sep">·</span>
+        <a href="/es/feedback.html">Comentarios</a>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/arcanis2k3" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://x.com/nao_seb" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://bsky.app/profile/f90.idroot.org" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/>
+          </svg>
+        </a>
+        <a href="https://bsky.app/profile/bapu.app" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266 1.056 1.956c-.365.498-.567 1.13-.544 1.776.223 5.483.945 9.043 2.012 11.238.868 1.782 2.657 3.393 4.966 3.931-1.393.186-2.923.364-4.664.125-1.042-.143-1.637.643-1.282 1.55C2.932 24.238 8.016 23.518 12 19.34c3.984 4.178 9.068 4.898 10.456 1.214.355-.907-.24-1.693-1.282-1.55-1.741.239-3.271.061-4.664-.125 2.31-.538 4.098-2.15 4.966-3.931 1.067-2.195 1.789-5.755 2.012-11.238.023-.646-.179-1.278-.544-1.776-.505-.69-1.51-1.012-4.146.849-2.752 1.942-5.711 5.881-6.798 7.995z"/>
+          </svg>
+        </a>
+        <span class="sep">|</span>
+        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="protected-badge">
+          <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" />
+        </a>
+      </div>
+      <div class="footer-copyright">© 2026 Sebastian Fleckenstein</div>
+    </footer>
+
+    <script src="../shared.js"></script>
+  </body>
+</html>
