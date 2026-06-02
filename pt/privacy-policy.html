@@ -217,9 +217,10 @@
           a sessão do AT Protocol e não armazenada posteriormente.
         </li>
         <li>
-          <strong>OAuth:</strong> O acesso é feito exclusivamente através do
-          escopo `atproto`, que é limitado à autenticação e leitura de dados
-          básicos de perfil.
+          <strong>OAuth:</strong> O acesso é feito através do escopo `atproto`
+          sempre que possível, o qual é limitado à autenticação e leitura de
+          dados básicos de perfil. Caso esta função não esteja implementada pelo
+          seu provedor, solicitamos acesso total.
         </li>
       </ul>
       <p class="doc-p">

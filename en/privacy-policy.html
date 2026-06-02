@@ -210,8 +210,10 @@
           the AT Protocol session and not stored afterwards.
         </li>
         <li>
-          <strong>OAuth:</strong> Access is exclusively via the `atproto` scope,
-          which is limited to authentication and reading basic profile data.
+          <strong>OAuth:</strong> Access is via the `atproto` scope whenever
+          possible, which is limited to authentication and reading basic profile
+          data. If this function is not implemented by your provider, we request
+          full access.
         </li>
       </ul>
       <p class="doc-p">

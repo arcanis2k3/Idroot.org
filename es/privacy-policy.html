@@ -214,9 +214,11 @@
           para crear la sesión del Protocolo AT y no se almacena después.
         </li>
         <li>
-          <strong>OAuth:</strong> El acceso es exclusivamente a través del
-          alcance `atproto`, que se limita a la autenticación y la lectura de
-          datos básicos del perfil.
+          <strong>OAuth:</strong> El acceso se realiza a través del alcance
+          `atproto` siempre que sea posible, el cual se limita a la
+          autenticación y la lectura de datos básicos del perfil. Si esta
+          función no está implementada por su proveedor, solicitamos acceso
+          total.
         </li>
       </ul>
       <p class="doc-p">
