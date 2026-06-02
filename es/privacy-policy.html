@@ -73,7 +73,7 @@
       <div class="doc-label">Legal</div>
       <div class="doc-h1">Política de Privacidad</div>
       <div class="doc-meta">
-        Última actualización: 31 de mayo de 2026 · Cumple con el RGPD · Ley
+        Última actualización: 02 de junio de 2026 · Cumple con el RGPD · Ley
         aplicable: República Federal de Alemania ·
         <strong
           >La versión en alemán de esta Política de Privacidad es la versión
@@ -83,12 +83,14 @@
       </div>
 
       <div class="highlight-box">
-        <strong>Resumen en lenguaje sencillo:</strong> Recopilamos el mínimo de
-        datos necesarios para operar este servicio. No vendemos sus datos. No
-        mostramos publicidad. Sus documentos de identidad son procesados por
-        Didit y nunca los almacenamos nosotros; solo almacenamos si su
-        verificación fue exitosa. Puede solicitar la eliminación de sus datos en
-        cualquier momento.
+        <strong>Resumen en lenguaje sencillo:</strong> Recopilamos los datos
+        necesarios para operar este servicio y garantizar su seguridad. No
+        vendemos sus datos. No mostramos publicidad. Mientras que la
+        verificación de identidad es procesada por Didit, almacenamos ciertos
+        detalles de identificación en nuestros registros de servidor seguros por
+        razones de seguridad. También puede optar por almacenar sus datos
+        verificados para su uso en un perfil público. Puede solicitar la
+        eliminación de sus datos en cualquier momento.
       </div>
 
       <div class="doc-h2">1. Responsable del tratamiento</div>
@@ -187,6 +189,15 @@
             </td>
             <td style="padding: 0.5rem">Duración de la cuenta + 30 días</td>
           </tr>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 0.5rem">Nombre Real y Dirección Verificados (Opt-in)</td>
+            <td style="padding: 0.5rem">
+              Mostrar en perfil público; permitir que otros proveedores
+              verifiquen su identidad sin necesidad de una nueva verificación
+            </td>
+            <td style="padding: 0.5rem">Art. 6(1)(a) — consentimiento</td>
+            <td style="padding: 0.5rem">Hasta que se retire el consentimiento</td>
+          </tr>
         </tbody>
       </table>
 
@@ -203,9 +214,11 @@
           para crear la sesión del Protocolo AT y no se almacena después.
         </li>
         <li>
-          <strong>OAuth:</strong> El acceso es exclusivamente a través del
-          alcance `atproto`, que se limita a la autenticación y la lectura de
-          datos básicos del perfil.
+          <strong>OAuth:</strong> El acceso se realiza a través del alcance
+          `atproto` siempre que sea posible, el cual se limita a la
+          autenticación y la lectura de datos básicos del perfil. Si esta
+          función no está implementada por su proveedor, solicitamos acceso
+          total.
         </li>
       </ul>
       <p class="doc-p">
@@ -270,7 +283,7 @@
       </p>
       <p class="doc-p">
         <strong
-          >No almacenamos documentos de identidad, datos de escaneo facial ni
+          >No almacenamos imágenes de documentos de identidad, datos de escaneo facial ni
           ningún otro dato biométrico.</strong
         >
         Estos son procesados exclusivamente por Didit.
@@ -281,6 +294,14 @@
         Nuestro servidor backend alojado en Alemania registra automáticamente la
         dirección IP, la marca de tiempo, el método HTTP, la URL, el código de
         respuesta y el agente de usuario para cada solicitud.
+      </p>
+      <p class="doc-p">
+        Además, por razones de seguridad, registramos los detalles de
+        identificación proporcionados durante el proceso de verificación,
+        incluyendo el <strong>Nombre Completo, Dirección y Número de Documento
+        de Identidad</strong>.
+      </p>
+      <p class="doc-p">
         <strong>Base legal:</strong> Art. 6(1)(f) RGPD — interés legítimo en la
         seguridad del sistema y el cumplimiento legal (§ 100 TKG). Se conservan
         durante <strong>90 días</strong>, luego se eliminan automáticamente.
@@ -297,9 +318,9 @@
 
       <div class="doc-h2">4. Lo que no recopilamos</div>
       <p class="doc-p">
-        No recopilamos ni almacenamos documentos de identidad o datos
-        biométricos; no rastreamos a los usuarios a través de sitios web; no
-        utilizamos cookies publicitarias ni rastreadores de marketing de
+        No recopilamos ni almacenamos imágenes de documentos de identidad o
+        datos biométricos; no rastreamos a los usuarios a través de sitios web;
+        no utilizamos cookies publicitarias ni rastreadores de marketing de
         terceros; no vendemos, alquilamos ni compartimos datos personales con
         fines comerciales; ni perfilamos a los usuarios ni tomamos decisiones
         automatizadas con efectos legales.
@@ -623,24 +644,8 @@
           </svg>
         </a>
         <span class="sep" style="color: var(--border)">|</span>
-        <a
-          href="https://www.cloudflare.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: flex"
-        >
-          <img
-            src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png"
-            alt="Protected by Cloudflare"
-            style="
-              height: 24px;
-              width: auto;
-              opacity: 0.8;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '1'"
-            onmouseout="this.style.opacity = '0.8'"
-          />
+        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="protected-badge">
+          <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" />
         </a>
       </div>
 

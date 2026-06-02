@@ -78,7 +78,7 @@
       <div class="doc-label">Jurídico</div>
       <div class="doc-h1">Política de Privacidade</div>
       <div class="doc-meta">
-        Última atualização: 31 de maio de 2026 · Em conformidade com o RGPD ·
+        Última atualização: 02 de junho de 2026 · Em conformidade com o RGPD ·
         Lei aplicável: República Federal da Alemanha ·
         <strong
           >A versão alemã desta Política de Privacidade é a versão autoritativa.
@@ -88,12 +88,14 @@
       </div>
 
       <div class="highlight-box">
-        <strong>Resumo em linguagem simples:</strong> Coletamos o mínimo de
-        dados necessários para operar este serviço. Não vendemos seus dados. Não
-        exibimos publicidade. Seus documentos de identidade são processados pela
-        Didit e nunca armazenados por nós — apenas armazenamos se sua verificação
-        foi bem-sucedida. Você pode solicitar a exclusão de seus dados a
-        qualquer momento.
+        <strong>Resumo em linguagem simples:</strong> Coletamos os dados
+        necessários para operar este serviço e garantir sua segurança. Não
+        vendemos seus dados. Não exibimos publicidade. Embora a verificação de
+        identidade seja processada pela Didit, armazenamos certos detalhes de
+        identificação em nossos logs de servidor seguros por motivos de
+        segurança. Você também pode optar por armazenar seus detalhes
+        verificados para uso em perfil público. Você pode solicitar a exclusão
+        de seus dados a qualquer momento.
       </div>
 
       <div class="doc-h2">1. Controlador</div>
@@ -191,6 +193,15 @@
             </td>
             <td style="padding: 0.5rem">Duração da conta + 30 dias</td>
           </tr>
+          <tr style="border-bottom: 1px solid var(--border)">
+            <td style="padding: 0.5rem">Nome Real e Endereço Verificados (Opt-in)</td>
+            <td style="padding: 0.5rem">
+              Exibição em perfil público; permitir que outros provedores
+              verifiquem sua identidade sem necessidade de nova verificação
+            </td>
+            <td style="padding: 0.5rem">Art. 6(1)(a) — consentimento</td>
+            <td style="padding: 0.5rem">Até que o consentimento seja retirado</td>
+          </tr>
         </tbody>
       </table>
 
@@ -206,9 +217,10 @@
           a sessão do AT Protocol e não armazenada posteriormente.
         </li>
         <li>
-          <strong>OAuth:</strong> O acesso é feito exclusivamente através do
-          escopo `atproto`, que é limitado à autenticação e leitura de dados
-          básicos de perfil.
+          <strong>OAuth:</strong> O acesso é feito através do escopo `atproto`
+          sempre que possível, o qual é limitado à autenticação e leitura de
+          dados básicos de perfil. Caso esta função não esteja implementada pelo
+          seu provedor, solicitamos acesso total.
         </li>
       </ul>
       <p class="doc-p">
@@ -271,7 +283,7 @@
       </p>
       <p class="doc-p">
         <strong
-          >Não armazenamos documentos de identidade, dados de reconhecimento
+          >Não armazenamos imagens de documentos de identidade, dados de reconhecimento
           facial nem quaisquer outros dados biométricos.</strong
         >
         Esses dados são processados exclusivamente pela Didit.
@@ -282,10 +294,17 @@
         Os logs do servidor são gerados na infraestrutura hospedada pela IONOS
         SE (ver § 6.3). Este servidor registra automaticamente o endereço IP, a
         data/hora, o método HTTP, o URL, o código de resposta e o agente do
-        usuário para cada solicitação. <strong>Base legal:</strong> Art.
-        6(1)(f) RGPD — interesse legítimo na segurança do sistema e conformidade
-        legal (§ 100 TKG). Retidos por <strong>90 dias</strong>, depois excluídos
-        automaticamente.
+        usuário para cada solicitação.
+      </p>
+      <p class="doc-p">
+        Além disso, por motivos de segurança, registramos os detalhes de
+        identificação fornecidos durante o processo de verificação, incluindo
+        <strong>Nome Completo, Endereço e Número do Documento de Identidade</strong>.
+      </p>
+      <p class="doc-p">
+        <strong>Base legal:</strong> Art. 6(1)(f) RGPD — interesse legítimo na
+        segurança do sistema e conformidade legal (§ 100 TKG). Retidos por
+        <strong>90 dias</strong>, depois excluídos automaticamente.
       </p>
 
       <div class="doc-h3">3.3 Análise da web</div>
@@ -299,9 +318,9 @@
 
       <div class="doc-h2">4. O que não coletamos</div>
       <p class="doc-p">
-        Não coletamos ou armazenamos documentos de identidade ou dados
-        biométricos; não rastreamos usuários em sites; não usamos cookies de
-        publicidade ou rastreadores de marketing de terceiros; não vendemos,
+        Não coletamos ou armazenamos imagens de documentos de identidade ou
+        dados biométricos; não rastreamos usuários em sites; não usamos cookies
+        de publicidade ou rastreadores de marketing de terceiros; não vendemos,
         alugamos ou compartilhamos dados pessoais comercialmente; não criamos
         perfis de usuários nem tomamos decisões automatizadas com efeitos
         jurídicos.
@@ -624,24 +643,8 @@
           </svg>
         </a>
         <span class="sep" style="color: var(--border)">|</span>
-        <a
-          href="https://www.cloudflare.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="display: flex"
-        >
-          <img
-            src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png"
-            alt="Protected by Cloudflare"
-            style="
-              height: 24px;
-              width: auto;
-              opacity: 0.8;
-              transition: opacity 0.2s;
-            "
-            onmouseover="this.style.opacity = '1'"
-            onmouseout="this.style.opacity = '0.8'"
-          />
+        <a href="https://www.cloudflare.com/" target="_blank" rel="noopener noreferrer" class="protected-badge">
+          <img src="/BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png" alt="Protected by Cloudflare" />
         </a>
       </div>
 
