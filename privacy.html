@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var supported = ["en", "de", "es", "pt", "ja"];
+        var lang = (navigator.language || navigator.userLanguage || "en")
+          .slice(0, 2)
+          .toLowerCase();
+        var target = supported.indexOf(lang) !== -1 ? lang : "en";
+        window.location.replace("/" + target + "/privacy-policy.html");
+      })();
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/en/privacy-policy.html" />
+    </noscript>
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <a href="/en/privacy-policy.html">Click here if you are not redirected</a>
+  </body>
+</html>
