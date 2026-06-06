@@ -1196,3 +1196,94 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* Quick Navigation Section */
+.quick-nav {
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.quick-nav h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quick-nav-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .quick-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* If uneven number of buttons, the last one spans both columns */
+  .quick-nav-grid a:last-child:nth-child(odd) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc(50% - 0.5rem);
+  }
+}
+
+.quick-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: var(--sky);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 133, 255, 0.05);
+}
+
+.quick-nav-btn:hover {
+  border-color: var(--sky);
+  background: var(--sky-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 133, 255, 0.12);
+}
+
+.quick-nav-btn svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.quick-nav-btn span {
+  text-align: left;
+}
+
+/* Accessibility: focus states */
+.quick-nav-btn:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 4px;
+}
+
+/* Refined Quick Nav for Desktop */
+@media (min-width: 1024px) {
+  .quick-nav-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.quick-nav-btn {
+  /* Increase contrast and size for accessibility */
+  min-height: 4.5rem;
+}
+
+.quick-nav-btn span {
+  font-size: 1.15rem;
+}

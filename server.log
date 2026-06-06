@@ -1,0 +1,10 @@
+127.0.0.1 - - [06/Jun/2026 17:27:28] "GET /en/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:28] "GET /BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:28] "GET /shared.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:28] "GET /shared.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:31] "GET /de/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:35] "GET /en/index.html HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:35] "GET /shared.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:35] "GET /BDES-5287_ProtectedByCloudflareBadge_web_badges_5.png HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:35] "GET /shared.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Jun/2026 17:27:38] "GET /de/index.html HTTP/1.1" 200 -
