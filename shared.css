@@ -1196,3 +1196,76 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* High-Visibility Footer Button Grid */
+.footer-button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 4rem auto 2rem;
+  max-width: 900px;
+  padding: 0 1rem;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(15, 25, 35, 0.05);
+}
+
+.footer-button:hover {
+  border-color: var(--sky);
+  background: var(--sky-light);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 133, 255, 0.1);
+}
+
+.footer-button svg {
+  width: 28px;
+  height: 28px;
+  color: var(--sky);
+  flex-shrink: 0;
+}
+
+/* Center the last button on web if uneven */
+.footer-button-grid .footer-button:last-child:nth-child(odd) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  width: 100%;
+  max-width: calc(50% - 0.75rem);
+}
+
+@media (max-width: 768px) {
+  .footer-button-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .footer-button-grid .footer-button:last-child:nth-child(odd) {
+    grid-column: auto;
+    width: auto;
+    max-width: none;
+  }
+
+  .footer-button {
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .footer-button svg {
+    width: 24px;
+    height: 24px;
+  }
+}
