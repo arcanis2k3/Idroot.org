@@ -1439,3 +1439,8 @@ footer {
   background: #0085ff;
   border-color: #0085ff;
 }
+
+.share-btn.whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+}
