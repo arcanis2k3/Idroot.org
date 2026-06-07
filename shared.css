@@ -1378,3 +1378,64 @@ footer {
     font-size: 2.2rem;
   }
 }
+
+/* Social Share Section */
+.social-share {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: rgba(0, 133, 255, 0.02);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.social-share h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--ink);
+}
+
+.share-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.share-btn {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--ink-faint);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.share-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.share-btn:hover {
+  transform: translateY(-4px);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(0, 133, 255, 0.15);
+}
+
+.share-btn.facebook:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+}
+
+.share-btn.x-twitter:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.share-btn.bluesky:hover {
+  background: #0085ff;
+  border-color: #0085ff;
+}
