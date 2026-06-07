@@ -9,6 +9,7 @@ idroot.org provides verified handles for the AT Protocol (Bluesky and other apps
 - [Spanish Home](https://idroot.org/es/index.html)
 - [Portuguese Home](https://idroot.org/pt/index.html)
 - [Japanese Home](https://idroot.org/ja/index.html)
+- [Developers & Businesses (EN)](https://idroot.org/en/developers.html)
 
 ## Legal Information
 

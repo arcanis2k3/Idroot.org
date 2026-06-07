@@ -1,75 +1,71 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Service Status — idroot.org</title>
-    <link rel="alternate" hreflang="en" href="https://idroot.org/en/status.html" />
-    <link rel="alternate" hreflang="de" href="https://idroot.org/de/status.html" />
-    <link rel="alternate" hreflang="es" href="https://idroot.org/es/status.html" />
-    <link rel="alternate" hreflang="pt" href="https://idroot.org/pt/status.html" />
-    <link rel="alternate" hreflang="ja" href="https://idroot.org/ja/status.html" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <title>Desenvolvedores e Empresas - idroot.org</title>
     <link rel="stylesheet" href="../shared.css" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-    <nav>
-      <a href="/en/index.html" class="nav-logo">idroot<span>.org</span></a>
-      <ul class="nav-links">
+    <div class="mesh-bg"></div>
+    <div class="grid-overlay"></div>
 
-          <li>
-            <a href="https://dashboard.idroot.org" class="btn-primary">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                <circle cx="12" cy="7" r="4" />
-              </svg>
-              Dashboard
-            </a>
-          </li>
+    <nav>
+      <a href="/pt/index.html" class="nav-logo">idroot<span>.org</span></a>
+      <ul class="nav-links">
+        <li>
+          <a href="https://dashboard.idroot.org" class="btn-primary">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Dashboard
+          </a>
+        </li>
       </ul>
     </nav>
 
     <div class="legal-container">
-      <div class="doc-label">System</div>
-      <div class="doc-h1">Service Status</div>
-
-      <div class="status-current">
-        <div class="status-indicator warning"></div>
-        <div class="status-text">
-          <h3>Partial Service Disruption</h3>
-          <p>Some users may experience issues during OAuth login or after successful verification.</p>
-        </div>
-      </div>
+      <div class="doc-label">Parceiros e Desenvolvedores</div>
+      <div class="doc-h1">Desenvolvedores e Empresas</div>
 
       <div class="highlight-box">
-        <strong>Status Update:</strong> Only the OAuth mechanism is currently affected. Login via <strong>handle + password</strong> remains fully functional. The identity verification process itself is <strong>unaffected</strong>.
+        <strong>Em breve:</strong> Estamos construindo a infraestrutura para permitir que desenvolvedores e empresas de terceiros aproveitem o sistema de verificação de identidade do idroot.org.
       </div>
 
-      <div class="doc-h2">Incident History</div>
+      <div class="doc-h2">Próximas APIs</div>
+      <p class="doc-p">
+        Estamos desenvolvendo um conjunto de APIs REST que permitirão:
+      </p>
+      <ul class="doc-p">
+        <li>Verificar se um handle específico é verificado por ID.</li>
+        <li>Recuperar informações de perfil público para usuários que optaram por participar.</li>
+        <li>Integrar nosso fluxo de verificação de identidade diretamente em seu aplicativo.</li>
+      </ul>
 
-      <div class="incident-item">
-        <div class="incident-date">June 1, 2026</div>
-        <div class="incident-details">
-          <p class="doc-p"><strong>Ongoing:</strong> Reports of OAuth login failures and delays in handle provisioning. Login via handle/password is available as a workaround. Our team is investigating the root cause.</p>
-        </div>
+      <div class="doc-h2">Servidor OAuth</div>
+      <p class="doc-p">
+        Nosso próximo servidor OAuth 2.0 / OpenID Connect (OIDC) habilitará o recurso "Login com idroot.org". Isso permitirá que seus usuários:
+      </p>
+      <ul class="doc-p">
+        <li>Provem sua identidade para seu serviço sem compartilhar documentos confidenciais.</li>
+        <li>Concedam ao seu aplicativo acesso ao seu status de identidade verificado.</li>
+        <li>Conectem perfeitamente sua identidade do AT Protocol com sua plataforma.</li>
+      </ul>
+
+      <div class="doc-h2">Por que fazer parceria com o idroot.org?</div>
+      <p class="doc-p">
+        Ao integrar-se ao idroot.org, você pode reduzir fraudes, garantir que seus usuários sejam pessoas reais e construir confiança em sua comunidade — tudo isso respeitando a privacidade do usuário.
+      </p>
+
+      <div class="highlight-box" style="margin-top: 3rem;">
+        <strong>Interessado?</strong> Se você é um desenvolvedor ou empresa interessada no acesso antecipado às nossas APIs ou servidor OAuth, entre em contato conosco através do <a href="/pt/feedback.html">formulário de feedback</a>.
       </div>
-
-      <div class="incident-item">
-        <div class="incident-date">May 31, 2026</div>
-        <div class="incident-details">
-          <p class="doc-p"><strong>Resolved:</strong> Intermittent authentication failures reported by users using specific AT Protocol PDS providers. Monitoring remains in place.</p>
-        </div>
-      </div>
-
     </div>
 
     <section class="quick-nav">
-      <h3>Quick Navigation</h3>
+      <h3>Navegação Rápida</h3>
       <div class="quick-nav-grid">
         <a href="https://atproto.com" target="_blank" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
@@ -83,37 +79,38 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
           <span>Dashboard</span>
         </a>
-        <a href="/en/developers.html" class="quick-nav-btn">
+        <a href="/pt/developers.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-          <span>Developers</span>
+          <span>Desenvolvedores</span>
         </a>
-        <a href="/en/feedback.html" class="quick-nav-btn">
+        <a href="/pt/feedback.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="13" y2="13"></line></svg>
           <span>Feedback</span>
         </a>
-        <a href="/en/legal.html" class="quick-nav-btn">
+        <a href="/pt/legal.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-          <span>Legal Notice</span>
+          <span>Aviso Legal</span>
         </a>
-        <a href="/en/privacy-policy.html" class="quick-nav-btn">
+        <a href="/pt/privacy-policy.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-          <span>Privacy Policy</span>
+          <span>Privacidade</span>
         </a>
-        <a href="/en/status.html" class="quick-nav-btn">
+        <a href="/pt/status.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
           <span>Status</span>
         </a>
-        <a href="/en/terms.html" class="quick-nav-btn">
+        <a href="/pt/terms.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-          <span>Terms of Service</span>
+          <span>Termos de Serviço</span>
         </a>
       </div>
     </section>
+
     <footer>
       <div class="footer-support">
         <div class="support-info">
-          <h4>☕ Support idroot.org</h4>
-          <p>Operated as a public good. No ads, no VC funding.</p>
+          <h4>☕ Apoie o idroot.org</h4>
+          <p>Operado como um bem público. Sem anúncios, sem financiamento de VC.</p>
         </div>
         <div class="support-actions">
           <a href="https://revolut.me/flek90" target="_blank" class="support-btn revolut">Revolut</a>
@@ -129,32 +126,32 @@
         <span class="sep">·</span>
         <a href="https://dashboard.idroot.org">Dashboard</a>
         <span class="sep">·</span>
-        <a href="/en/developers.html">Developers</a>
+        <a href="/pt/developers.html">Desenvolvedores</a>
         <span class="sep">·</span>
-        <a href="/en/feedback.html">Feedback</a>
+        <a href="/pt/feedback.html">Feedback</a>
         <span class="sep">·</span>
-        <a href="/en/legal.html">Legal Notice</a>
+        <a href="/pt/legal.html">Aviso Legal</a>
         <span class="sep">·</span>
-        <a href="/en/privacy-policy.html">Privacy Policy</a>
+        <a href="/pt/privacy-policy.html">Privacidade</a>
         <span class="sep">·</span>
-        <a href="/en/status.html">Status</a>
+        <a href="/pt/status.html">Status</a>
         <span class="sep">·</span>
-        <a href="/en/terms.html">Terms of Service</a>
+        <a href="/pt/terms.html">Termos de Serviço</a>
       </div>
 
         <div class="lang-switcher">
           <button class="lang-btn" id="langBtn">
-            🌐 EN
+            🌐 PT
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           <div class="lang-dropdown" id="langDropdown">
-            <a href="/en/index.html">🇬🇧 English</a>
-            <a href="/de/index.html">🇩🇪 Deutsch</a>
-            <a href="/es/index.html">🇪🇸 Español</a>
-            <a href="/pt/index.html">🇧🇷 Português</a>
-            <a href="/ja/index.html">🇯🇵 日本語</a>
+            <a href="/en/developers.html">🇬🇧 English</a>
+            <a href="/de/developers.html">🇩🇪 Deutsch</a>
+            <a href="/es/developers.html">🇪🇸 Español</a>
+            <a href="/pt/developers.html">🇧🇷 Português</a>
+            <a href="/ja/developers.html">🇯🇵 日本語</a>
           </div>
         </div>
       <div class="footer-socials">
