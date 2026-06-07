@@ -333,8 +333,8 @@ h1 em {
     inset 0 0 0 1px rgba(255, 255, 255, 0.8);
 }
 .handle-avatar {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: linear-gradient(135deg, #bddeff 0%, #91c8ff 100%);
   display: flex;
@@ -1236,15 +1236,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1.25rem;
   background: var(--white);
   border: 2px solid var(--border);
-  border-radius: 24px;
-  padding: 2.5rem;
+  border-radius: 20px;
+  padding: 1.5rem;
   color: var(--sky);
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 133, 255, 0.05);
 }
@@ -1258,14 +1258,15 @@ footer {
 
 .quick-nav-btn svg,
 .quick-nav-btn img {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
   object-fit: contain;
 }
 
 .quick-nav-btn span {
-  text-align: left;
+  text-align: center;
+  word-break: break-word;
 }
 
 /* Accessibility: focus states */
@@ -1283,11 +1284,11 @@ footer {
 
 .quick-nav-btn {
   /* Increase contrast and size for accessibility */
-  min-height: 8rem;
+  min-height: 7rem;
 }
 
 .quick-nav-btn span {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 /* Announcements Section */
@@ -1295,6 +1296,12 @@ footer {
   padding: 8rem 0;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.announcements .section-label {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .announcements h2 {
@@ -1362,7 +1369,12 @@ footer {
   .announcements {
     padding: 4rem 0;
   }
-  .announcements h2 {
+  .announcements .section-label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.announcements h2 {
     font-size: 2.2rem;
   }
 }
