@@ -1444,3 +1444,76 @@ footer {
   background: #25d366;
   border-color: #25d366;
 }
+
+/* Identity Hub Section */
+.identity-hub {
+  padding: 6rem 1.5rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(0, 133, 255, 0.08) 0%, transparent 70%);
+}
+
+.identity-hub h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--sky) 0%, #0056b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.identity-hub p {
+  font-size: 1.5rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.subscribe-section h3 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: var(--sky);
+}
+
+#subscribe-status {
+  margin-top: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .identity-hub h2 {
+    font-size: 2.5rem;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+}

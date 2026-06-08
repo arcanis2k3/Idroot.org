@@ -101,3 +101,52 @@ function handleFeedbackRedirect() {
 document.addEventListener("DOMContentLoaded", () => {
   handleFeedbackRedirect();
 });
+
+
+// Subscription form handler (ListMonk)
+async function handleSubscribe(event) {
+  event.preventDefault();
+  const form = event.target;
+  const status = document.getElementById('subscribe-status');
+  const btn = form.querySelector('button[type="submit"]');
+  const originalBtnText = btn.textContent;
+
+  const email = form.querySelector('input[name="email"]').value;
+
+  // Disable form
+  btn.disabled = true;
+  btn.textContent = '...';
+  status.style.display = 'none';
+  status.className = '';
+
+  try {
+    const response = await fetch('https://lm.idroot.org/api/public/subscription', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        list_uuids: ['af77393e-da0a-4e7a-8210-7037a083eaa4'],
+      }),
+    });
+
+    if (response.ok) {
+      form.style.display = 'none';
+      status.textContent = btn.dataset.successText || '✓ Check your inbox to confirm!';
+      status.className = 'highlight-box';
+      status.style.display = 'block';
+      status.style.color = '#00B877';
+    } else {
+      throw new Error('Something went wrong. Try again.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
+    status.className = 'warning-box';
+    status.style.display = 'block';
+    status.style.color = 'red';
+    btn.disabled = false;
+    btn.textContent = originalBtnText;
+  }
+}
