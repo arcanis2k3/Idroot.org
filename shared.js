@@ -78,7 +78,7 @@ async function handleFeedbackSubmit(event) {
     }
   } catch (error) {
     console.error('Error:', error);
-    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
+    status.textContent = btn.dataset.errorText || 'Service currently unavailable. Please try again later.';
     status.className = 'warning-box';
     status.style.display = 'block';
     btn.disabled = false;
@@ -147,7 +147,7 @@ async function handleSubscribe(event) {
     }
   } catch (error) {
     console.error('Error:', error);
-    status.textContent = error.message || 'Something went wrong. Please try again later.';
+    status.textContent = (error.name === "TypeError") ? (btn.dataset.errorText || "Service unavailable. Please try again later.") : (error.message || "Something went wrong.");
     status.className = 'warning-box';
     status.style.display = 'block';
     status.style.color = 'red';
