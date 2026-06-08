@@ -103,7 +103,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Subscription form handler (ListMonk)
+
+// Subscription form handler
 async function handleSubscribe(event) {
   event.preventDefault();
   const form = event.target;
@@ -112,6 +113,7 @@ async function handleSubscribe(event) {
   const originalBtnText = btn.textContent;
 
   const email = form.querySelector('input[name="email"]').value;
+  const lang = document.documentElement.lang || 'en';
 
   // Disable form
   btn.disabled = true;
@@ -120,29 +122,32 @@ async function handleSubscribe(event) {
   status.className = '';
 
   try {
-    const response = await fetch('https://lm.idroot.org/api/public/subscription', {
+    const response = await fetch('https://api3.bapu.app/api/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         email,
-        list_uuids: ['af77393e-da0a-4e7a-8210-7037a083eaa4'],
+        lang,
+        source: 'idroot'
       }),
     });
 
-    if (response.ok) {
+    const result = await response.json();
+
+    if (response.ok && result.success) {
       form.style.display = 'none';
       status.textContent = btn.dataset.successText || '✓ Check your inbox to confirm!';
       status.className = 'highlight-box';
       status.style.display = 'block';
       status.style.color = '#00B877';
     } else {
-      throw new Error('Something went wrong. Try again.');
+      throw new Error(result.message || 'Something went wrong. Try again.');
     }
   } catch (error) {
     console.error('Error:', error);
-    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
+    status.textContent = error.message || 'Something went wrong. Please try again later.';
     status.className = 'warning-box';
     status.style.display = 'block';
     status.style.color = 'red';
