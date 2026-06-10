@@ -293,6 +293,8 @@ h1 em {
 
 /* Handle Preview */
 .handle-preview {
+  display: flex;
+  justify-content: center;
   margin-top: 4rem;
   animation:
     fadeUp 0.7s 0.4s ease both,
@@ -307,6 +309,7 @@ h1 em {
 }
 
 .handle-card {
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -432,11 +435,16 @@ h1 em {
 
 /* SECTIONS */
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 5rem 2rem;
   max-width: 1100px;
   margin: 0 auto;
 }
 .section-label {
+  text-align: center;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.1em;
@@ -445,8 +453,9 @@ section {
   margin-bottom: 1rem;
 }
 h2 {
+  text-align: center;
   font-family: "DM Serif Display", serif;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 6vw, 3rem);
   line-height: 1.12;
   letter-spacing: -0.025em;
   color: var(--ink);
@@ -456,7 +465,8 @@ h2 {
 /* How Grid */
 .how-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  width: 100%;
   gap: 1.5rem;
   margin-top: 3rem;
 }
@@ -1109,6 +1119,19 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  section {
+    padding: 3.5rem 1.25rem;
+  }
+  .feature-card {
+    padding: 1.5rem;
+  }
+  .step-card {
+    padding: 1.25rem;
+  }
+  .handle-card {
+    padding: 1rem;
+    gap: 1rem;
+  }
   .why-section {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1201,7 +1224,7 @@ footer {
 .quick-nav {
   max-width: 800px;
   margin: 4rem auto 2rem;
-  padding: 0 1.5rem;
+  padding: 0;
   text-align: center;
 }
 
@@ -1293,6 +1316,9 @@ footer {
 
 /* Announcements Section */
 .announcements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 8rem 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -1315,12 +1341,14 @@ footer {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  width: 100%;
   gap: 2rem;
-  padding: 0 1.5rem;
+  padding: 0;
 }
 
 .feature-card {
+  text-align: left;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 24px;
