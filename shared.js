@@ -78,7 +78,7 @@ async function handleFeedbackSubmit(event) {
     }
   } catch (error) {
     console.error('Error:', error);
-    status.textContent = btn.dataset.errorText || 'Something went wrong. Please try again later.';
+    status.textContent = btn.dataset.errorText || 'Service currently unavailable. Please try again later.';
     status.className = 'warning-box';
     status.style.display = 'block';
     btn.disabled = false;
@@ -101,3 +101,57 @@ function handleFeedbackRedirect() {
 document.addEventListener("DOMContentLoaded", () => {
   handleFeedbackRedirect();
 });
+
+
+
+// Subscription form handler
+async function handleSubscribe(event) {
+  event.preventDefault();
+  const form = event.target;
+  const status = document.getElementById('subscribe-status');
+  const btn = form.querySelector('button[type="submit"]');
+  const originalBtnText = btn.textContent;
+
+  const email = form.querySelector('input[name="email"]').value;
+  const lang = document.documentElement.lang || 'en';
+
+  // Disable form
+  btn.disabled = true;
+  btn.textContent = '...';
+  status.style.display = 'none';
+  status.className = '';
+
+  try {
+    const response = await fetch('https://api3.bapu.app/api/subscribe', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        lang,
+        source: 'idroot'
+      }),
+    });
+
+    const result = await response.json();
+
+    if (response.ok && result.success) {
+      form.style.display = 'none';
+      status.textContent = btn.dataset.successText || '✓ Check your inbox to confirm!';
+      status.className = 'highlight-box';
+      status.style.display = 'block';
+      status.style.color = '#00B877';
+    } else {
+      throw new Error(result.message || 'Something went wrong. Try again.');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    status.textContent = (error.name === "TypeError") ? (btn.dataset.errorText || "Service unavailable. Please try again later.") : (error.message || "Something went wrong.");
+    status.className = 'warning-box';
+    status.style.display = 'block';
+    status.style.color = 'red';
+    btn.disabled = false;
+    btn.textContent = originalBtnText;
+  }
+}

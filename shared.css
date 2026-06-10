@@ -1196,3 +1196,333 @@ footer {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* Quick Navigation Section */
+.quick-nav {
+  max-width: 800px;
+  margin: 4rem auto 2rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.quick-nav h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.quick-nav-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .quick-nav-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* If uneven number of buttons, the last one spans both columns */
+  .quick-nav-grid a:last-child:nth-child(odd) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: calc(50% - 0.5rem);
+  }
+}
+
+.quick-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: var(--sky);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 133, 255, 0.05);
+}
+
+.quick-nav-btn:hover {
+  border-color: var(--sky);
+  background: var(--sky-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 133, 255, 0.12);
+}
+
+.quick-nav-btn svg,
+.quick-nav-btn img {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.quick-nav-btn span {
+  text-align: center;
+  word-break: break-word;
+}
+
+/* Accessibility: focus states */
+.quick-nav-btn:focus-visible {
+  outline: 3px solid var(--sky);
+  outline-offset: 4px;
+}
+
+/* Refined Quick Nav for Desktop */
+@media (min-width: 1024px) {
+  .quick-nav-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.quick-nav-btn {
+  /* Increase contrast and size for accessibility */
+  min-height: 7rem;
+}
+
+.quick-nav-btn span {
+  font-size: 1.3rem;
+}
+
+/* Announcements Section */
+.announcements {
+  padding: 8rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.announcements .section-label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.announcements h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--sky) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1.5rem;
+}
+
+.feature-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--sky);
+  box-shadow: 0 20px 40px rgba(0, 133, 255, 0.08);
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--sky-light);
+  color: var(--sky);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.feature-card p {
+  color: var(--ink-faint);
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .announcements {
+    padding: 4rem 0;
+  }
+  .announcements .section-label {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.announcements h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Social Share Section */
+.social-share {
+  padding: 4rem 1.5rem;
+  text-align: center;
+  background: rgba(0, 133, 255, 0.02);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.social-share h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--ink);
+}
+
+.share-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.share-btn {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--ink-faint);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.share-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.share-btn:hover {
+  transform: translateY(-4px);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(0, 133, 255, 0.15);
+}
+
+.share-btn.facebook:hover {
+  background: #1877f2;
+  border-color: #1877f2;
+}
+
+.share-btn.x-twitter:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.share-btn.bluesky:hover {
+  background: #0085ff;
+  border-color: #0085ff;
+}
+
+.share-btn.whatsapp:hover {
+  background: #25d366;
+  border-color: #25d366;
+}
+
+/* Identity Hub Section */
+.identity-hub {
+  padding: 6rem 1.5rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(0, 133, 255, 0.08) 0%, transparent 70%);
+}
+
+.identity-hub h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--sky) 0%, #0056b3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+.identity-hub p {
+  font-size: 1.5rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  display: none;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.subscribe-section h3 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: var(--sky);
+}
+
+#subscribe-status {
+  margin-top: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .identity-hub h2 {
+    font-size: 2.5rem;
+  }
+  .subscribe-form {
+    flex-direction: column;
+  }
+}
+
+.footer-footnote {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
