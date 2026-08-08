@@ -292,4 +292,9 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://idroot.org/pt/legal.html"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://idroot.org/ja/legal.html"/>
   </url>
+  <url>
+    <loc>https://idroot.org/.well-known/security.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
