@@ -75,58 +75,137 @@
 
     <main>
 
-      <section class="identity-hub">
-        <div class="section-label">Identity Hub</div>
-        <h2>Seu Hub de Identidade!</h2>
-        <p>Verifique uma vez. Confie em todos os lugares.</p>
-      </section>
+      <div class="hero" id="identity-hub">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>Sua identidade. Verificada uma vez. Utilizável em qualquer lugar.
+        </div>
+        <h1>IDroot Identity Hub</h1>
+        <div class="handle-chip" style="margin-bottom: 1.5rem; font-size: 0.85rem; padding: 0.4rem 1rem; border-radius: 100px; display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 184, 119, 0.1); border: 1px solid rgba(0, 184, 119, 0.3); color: var(--verified); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><polyline points="20 6 9 17 4 12"/></svg>
+          TESTE ALPHA CONCLUÍDO — 18 DE SETEMBRO DE 2026
+        </div>
+        <p class="hero-sub" style="max-width: 680px; font-size: 1.15rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 2rem;">
+          O primeiro teste Alpha do IDroot foi concluído com sucesso.<br />
+          Agora estamos trabalhando na próxima etapa: o IDroot Identity Hub.<br /><br />
+          O Identity Hub foi desenvolvido para permitir que você verifique sua identidade uma única vez e reutilize essa identidade verificada em várias plataformas e serviços participantes.<br /><br />
+          Em vez de repetir o mesmo processo de verificação sempre que utilizar um novo serviço, sua identidade verificada poderá ser reutilizada, reduzindo o tempo e o esforço necessários para realizar novas verificações.
+        </p>
+        <div class="hero-cta" style="margin-bottom: 3rem;">
+          <a href="https://dashboard.idroot.org" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            Junte-se ao IDroot
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Saiba mais sobre o Identity Hub
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      <div class="cta-banner" id="claim">
-        <div class="section-label" style="text-align: center">Começar</div>
-
-      <section class="announcements" id="upcoming">
-        <div class="section-label">Anúncios</div>
-        <h2>Em breve para usuários verificados</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            </div>
-            <h3>Suporte Multiplataforma</h3>
-            <p>Suportaremos muito mais plataformas e métodos de login, incluindo Google, X (antigo Twitter) e muito mais.</p>
+      <section id="identity-hub-steps" style="padding-top: 2rem;">
+        <div class="section-label">Verifique uma vez. Use sua identidade em vários serviços.</div>
+        <h2>3 passos para uma identidade reutilizável</h2>
+        <div class="how-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>1 — Verifique</h3>
+            <p>Conclua um processo seguro de verificação de identidade.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
-            <h3>Redirecionamento de E-mail Profissional</h3>
-            <p>Obtenha um endereço de e-mail personalizado <strong>seunome@idroot.org</strong> que redireciona para sua caixa de entrada principal. (Opt-in)</p>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>2 — Mantenha sua verificação</h3>
+            <p>Sua identidade verificada fica associada à sua conta IDroot.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            </div>
-            <h3>Painel de controle fácil de usar</h3>
-            <p>Gerencie sua identidade e handles sem esfuerzo através do nosso painel de controle intuitivo.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </div>
-            <h3>Sistema de Verificação de Identidade</h3>
-            <p>Permita que amigos e familiares verifiquem sua identidade com verificações de liveness integradas para garantir que é realmente você. (Opt-in)</p>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>3 — Use em todos os lugares</h3>
+            <p>As plataformas participantes poderão solicitar as informações ou o nível de verificação de que precisam da sua identidade no IDroot, sempre com a sua autorização. Você não precisará repetir todo o processo de verificação a cada novo serviço.</p>
           </div>
         </div>
       </section>
 
+      <div class="why-section" style="margin-top: 2rem; margin-bottom: 4rem;">
+        <div class="why-left">
+          <div class="section-label" style="color: #5bb8ff">Infraestrutura</div>
+          <h2>Uma identidade.<br />Vários serviços.</h2>
+          <p>
+            O Identity Hub está sendo desenvolvido como uma infraestrutura de identidade, e não como mais uma rede social.<br /><br />
+            O objetivo é fornecer uma camada de identidade comum para plataformas e serviços participantes — desde redes sociais e comunidades online até serviços que exigem um nível maior de garantia de identidade.
+          </p>
+        </div>
+        <div class="why-right" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <h3 style="color: white; font-size: 1.2rem; margin-bottom: 1rem;">O objetivo é simples:</h3>
+          <ul class="why-features">
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Menos verificações repetidas</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Menos atrito</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>Mais confiança</strong></div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">AT Protocol e Identidade Online</div>
+        <h2>Sua identidade verificada também pode impulsionar sua identidade online</h2>
+        <p style="max-width: 680px; font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 1.5rem;">
+          Atualmente, o IDroot oferece identificadores verificados para o AT Protocol, como:
+        </p>
+        <div class="example-handle" style="font-size: 1.2rem; padding: 0.75rem 2rem; margin-bottom: 1.5rem; display: inline-block;">
+          @name.idroot.org
+        </div>
+        <p style="max-width: 680px; font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7;">
+          Esses identificadores são uma das primeiras aplicações da infraestrutura de identidade do IDroot.<br />
+          À medida que o Identity Hub evolui, a mesma identidade verificada poderá ser utilizada para muito mais do que um único identificador ou uma única plataforma.
+        </p>
+      </section>
 
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">Privacidade em Primeiro Lugar</div>
+        <h2>Construído em torno da privacidade</h2>
+        <div class="highlight-box" style="max-width: 720px; text-align: left; font-size: 1rem; line-height: 1.7;">
+          <p style="margin-bottom: 0.75rem;"><strong>A verificação de identidade não deve significar dar a cada plataforma acesso irrestrito aos seus documentos de identidade.</strong></p>
+          <p style="margin-bottom: 0.75rem;">O IDroot é projetado em torno do princípio da divulgação mínima necessária.</p>
+          <p>Os serviços participantes devem conseguir estabelecer as informações de que realmente precisam — por exemplo, que uma identidade foi verificada — sem exigir que o usuário repita o processo de verificação completo.</p>
+        </div>
+      </section>
 
+      <section style="padding-top: 2rem; padding-bottom: 4rem;">
+        <div class="section-label">Olhando para o futuro</div>
+        <h2>O Identity Hub está chegando</h2>
+        <p style="max-width: 680px; font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 2rem;">
+          A fase Alpha foi concluída.<br />
+          Agora estamos dando continuidade ao desenvolvimento do IDroot Identity Hub e preparando a infraestrutura para a participação de plataformas e serviços externos.<br /><br />
+          <strong>Verifique uma vez. Use sua identidade em todos os lugares.</strong>
+        </p>
+        <div class="hero-cta">
+          <a href="https://dashboard.idroot.org" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            Junte-se ao IDroot
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Saiba mais sobre o Identity Hub
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </section>
 
-
-
-
-
+      <hr style="border: none; border-top: 1px solid var(--border); max-width: 1000px; margin: 2rem auto 4rem;" />
 
       <div class="hero">
         <div class="hero-eyebrow">

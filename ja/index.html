@@ -75,58 +75,137 @@
 
     <main>
 
-      <section class="identity-hub">
-        <div class="section-label">Identity Hub</div>
-        <h2>あなたのアイデンティティ・ハブ！</h2>
-        <p>一度の認証で、どこでも信頼。</p>
-      </section>
+      <div class="hero" id="identity-hub">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>あなたのアイデンティティ。1回の認証で、どこでも利用可能に。
+        </div>
+        <h1>IDroot Identity Hub</h1>
+        <div class="handle-chip" style="margin-bottom: 1.5rem; font-size: 0.85rem; padding: 0.4rem 1rem; border-radius: 100px; display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(0, 184, 119, 0.1); border: 1px solid rgba(0, 184, 119, 0.3); color: var(--verified); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 14px; height: 14px;"><polyline points="20 6 9 17 4 12"/></svg>
+          ALPHA TEST COMPLETED — 2026年9月18日
+        </div>
+        <p class="hero-sub" style="max-width: 680px; font-size: 1.15rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 2rem;">
+          IDrootの最初のAlphaテストが無事に完了しました。<br />
+          現在、次のステージとなる IDroot Identity Hub の開発を進めています。<br /><br />
+          Identity Hubは、ユーザーが一度本人確認を行うことで、その認証済みアイデンティティを、参加する複数のプラットフォームやサービスで再利用できるようにするための基盤です。<br /><br />
+          各サービスで同じ本人確認を繰り返すのではなく、認証済みのアイデンティティを再利用することで、本人確認にかかる手間と時間を減らします。
+        </p>
+        <div class="hero-cta" style="margin-bottom: 3rem;">
+          <a href="https://dashboard.idroot.org" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            IDrootに参加する
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Identity Hubについて詳しく知る
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      <div class="cta-banner" id="claim">
-        <div class="section-label" style="text-align: center">始めましょう</div>
-
-      <section class="announcements" id="upcoming">
-        <div class="section-label">お知らせ</div>
-        <h2>認証済みユーザー向け新機能（近日公開）</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            </div>
-            <h3>マルチプラットフォーム対応</h3>
-            <p>Google、X（旧Twitter）など、さらに多くのプラットフォームやログイン方法に対応する予定です。</p>
+      <section id="identity-hub-steps" style="padding-top: 2rem;">
+        <div class="section-label">一度認証すれば、複数のサービスで利用可能</div>
+        <h2>再利用可能なアイデンティティへの3つのステップ</h2>
+        <div class="how-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>1 — Verify</h3>
+            <p>安全な本人確認プロセスを完了します。</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
-            <h3>プロフェッショナル・メール転送</h3>
-            <p>メインの受信トレイに転送されるカスタムアドレス <strong>お名前@idroot.org</strong> を取得できます。（オプトイン）</p>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>2 — Keep your verification</h3>
+            <p>認証済みのアイデンティティが、あなたのIDrootアカウントに紐づきます。</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            </div>
-            <h3>使いやすいダッシュボード</h3>
-            <p>直感的なダッシュボードを通じて、身元とハンドルを簡単に管理できます。</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </div>
-            <h3>本人確認システム</h3>
-            <p>友人や家族があなたの身元を確認できるようにします。統合されたライブネスチェックにより、本人であることを保証します。（オプトイン）</p>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>3 — Use it everywhere</h3>
+            <p>参加するプラットフォームは、必要な情報や認証情報について、あなたの許可を得たうえでIDrootを利用できます。毎回、本人確認を最初からやり直す必要はありません。</p>
           </div>
         </div>
       </section>
 
+      <div class="why-section" style="margin-top: 2rem; margin-bottom: 4rem;">
+        <div class="why-left">
+          <div class="section-label" style="color: #5bb8ff">インフラストラクチャ</div>
+          <h2>1つのアイデンティティ。<br />複数のサービス。</h2>
+          <p>
+            Identity Hubは、単なるソーシャルネットワークではなく、アイデンティティ・インフラストラクチャとして設計されています。<br /><br />
+            ソーシャルプラットフォーム、オンラインコミュニティ、その他の本人確認を必要とするサービスなど、参加するさまざまなサービスに共通のアイデンティティレイヤーを提供することを目指しています。
+          </p>
+        </div>
+        <div class="why-right" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <h3 style="color: white; font-size: 1.2rem; margin-bottom: 1rem;">目標はシンプルです：</h3>
+          <ul class="why-features">
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>繰り返しの本人確認を減らす。</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>利用時の負担を減らす。</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>信頼性を高める。</strong></div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">AT Protocol & オンライン・アイデンティティ</div>
+        <h2>認証済みアイデンティティは、あなたのオンラインでの存在感を高めます</h2>
+        <p style="max-width: 680px; font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 1.5rem;">
+          現在、IDrootでは、認証済みのAT Protocolハンドルを提供しています：
+        </p>
+        <div class="example-handle" style="font-size: 1.2rem; padding: 0.75rem 2rem; margin-bottom: 1.5rem; display: inline-block;">
+          @name.idroot.org
+        </div>
+        <p style="max-width: 680px; font-size: 1.05rem; color: var(--ink-soft); line-height: 1.7;">
+          これらのハンドルは、IDrootのアイデンティティ・インフラストラクチャを活用した最初のアプリケーションの一つです。<br />
+          Identity Hubの開発が進むにつれて、同じ認証済みアイデンティティを、単一のハンドルやプラットフォームを超えて、さまざまな用途で利用できるようになります。
+        </p>
+      </section>
 
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">プライバシーを最優先</div>
+        <h2>プライバシーを中心に設計</h2>
+        <div class="highlight-box" style="max-width: 720px; text-align: left; font-size: 1rem; line-height: 1.7;">
+          <p style="margin-bottom: 0.75rem;"><strong>本人確認を行うからといって、すべてのプラットフォームに身分証明書への無制限のアクセス権を与えるべきではありません。</strong></p>
+          <p style="margin-bottom: 0.75rem;">IDrootは、必要最小限の情報開示という原則に基づいて設計されています。</p>
+          <p>参加サービスは、ユーザーが本人確認プロセスを毎回やり直すことなく、実際に必要な情報（例えば、アイデンティティが認証済みであることなど）のみを確認できるようになります。</p>
+        </div>
+      </section>
 
+      <section style="padding-top: 2rem; padding-bottom: 4rem;">
+        <div class="section-label">今後の展望</div>
+        <h2>Identity Hubの登場</h2>
+        <p style="max-width: 680px; font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 2rem;">
+          Alphaフェーズは完了しました。<br />
+          現在、IDroot Identity Hubの開発を継続しており、外部のプラットフォームやサービスが参加できるインフラの準備を進めています。<br /><br />
+          <strong>一度認証すれば、どこでも利用可能に。</strong>
+        </p>
+        <div class="hero-cta">
+          <a href="https://dashboard.idroot.org" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            IDrootに参加する
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Identity Hubについて詳しく知る
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </section>
 
-
-
-
-
+      <hr style="border: none; border-top: 1px solid var(--border); max-width: 1000px; margin: 2rem auto 4rem;" />
 
       <div class="hero">
         <div class="hero-eyebrow">
