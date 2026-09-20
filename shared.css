@@ -565,6 +565,34 @@ h2 {
   line-height: 1.6;
 }
 
+/* Alpha Badge */
+.alpha-badge {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+  background: rgba(0, 184, 119, 0.1);
+  border: 1px solid rgba(0, 184, 119, 0.3);
+  color: var(--verified);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 100%;
+  line-height: 1.4;
+  white-space: normal;
+  word-break: break-word;
+}
+.alpha-badge svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 /* Why Section */
 .why-section {
   background: var(--ink);
@@ -574,10 +602,9 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin: 0 2rem;
-  max-width: calc(1100px - 4rem);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
 }
 .why-left h2 {
   color: white;
@@ -1161,86 +1188,12 @@ footer {
 
 /* Responsive */
 
-
 @media (max-width: 768px) {
-  section {
-    padding: 3rem 1.5rem;
-  }
-  .feature-card {
-    padding: 1.5rem;
-  }
-  .step-card {
-    padding: 1.5rem;
-  }
-  .handle-card {
-    padding: 1.25rem;
-    gap: 1rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  .handle-avatar {
-    margin-bottom: 0.5rem;
-  }
-  .handle-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .handle-name {
-    justify-content: center;
-  }
-  .badge-row {
-    gap: 0.75rem;
-  }
-  .atproto-badge, .verified-by-didit {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-  section {
-    padding: 3rem 1.5rem;
-  }
-  .feature-card {
-  text-align: left;
-    padding: 1.5rem;
-  }
-  .step-card {
-    padding: 1.5rem;
-  }
-  .handle-card {
-    padding: 1.25rem;
-    gap: 1rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  .handle-avatar {
-    margin-bottom: 0.5rem;
-  }
-  .handle-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .handle-name {
-    justify-content: center;
-  }
-  .badge-row {
-    gap: 0.75rem;
-  }
-  .atproto-badge, .verified-by-didit {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
   section {
     padding: 3.5rem 1.25rem;
   }
   .feature-card {
-  text-align: left;
+    text-align: left;
     padding: 1.5rem;
   }
   .step-card {
@@ -1249,12 +1202,34 @@ footer {
   .handle-card {
     padding: 1rem;
     gap: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .handle-avatar {
+    margin-bottom: 0.5rem;
+  }
+  .handle-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .handle-name {
+    justify-content: center;
+  }
+  .badge-row {
+    gap: 0.75rem;
+  }
+  .atproto-badge, .verified-by-didit {
+    width: 100%;
+    justify-content: center;
   }
   .why-section {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     padding: 2.5rem 2rem;
     margin: 0 1rem;
+    width: auto;
   }
   nav {
     padding: 0 1.25rem;
@@ -1513,51 +1488,14 @@ footer {
 
 
 @media (max-width: 768px) {
-  section {
-    padding: 3rem 1.5rem;
-  }
-  .feature-card {
-    padding: 1.5rem;
-  }
-  .step-card {
-    padding: 1.5rem;
-  }
-  .handle-card {
-    padding: 1.25rem;
-    gap: 1rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  .handle-avatar {
-    margin-bottom: 0.5rem;
-  }
-  .handle-info {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .handle-name {
-    justify-content: center;
-  }
-  .badge-row {
-    gap: 0.75rem;
-  }
-  .atproto-badge, .verified-by-didit {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
   .announcements {
     padding: 4rem 0;
   }
   .announcements .section-label {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.announcements h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .announcements h2 {
     font-size: 2.2rem;
   }
 }
