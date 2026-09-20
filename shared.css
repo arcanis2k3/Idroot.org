@@ -1382,7 +1382,8 @@ footer {
 
 .quick-nav-btn span {
   text-align: center;
-  word-break: break-word;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 /* Accessibility: focus states */
