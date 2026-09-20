@@ -62,12 +62,12 @@
           <li><a href="#why">idrootを選ぶ理由</a></li>
 
           <li>
-            <a href="https://dashboard.idroot.org" class="btn-primary">
+            <a href="/ja/feedback.html" class="btn-primary">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                 <circle cx="12" cy="7" r="4" />
               </svg>
-              Dashboard
+              アクセスリクエスト
             </a>
           </li>
       </ul>
@@ -75,58 +75,216 @@
 
     <main>
 
-      <section class="identity-hub">
-        <div class="section-label">Identity Hub</div>
-        <h2>あなたのアイデンティティ・ハブ！</h2>
-        <p>一度の認証で、どこでも信頼。</p>
-      </section>
+      <div class="hero" id="identity-hub">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>あなたのアイデンティティ。1回の認証で、どこでも利用可能に。
+        </div>
+        <h1>IDroot Identity Hub</h1>
+        <div class="alpha-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          ALPHA TEST COMPLETED — 2026年9月18日
+        </div>
+        <p class="hero-sub" style="max-width: 680px; font-size: 1.15rem; line-height: 1.7; color: var(--ink-soft); margin-bottom: 2rem;">
+          IDrootの最初のAlphaテストが無事に完了しました。<br />
+          現在、次のステージとなる IDroot Identity Hub の開発を進めています。<br /><br />
+          Identity Hubは、ユーザーが一度本人確認を行うことで、その認証済みアイデンティティを、参加する複数のプラットフォームやサービスで再利用できるようにするための基盤です。<br /><br />
+          各サービスで同じ本人確認を繰り返すのではなく、認証済みのアイデンティティを再利用することで、本人確認にかかる手間と時間を減らします。
+        </p>
+        <div class="hero-cta" style="margin-bottom: 3rem;">
+          <a href="/ja/feedback.html" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            クローズドベータアクセスをリクエスト
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Identity Hubについて詳しく知る
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      <div class="cta-banner" id="claim">
-        <div class="section-label" style="text-align: center">始めましょう</div>
-
-      <section class="announcements" id="upcoming">
-        <div class="section-label">お知らせ</div>
-        <h2>認証済みユーザー向け新機能（近日公開）</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            </div>
-            <h3>マルチプラットフォーム対応</h3>
-            <p>Google、X（旧Twitter）など、さらに多くのプラットフォームやログイン方法に対応する予定です。</p>
+      <section id="identity-hub-steps" style="padding-top: 2rem;">
+        <div class="section-label">一度認証すれば、複数のサービスで利用可能</div>
+        <h2>再利用可能なアイデンティティへの3つのステップ</h2>
+        <div class="how-grid">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <h3>1 — Verify</h3>
+            <p>安全な本人確認プロセスを完了します。</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </div>
-            <h3>プロフェッショナル・メール転送</h3>
-            <p>メインの受信トレイに転送されるカスタムアドレス <strong>お名前@idroot.org</strong> を取得できます。（オプトイン）</p>
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <h3>2 — Keep your verification</h3>
+            <p>認証済みのアイデンティティが、あなたのIDrootアカウントに紐づきます。</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            </div>
-            <h3>使いやすいダッシュボード</h3>
-            <p>直感的なダッシュボードを通じて、身元とハンドルを簡単に管理できます。</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-            </div>
-            <h3>本人確認システム</h3>
-            <p>友人や家族があなたの身元を確認できるようにします。統合されたライブネスチェックにより、本人であることを保証します。（オプトイン）</p>
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <h3>3 — Use it everywhere</h3>
+            <p>参加するプラットフォームは、必要な情報や認証情報について、あなたの許可を得たうえでIDrootを利用できます。毎回、本人確認を最初からやり直す必要はありません。</p>
           </div>
         </div>
       </section>
 
+      <div class="sharing-graphic-section">
+        <div class="sharing-graphic-header">
+          <h2>共有する情報は、あなたがコントロール。</h2>
+          <p>あなたのアイデンティティ。あなたの選択。必要な情報だけを。</p>
+        </div>
+        <div class="sharing-flow-grid">
+          <!-- Card 1: 認証済みアイデンティティ -->
+          <div class="sharing-card">
+            <div class="sharing-card-title">認証済みアイデンティティ</div>
+            <div class="sharing-card-sub">IDrootで安全に管理。</div>
+            <div class="profile-box">
+              <div class="profile-avatar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div class="profile-name">
+                  Sebastian Fleckenstein
+                  <div class="verified-badge"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                </div>
+                <div class="profile-status">IDroot 認証済み</div>
+              </div>
+            </div>
+            <div class="attr-list">
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>認証済みアイデンティティ</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>実在する人物（認証済み）</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>年齢確認済み</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>メールアドレス確認済み</div></div>
+            </div>
+          </div>
 
+          <div class="sharing-flow-arrow">→</div>
 
+          <!-- Card 2: プラットフォームからの要求 -->
+          <div class="sharing-card">
+            <div class="sharing-card-title">プラットフォームからの要求</div>
+            <div class="sharing-card-sub">必要な項目のみをリクエスト。</div>
+            <div class="attr-list">
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>実在人物</div><div class="attr-badge required">必須 ✓</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>18歳以上</div><div class="attr-badge required">必須 ✓</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>氏名</div><div class="attr-badge not-requested">要求なし ✕</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</div><div class="attr-badge not-requested">要求なし ✕</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>生年月日</div><div class="attr-badge not-requested">要求なし ✕</div></div>
+            </div>
+          </div>
 
+          <div class="sharing-flow-arrow">→</div>
 
+          <!-- Card 3: あなたの承認 -->
+          <div class="sharing-card">
+            <div class="sharing-card-title">あなたの承認</div>
+            <div class="sharing-card-sub">共有する項目を選択。</div>
+            <div class="attr-list">
+              <div class="attr-item active-share"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>実在人物</div><div class="attr-badge shared">共有 ✓</div></div>
+              <div class="attr-item active-share"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>18歳以上</div><div class="attr-badge shared">共有 ✓</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>氏名</div><div class="attr-badge not-shared">未共有 ✕</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</div><div class="attr-badge not-shared">未共有 ✕</div></div>
+              <div class="attr-item"><div class="attr-item-left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>生年月日</div><div class="attr-badge not-shared">未共有 ✕</div></div>
+            </div>
+          </div>
 
+          <div class="sharing-flow-arrow">→</div>
 
+          <!-- Card 4: プラットフォーム -->
+          <div class="sharing-card">
+            <div class="sharing-card-title">プラットフォーム</div>
+            <div class="sharing-card-sub">承認された情報のみを受信。</div>
+            <div class="platform-received-card">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              <div class="platform-received-title">認証済みの人物</div>
+              <div class="platform-received-tag">18歳以上</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="why-section" style="margin-top: 2rem; margin-bottom: 4rem;">
+        <div class="why-left">
+          <div class="section-label" style="color: #5bb8ff">インフラストラクチャ</div>
+          <h2>1つのアイデンティティ。<br />複数のサービス。</h2>
+          <p>
+            Identity Hubは、単なるソーシャルネットワークではなく、アイデンティティ・インフラストラクチャとして設計されています。<br /><br />
+            ソーシャルプラットフォーム、オンラインコミュニティ、その他の本人確認を必要とするサービスなど、参加するさまざまなサービスに共通のアイデンティティレイヤーを提供することを目指しています。
+          </p>
+        </div>
+        <div class="why-right" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <h3 style="color: white; font-size: 1.2rem; margin-bottom: 1rem;">目標はシンプルです：</h3>
+          <ul class="why-features">
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>繰り返しの本人確認を減らす。</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>利用時の負担を減らす。</strong></div>
+            </li>
+            <li>
+              <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div><strong>信頼性を高める。</strong></div>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">ユースケース</div>
+        <h2>あらゆるデジタル領域のために</h2>
+        <div class="examples-grid" style="max-width: 840px; margin-top: 1.5rem;">
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">ソーシャルメディア</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">金融・フィンテック</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">クリエイター</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">ゲーミング</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">マッチング</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">トラベル</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">マーケットプレイス</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">ビジネス</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">教育</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">行政・公共</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">年齢確認</span>
+          <span class="example-handle" style="color: var(--ink); font-weight: 600;">KYC（本人確認）</span>
+        </div>
+      </section>
+
+      <section style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="section-label">プライバシーを最優先</div>
+        <h2>プライバシーを中心に設計</h2>
+        <div class="highlight-box" style="max-width: 720px; text-align: left; font-size: 1rem; line-height: 1.7;">
+          <p style="margin-bottom: 0.75rem;"><strong>本人確認を行うからといって、すべてのプラットフォームに身分証明書への無制限のアクセス権を与えるべきではありません。</strong></p>
+          <p style="margin-bottom: 0.75rem;">IDrootは、必要最小限の情報開示という原則に基づいて設計されています。</p>
+          <p>参加サービスは、ユーザーが本人確認プロセスを毎回やり直すことなく、実際に必要な情報（例えば、アイデンティティが認証済みであることなど）のみを確認できるようになります。</p>
+        </div>
+      </section>
+
+      <section style="padding-top: 2rem; padding-bottom: 4rem;">
+        <div class="section-label">今後の展望</div>
+        <h2>Identity Hubの登場</h2>
+        <p style="max-width: 680px; font-size: 1.1rem; color: var(--ink-soft); line-height: 1.7; margin-bottom: 2rem;">
+          Alphaフェーズは完了しました。<br />
+          現在、IDroot Identity Hubの開発を継続しており、外部のプラットフォームやサービスが参加できるインフラの準備を進めています。<br /><br />
+          <strong>一度認証すれば、どこでも利用可能に。</strong>
+        </p>
+        <div class="hero-cta">
+          <a href="/ja/feedback.html" class="btn-primary" style="font-size: 1rem; padding: 0.75rem 1.75rem;">
+            クローズドベータアクセスをリクエスト
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="#identity-hub-steps" class="btn-secondary">
+            Identity Hubについて詳しく知る
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <hr style="border: none; border-top: 1px solid var(--border); max-width: 1000px; margin: 2rem auto 4rem;" />
 
       <div class="hero">
         <div class="hero-eyebrow">
@@ -140,11 +298,11 @@
         </p>
         <div class="hero-cta">
           <a
-            href="https://dashboard.idroot.org"
+            href="/ja/feedback.html"
             class="btn-primary"
             style="font-size: 1rem; padding: 0.75rem 1.75rem"
           >
-            ハンドルを登録
+            クローズドベータアクセスをリクエスト
             <svg
               width="14"
               height="14"
@@ -178,21 +336,24 @@
             <div class="handle-avatar">S</div>
             <div class="handle-info">
               <div class="handle-name">
-                Sebastian K.
-                <div class="verified-badge">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                </div>
+                <a href="https://bsky.app/profile/f90.idroot.org" target="_blank" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+                  Sebastian F.
+                  <div class="verified-badge">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                </a>
               </div>
-              <div class="handle-at">@sebastian.idroot.org</div>
+              </div>
+              <div class="handle-at"><a href="https://bsky.app/profile/f90.idroot.org" target="_blank" style="color: var(--sky); text-decoration: none;">@f90.idroot.org</a></div>
             </div>
             <div class="handle-chip">認証済み</div>
           </div>
@@ -372,16 +533,17 @@
 
 
 
-        <h2>ハンドルを登録する準備はできましたか？</h2>
+      <section class="cta-banner">
+        <h2>クローズドベータアクセスをリクエストする準備はできましたか？</h2>
         <p>
           オープンなウェブでハンドルを確保した認証済みユーザーの仲間入りをしましょう。
         </p>
         <a
-          href="https://dashboard.idroot.org"
+          href="/ja/feedback.html"
           class="btn-primary"
           style="font-size: 1rem; padding: 0.8rem 2rem"
         >
-          ハンドルを登録
+          クローズドベータアクセスをリクエスト
           <svg
             width="14"
             height="14"
@@ -438,7 +600,7 @@
             >Didit *¹</a
           >
         </div>
-      </div>
+      </section>
 
 
     </main>
@@ -476,6 +638,10 @@
     <section class="quick-nav">
       <h3>クイックナビゲーション</h3>
       <div class="quick-nav-grid">
+        <a href="/ja/index.html" class="quick-nav-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>ホーム</span>
+        </a>
         <a href="https://atproto.com" target="_blank" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
           <span>AT Protocol</span>
@@ -484,9 +650,9 @@
           <img src="/bapu-icon-512.png" alt="Bapu.app">
           <span>Bapu.app</span>
         </a>
-        <a href="https://dashboard.idroot.org" class="quick-nav-btn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
-          <span>Dashboard</span>
+        <a href="/ja/feedback.html" class="quick-nav-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>クローズドベータリクエスト</span>
         </a>
         <a href="/ja/developers.html" class="quick-nav-btn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -532,7 +698,7 @@
         <span class="sep">·</span>
         <a href="https://bapu.app" target="_blank">Bapu.app</a>
         <span class="sep">·</span>
-        <a href="https://dashboard.idroot.org">ダッシュボード</a>
+        <a href="/ja/feedback.html">ベータリクエスト</a>
         <span class="sep">·</span>
         <a href="/ja/developers.html">開発者</a>
         <span class="sep">·</span>
