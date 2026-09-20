@@ -1313,6 +1313,213 @@ footer {
   cursor: not-allowed;
 }
 
+/* Sharing Control Flow Section */
+.sharing-graphic-section {
+  width: 100%;
+  max-width: 1180px;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.sharing-graphic-header h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.sharing-graphic-header p {
+  font-size: 1.15rem;
+  color: var(--ink-faint);
+  margin-bottom: 3rem;
+}
+
+.sharing-flow-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sharing-flow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-faint);
+  font-size: 1.25rem;
+}
+
+.sharing-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1.25rem;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(15, 25, 35, 0.04);
+  flex: 1 1 230px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sharing-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.sharing-card-sub {
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  margin-bottom: 1.25rem;
+}
+
+/* User Profile Badge */
+.profile-box {
+  background: rgba(247, 250, 253, 0.8);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--sky-light);
+  border: 1px solid var(--sky-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sky);
+}
+
+.profile-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.profile-status {
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+}
+
+/* Attributes list */
+.attr-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.attr-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}
+
+.attr-item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.attr-item-left svg {
+  width: 16px;
+  height: 16px;
+  color: var(--ink-faint);
+  flex-shrink: 0;
+}
+
+.attr-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.attr-badge.required {
+  color: var(--sky);
+}
+
+.attr-badge.shared {
+  color: var(--verified);
+}
+
+.attr-badge.not-requested,
+.attr-badge.not-shared {
+  color: #a0aec0;
+}
+
+.attr-item.active-share {
+  background: rgba(0, 184, 119, 0.08);
+  border: 1px solid rgba(0, 184, 119, 0.2);
+}
+
+/* Card 4 Platform Output */
+.platform-received-card {
+  background: var(--sky-light);
+  border: 1px solid var(--sky-mid);
+  border-radius: 16px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.platform-received-card svg {
+  width: 32px;
+  height: 32px;
+  color: var(--sky);
+}
+
+.platform-received-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.platform-received-tag {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--sky);
+}
+
+@media (max-width: 1024px) {
+  .sharing-flow-grid {
+    flex-direction: column;
+  }
+
+  .sharing-flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .sharing-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 /* Quick Navigation Section */
 .quick-nav {
   max-width: 1100px;
